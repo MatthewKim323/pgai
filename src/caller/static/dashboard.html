@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pgai-caller · mission control</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c2129; --line: #2d333b;
+    --text: #e6edf3; --dim: #8b949e; --accent: #4ea1ff;
+    --agent: #d29922; --patient: #3fb950;
+    --high: #f85149; --medium: #d29922; --low: #8b949e;
+    --state-agent: #d29922; --state-patient: #3fb950; --state-think: #4ea1ff;
+    --state-wait: #30363d; --state-overlap: #f85149;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  header {
+    padding: 14px 20px; border-bottom: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  header h1 span { color: var(--accent); }
+  header .sub { color: var(--dim); font-size: 12px; }
+  .layout { display: grid; grid-template-columns: 330px 1fr; min-height: calc(100vh - 49px); }
+  nav { border-right: 1px solid var(--line); overflow-y: auto; }
+  .call-item {
+    padding: 10px 14px; border-bottom: 1px solid var(--line); cursor: pointer;
+  }
+  .call-item:hover { background: var(--panel); }
+  .call-item.active { background: var(--panel2); border-left: 3px solid var(--accent); }
+  .call-item .name { font-weight: 600; }
+  .call-item .vitals { color: var(--dim); font-size: 12px; margin-top: 2px; }
+  .badge {
+    display: inline-block; padding: 0 6px; border-radius: 8px; font-size: 11px;
+    border: 1px solid var(--line); color: var(--dim); margin-left: 6px;
+  }
+  .badge.high { color: var(--high); border-color: var(--high); }
+  .badge.medium { color: var(--medium); border-color: var(--medium); }
+  main { padding: 18px 22px; overflow-y: auto; }
+  .empty { color: var(--dim); padding: 60px; text-align: center; }
+  section { margin-bottom: 22px; }
+  section h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--dim); margin: 0 0 8px; font-weight: 600;
+  }
+  .meta-grid { display: flex; flex-wrap: wrap; gap: 8px 26px; color: var(--dim); font-size: 13px; }
+  .meta-grid b { color: var(--text); font-weight: 600; }
+  audio { width: 100%; margin-top: 6px; }
+  .timeline { position: relative; height: 34px; background: var(--panel); border-radius: 6px; overflow: hidden; }
+  .timeline .seg { position: absolute; top: 0; bottom: 0; }
+  .tl-legend { margin-top: 6px; font-size: 11px; color: var(--dim); display: flex; gap: 14px; }
+  .tl-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .lat-row { display: flex; align-items: center; gap: 10px; margin: 3px 0; font-size: 12px; }
+  .lat-row .lbl { width: 64px; color: var(--dim); }
+  .lat-row .bar { height: 12px; border-radius: 3px; background: var(--accent); min-width: 2px; }
+  .lat-row .bar.slow { background: var(--high); }
+  .lat-row .val { color: var(--dim); }
+  .utt { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  .utt .ts { color: var(--dim); min-width: 46px; }
+  .utt .who { min-width: 70px; font-weight: 600; }
+  .utt.agent .who { color: var(--agent); }
+  .utt.patient .who { color: var(--patient); }
+  .finding { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--low);
+             border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; }
+  .finding.high { border-left-color: var(--high); }
+  .finding.medium { border-left-color: var(--medium); }
+  .finding .title { font-weight: 600; }
+  .finding .details { color: var(--dim); margin-top: 4px; }
+  .finding .quote { color: var(--text); background: var(--panel2); border-radius: 4px;
+                    padding: 6px 10px; margin-top: 6px; font-style: italic; }
+  .gaps b.slow { color: var(--high); }
+</style>
+</head>
+<body>
+<header>
+  <h1>pgai-caller <span>mission control</span></h1>
+  <div class="sub" id="summary">loading…</div>
+</header>
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"><div class="empty">select a call</div></main>
+</div>
+<script>
+const STATE_COLORS = {
+  agent_speaking: "var(--state-agent)",
+  patient_speaking: "var(--state-patient)",
+  thinking: "var(--state-think)",
+  waiting_greeting: "var(--state-wait)",
+  overlap: "var(--state-overlap)",
+};
+let CALLS = [];
+
+async function boot() {
+  CALLS = await (await fetch("/api/calls")).json();
+  const nCalls = CALLS.length;
+  const nFind = CALLS.reduce((a, c) => a + (c.findings ? c.findings.length : 0), 0);
+  document.getElementById("summary").textContent =
+    `${nCalls} calls · ${nFind} findings on record`;
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  CALLS.forEach((c, i) => {
+    const tel = c.telemetry || {};
+    const div = document.createElement("div");
+    div.className = "call-item";
+    div.onclick = () => select(i);
+    const sevs = (c.findings || []).map(f => f.severity);
+    const badge = sevs.includes("high") ? "high" : sevs.includes("medium") ? "medium" : "";
+    div.innerHTML = `
+      <div class="name">${c.id}${c.findings && c.findings.length
+        ? `<span class="badge ${badge}">${c.findings.length} finding${c.findings.length > 1 ? "s" : ""}</span>` : ""}</div>
+      <div class="vitals">${fmt(tel.call_duration_secs)}s · ${tel.completed_turns ?? "?"} turns
+        · ${(c.meta || {}).ended_by || "?"}${c.recording ? " · ♪" : ""}</div>`;
+    nav.appendChild(div);
+  });
+  if (CALLS.length) select(CALLS.length - 1);
+}
+
+function fmt(x) { return x == null ? "?" : (Math.round(x * 10) / 10); }
+
+function select(i) {
+  document.querySelectorAll(".call-item").forEach((el, j) =>
+    el.classList.toggle("active", j === i));
+  const c = CALLS[i];
+  const meta = c.meta || {}, tel = c.telemetry || {};
+  const main = document.getElementById("main");
+  main.innerHTML = `
+    ${section("call", metaGrid(meta, tel))}
+    ${c.recording ? section("recording (agent left · patient right)",
+      `<audio controls src="/api/calls/${c.id}/recording.mp3"></audio>`) : ""}
+    ${section("turn-state timeline", timelineHtml(c))}
+    ${section("our response latency (agent stops → patient audio)", latencyHtml(tel))}
+    ${section("agent response gaps (how long it left us waiting)", gapsHtml(tel))}
+    ${section(`findings ${c.findings ? `(${c.findings.length})` : "(not analyzed yet)"}`,
+      findingsHtml(c.findings))}
+    ${section("transcript", transcriptHtml(c.transcript))}
+  `;
+}
+
+const section = (title, body) => `<section><h2>${title}</h2>${body}</section>`;
+
+function metaGrid(meta, tel) {
+  const rows = [
+    ["scenario", meta.scenario], ["behavior", meta.behavior],
+    ["barge-in", meta.barge_in_policy], ["duration", fmt(tel.call_duration_secs) + "s"],
+    ["turns", tel.completed_turns], ["interruptions", tel.interruptions],
+    ["ended by", meta.ended_by], ["call sid", meta.call_sid],
+  ];
+  return `<div class="meta-grid">${rows
+    .filter(([, v]) => v !== undefined && v !== null)
+    .map(([k, v]) => `<span>${k}: <b>${v}</b></span>`).join("")}</div>`;
+}
+
+function timelineHtml(c) {
+  const tl = (c.timeline || []).filter(e => e.type === "state_changed");
+  if (tl.length < 2) return `<div class="empty">no timeline</div>`;
+  const t0 = tl[0].ts, t1 = tl[tl.length - 1].ts, span = t1 - t0 || 1;
+  let segs = "";
+  for (let i = 0; i < tl.length - 1; i++) {
+    const color = STATE_COLORS[tl[i].to];
+    if (!color) continue;
+    const left = ((tl[i].ts - t0) / span) * 100;
+    const width = ((tl[i + 1].ts - tl[i].ts) / span) * 100;
+    segs += `<div class="seg" title="${tl[i].to} (${fmt(tl[i + 1].ts - tl[i].ts)}s)"
+      style="left:${left}%;width:${width}%;background:${color}"></div>`;
+  }
+  const legend = Object.entries(STATE_COLORS).map(([k, v]) =>
+    `<span><i style="background:${v}"></i>${k.replace("_", " ")}</span>`).join("");
+  return `<div class="timeline">${segs}</div><div class="tl-legend">${legend}</div>`;
+}
+
+function latencyHtml(tel) {
+  const rows = ((tel.patient || {}).per_turn || []).filter(r => r.response_latency != null);
+  if (!rows.length) return `<div class="empty">no completed turns</div>`;
+  const max = Math.max(...rows.map(r => r.response_latency), 2);
+  return rows.map(r => `
+    <div class="lat-row">
+      <span class="lbl">turn ${r.turn}${r.interrupted ? " ⚡" : ""}</span>
+      <div class="bar ${r.response_latency > 2 ? "slow" : ""}"
+           style="width:${(r.response_latency / max) * 60}%"></div>
+      <span class="val">${r.response_latency.toFixed(2)}s</span>
+    </div>`).join("");
+}
+
+function gapsHtml(tel) {
+  const gaps = ((tel.agent_under_test || {}).response_gaps) || [];
+  if (!gaps.length) return `<div class="empty">none recorded</div>`;
+  return `<div class="gaps">${gaps.map(g =>
+    `<b class="${g > 4 ? "slow" : ""}">${g.toFixed(1)}s</b>`).join(" · ")}</div>`;
+}
+
+function findingsHtml(findings) {
+  if (!findings) return `<div class="empty">run <code>python -m caller analyze</code></div>`;
+  if (!findings.length) return `<div class="empty">judge filed no findings — clean call</div>`;
+  return findings.map(f => `
+    <div class="finding ${f.severity}">
+      <div class="title">${f.title} <span class="badge ${f.severity}">${f.severity}</span>
+        <span class="badge">${f.category}</span> <span class="badge">${f.timestamp}</span></div>
+      <div class="details">${f.details}</div>
+      <div class="quote">${f.quote}</div>
+    </div>`).join("");
+}
+
+function transcriptHtml(entries) {
+  if (!entries || !entries.length) return `<div class="empty">empty transcript</div>`;
+  return entries.map(e => `
+    <div class="utt ${e.speaker}">
+      <span class="ts">${e.stamp}</span>
+      <span class="who">${e.speaker.toUpperCase()}</span>
+      <span class="txt">${e.text}</span>
+    </div>`).join("");
+}
+
+boot();
+</script>
+</body>
+</html>

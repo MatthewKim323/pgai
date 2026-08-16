@@ -5,6 +5,7 @@
     python -m caller campaign <ids...>     run several scenarios back to back
     python -m caller list                  scenarios + completed calls
     python -m caller analyze               mine transcripts for bugs (see analyze/)
+    python -m caller dashboard             mission control UI over calls/
 
 `call` and `campaign` start the server in-process if one isn't already
 listening, so after setup a single command runs a whole test call.
@@ -106,6 +107,16 @@ def _cmd_analyze(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_dashboard(args: argparse.Namespace) -> int:
+    import uvicorn
+
+    from caller.dashboard import create_dashboard_app
+
+    print(f"mission control: http://localhost:{args.port}")
+    uvicorn.run(create_dashboard_app(), host="127.0.0.1", port=args.port, log_level="warning")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="caller", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -123,6 +134,10 @@ def main(argv: list[str] | None = None) -> int:
     p_camp.set_defaults(fn=_cmd_campaign)
 
     sub.add_parser("list", help="list scenarios and completed calls").set_defaults(fn=_cmd_list)
+
+    p_dash = sub.add_parser("dashboard", help="serve the mission-control UI")
+    p_dash.add_argument("--port", type=int, default=8090)
+    p_dash.set_defaults(fn=_cmd_dashboard)
 
     p_an = sub.add_parser("analyze", help="mine call artifacts for bugs")
     p_an.add_argument("--force", action="store_true", help="re-analyze calls already judged")
