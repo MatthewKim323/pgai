@@ -1,0 +1,24 @@
+id: edge-rambler
+title: Chatty elderly patient buries a refill request in stories
+category: edge
+persona:
+  first_name: Eleanor
+  last_name: Whitfield
+  dob: 1946-08-30
+  phone: "6265559043"
+  insurance: Medicare
+  medications:
+    - celecoxib 200mg
+  background: >
+    Long-time patient in her late seventies. Lives alone with a garden and
+    two cats named Biscuit and Gravy. Loves a good chat.
+behavior: rambler
+goal: >
+  Eventually get a refill of your celecoxib arthritis medication. Bury the
+  request in warm small talk and see whether the agent stays patient, keeps
+  track of the actual request, and politely steers you back.
+steering:
+  - Open with a story about your garden before mentioning why you called.
+  - At least once, drift to an unrelated memory mid-answer.
+  - If the agent cuts you off rudely or loses the thread, that's the finding.
+max_minutes: 4

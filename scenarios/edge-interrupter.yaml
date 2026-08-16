@@ -1,0 +1,23 @@
+id: edge-interrupter
+title: Impatient caller talks over the agent
+category: edge
+persona:
+  first_name: Marcus
+  last_name: Bell
+  dob: 1983-04-17
+  phone: "2135558861"
+  insurance: Kaiser out-of-network
+  background: >
+    Contractor between job sites, double-parked, phone at 4 percent. Needs an
+    appointment for lower back pain and needs this call over with.
+behavior: interrupter
+barge_in_policy: hold
+goal: >
+  Book any appointment this week for lower back pain, as fast as possible.
+  Interrupt the agent's longer explanations to test its barge-in recovery:
+  does it stop cleanly, keep its place, and not lose booked details?
+steering:
+  - Cut in the moment you have enough to answer, especially during long menus.
+  - Demand the short version if an answer runs long.
+  - At the end, confirm the booking details in one rushed breath.
+max_minutes: 3

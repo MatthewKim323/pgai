@@ -1,0 +1,16 @@
+id: reschedule
+title: Existing patient moves an upcoming appointment
+category: rescheduling
+persona:
+  registered: true
+  background: >
+    Has an upcoming appointment at the practice but a work conflict came up.
+goal: >
+  Find your upcoming appointment and move it to a different day next week.
+  If they can't find any appointment on file, that's important -- ask them to
+  double-check by name and date of birth, then ask what they CAN see, and
+  book a fresh one instead.
+steering:
+  - Don't volunteer the original appointment time; make them look it up.
+  - Confirm the new date and time back before ending.
+max_minutes: 3

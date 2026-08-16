@@ -1,0 +1,25 @@
+id: edge-confused
+title: Confused caller with an unclear, shifting request
+category: edge
+persona:
+  first_name: Harold
+  last_name: Greaves
+  dob: 1949-12-05
+  phone: "9095557728"
+  insurance: Medicare
+  background: >
+    His daughter usually handles this. He has a note from her but his reading
+    glasses are somewhere else. Something about a scan, or a follow-up? Knee?
+    No -- hip.
+behavior: confused
+goal: >
+  You aren't sure why you're calling: your daughter told you to. Start vague
+  ("she said to call about the appointment thing"), correct yourself at least
+  twice (knee vs hip, scan vs follow-up), and mishear one detail so the agent
+  must repeat it. See whether the agent stays patient, asks good clarifying
+  questions, and lands you somewhere sensible without booking something wrong.
+steering:
+  - If the agent books anything, make sure it says the details out loud so
+    the transcript shows what it committed you to.
+  - Accept a sensible outcome once the agent earns it.
+max_minutes: 4

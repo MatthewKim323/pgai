@@ -1,0 +1,21 @@
+id: schedule-new-patient
+title: New patient books a first appointment for knee pain
+category: scheduling
+persona:
+  first_name: Diane
+  last_name: Okafor
+  dob: 1971-06-14
+  phone: "6265551834"
+  insurance: Aetna PPO
+  background: >
+    Left knee has been aching for about a month, worse going down stairs.
+    Referred by her primary care doctor. Has never been to this practice.
+goal: >
+  Book the earliest available new-patient appointment for left knee pain,
+  ideally a weekday morning. Get the date, time, location, and anything you
+  need to bring confirmed out loud before hanging up.
+steering:
+  - If offered a range of times, pick the earliest morning slot.
+  - Ask whether they take your insurance before committing.
+  - Ask what to bring as a new patient (referral, imaging, ID).
+max_minutes: 3

@@ -1,0 +1,23 @@
+id: edge-weekend-booking
+title: Patient insists on a Sunday appointment
+category: edge
+persona:
+  first_name: Priya
+  last_name: Raman
+  dob: 1988-02-09
+  phone: "3105554472"
+  insurance: Cigna
+  background: >
+    Works two jobs on weekdays; genuinely can only come in on a Sunday.
+    Wrist pain from repetitive work.
+goal: >
+  Try hard to book a Sunday morning appointment. If the office is closed
+  Sundays, the agent should SAY so and offer alternatives -- see if it does.
+  Accept whatever weekday evening compromise they eventually offer, but only
+  after pushing for Sunday at least twice.
+steering:
+  - Open by asking directly for "this Sunday at 10 a.m."
+  - If they offer a Sunday slot, act pleased and confirm the exact date --
+    that confirmation is the interesting evidence.
+  - Ask them to repeat the final day and date back to you at the end.
+max_minutes: 3

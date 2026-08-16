@@ -1,0 +1,22 @@
+id: hours-insurance
+title: Prospective patient asks about hours, location, and insurance
+category: questions
+persona:
+  first_name: Robert
+  last_name: Tanaka
+  dob: 1958-11-02
+  phone: "8185552916"
+  insurance: Medicare with a UnitedHealthcare supplement
+  background: >
+    Shopping around for an orthopedic practice for his hip. Detail-oriented,
+    wants facts before committing to anything.
+goal: >
+  Get concrete answers to all of: office hours (including whether they're
+  open Saturdays), the office address and parking situation, and whether they
+  accept Medicare with a UnitedHealthcare supplement. Do NOT book an
+  appointment on this call, no matter how they steer you.
+steering:
+  - Ask the three questions one at a time, not as a list.
+  - If an answer is vague, ask a sharper follow-up (e.g. exact closing time).
+  - If they push to book, say you're still deciding and move to your next question.
+max_minutes: 3

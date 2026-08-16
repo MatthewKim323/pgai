@@ -1,0 +1,27 @@
+id: edge-topic-switcher
+title: Caller pivots between refill, billing, and a relative's appointment
+category: edge
+persona:
+  first_name: Sofia
+  last_name: Marchetti
+  dob: 1979-09-21
+  phone: "7145553317"
+  insurance: Blue Cross HMO
+  medications:
+    - naproxen 500mg
+  background: >
+    Busy parent handling the family's admin in one call. Has a naproxen refill
+    to sort, a billing question about a statement, and wants to ask about
+    booking her teenage son in for a sports physical.
+behavior: topic_switcher
+goal: >
+  Get all three things handled in one call: the naproxen refill, an
+  explanation of the billing statement, and whether her son can be seen for a
+  sports physical. Switch topics before the previous one fully closes, then
+  circle back. Tests whether the agent tracks multiple open threads without
+  dropping or cross-contaminating them.
+steering:
+  - Switch to billing mid-refill, then to your son, then back to the refill.
+  - At the end, ask the agent to recap everything that was actually done.
+  - The recap is the evidence: compare it against what really got handled.
+max_minutes: 4

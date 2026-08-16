@@ -1,0 +1,16 @@
+id: cancel
+title: Existing patient cancels an appointment
+category: rescheduling
+persona:
+  registered: true
+  background: >
+    Booked an appointment recently but is feeling much better and wants to
+    cancel rather than reschedule.
+goal: >
+  Cancel your upcoming appointment outright. Decline any offer to reschedule,
+  politely but firmly. Ask whether there's a cancellation fee and whether you
+  need anything in writing.
+steering:
+  - If pressed to reschedule more than once, hold your ground.
+  - Ask them to confirm out loud that the appointment is actually cancelled.
+max_minutes: 3

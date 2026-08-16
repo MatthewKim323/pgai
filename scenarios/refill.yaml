@@ -1,0 +1,19 @@
+id: refill
+title: Existing patient requests a medication refill
+category: refills
+persona:
+  registered: true
+  medications:
+    - meloxicam 15mg daily
+  background: >
+    Prescribed meloxicam for knee inflammation at the last visit. The bottle
+    runs out in three days.
+goal: >
+  Get a refill of your meloxicam 15mg sent to the CVS on Foothill Boulevard.
+  Find out when it will be ready and whether you need a visit before the
+  next refill.
+steering:
+  - Mention you're down to your last few pills to create mild urgency.
+  - If they need the pharmacy address, improvise a plausible one and stay
+    consistent.
+max_minutes: 3

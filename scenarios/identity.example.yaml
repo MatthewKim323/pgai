@@ -1,0 +1,9 @@
+# Copy to identity.local.yaml (gitignored) and fill in the exact details used
+# when registering the test account at pgai.us/athena. Scenarios with
+# `persona.registered: true` merge this in as the patient's identity so
+# verification flows (name / DOB / phone lookups) hit a real record.
+first_name: Jane
+last_name: Doe
+dob: 1990-01-31
+phone: "5551234567"
+insurance: Blue Shield PPO

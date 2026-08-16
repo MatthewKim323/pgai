@@ -1,0 +1,15 @@
+id: schedule-followup
+title: Existing patient books a follow-up visit
+category: scheduling
+persona:
+  registered: true
+  background: >
+    Saw the doctor about two weeks ago for shoulder pain after a snowboarding
+    fall. Was told to book a follow-up in two to three weeks to check progress.
+goal: >
+  Book a follow-up appointment for your shoulder in the next two weeks.
+  Confirm the exact date, time, and which provider you'll see.
+steering:
+  - Let them look you up by name and date of birth when asked.
+  - Afternoons work better for you; say so if offered a morning.
+max_minutes: 3

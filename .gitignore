@@ -1,7 +1,8 @@
-# secrets
+# secrets + personal data
 .env
 .env.*
 !.env.example
+scenarios/identity.local.yaml
 
 # python
 __pycache__/
