@@ -28,7 +28,7 @@ Barge-in policy (what to do when the agent talks over us):
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from enum import Enum
+from enum import StrEnum
 from typing import Any
 
 __all__ = [
@@ -39,7 +39,7 @@ __all__ = [
 ]
 
 
-class CallState(str, Enum):
+class CallState(StrEnum):
     DIALING = "dialing"
     WAITING_GREETING = "waiting_greeting"
     AGENT_SPEAKING = "agent_speaking"
@@ -49,7 +49,7 @@ class CallState(str, Enum):
     ENDED = "ended"
 
 
-class BargeInPolicy(str, Enum):
+class BargeInPolicy(StrEnum):
     YIELD = "yield"
     HOLD = "hold"
 
