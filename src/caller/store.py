@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -60,7 +60,7 @@ def save_artifacts(
     _write_json(call_dir / "telemetry.json", telemetry.build_report(machine.turns, machine.events))
     _write_json(
         call_dir / "meta.json",
-        {"saved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **meta},
+        {"saved_at": datetime.now(UTC).isoformat(timespec="seconds"), **meta},
     )
 
 

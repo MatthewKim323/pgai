@@ -24,7 +24,8 @@ class TestLoadConfig:
         assert cfg.elevenlabs_voice_id  # falls back to the default voice
 
     def test_all_missing_vars_reported_at_once(self):
-        env = {k: v for k, v in GOOD_ENV.items() if k not in ("DEEPGRAM_API_KEY", "ANTHROPIC_API_KEY")}
+        dropped = ("DEEPGRAM_API_KEY", "ANTHROPIC_API_KEY")
+        env = {k: v for k, v in GOOD_ENV.items() if k not in dropped}
         with pytest.raises(ConfigError) as e:
             load_config(env)
         assert "DEEPGRAM_API_KEY" in str(e.value)
