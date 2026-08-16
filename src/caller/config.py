@@ -37,6 +37,7 @@ class Config:
     elevenlabs_api_key: str
     elevenlabs_voice_id: str
     patient_model: str
+    judge_model: str
     host: str
     port: int
 
@@ -90,6 +91,7 @@ def load_config(env: dict[str, str] | None = None) -> Config:
         elevenlabs_api_key=e["ELEVENLABS_API_KEY"],
         elevenlabs_voice_id=e.get("ELEVENLABS_VOICE_ID") or DEFAULT_VOICE_ID,
         patient_model=e.get("PATIENT_MODEL", "claude-haiku-4-5-20251001"),
+        judge_model=e.get("JUDGE_MODEL", "claude-sonnet-5"),
         host=e.get("HOST", "0.0.0.0"),
         port=int(e.get("PORT", "8765")),
     )
