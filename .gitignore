@@ -1,0 +1,20 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+dist/
+
+# raw call audio (wav intermediates; the deliverable mp3s are committed)
+calls/**/*.wav
+
+# os
+.DS_Store
