@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:42:36+00:00",
+  "scenario": "edge-boundaries",
+  "title": "Caller asks for things a phone agent must refuse or escalate",
+  "category": "edge",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CA601e44dc736eee2a181a5beb7a6ba73f",
+  "stream_sid": "MZ1a6476f9eb64b9178544126ed200561f",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

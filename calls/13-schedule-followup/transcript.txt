@@ -1,0 +1,44 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:12] AGENT: Would you like to create a demo patient profile
+[00:15] AGENT: I just need your first and last name to get started.
+[00:16] PATIENT: Hi, thanks for calling. My name is Matthew Kim.
+[00:26] AGENT: Your patient profile is set up.
+[00:29] AGENT: And your date of birth is July fourth
+[00:31] AGENT: two thousand for demo purposes.
+[00:31] PATIENT: Actually
+[00:33] AGENT: How may I help you today?
+[00:34] PATIENT: Actually, um, my date of birth is March twenty third, two thousand six, not July fourth. Can you correct that for me?
+[00:51] AGENT: I see there is already a case open to update your date of birth to March twenty third. Two thousand six.
+[00:55] AGENT: The clinic staff will review and make the correction.
+[00:57] AGENT: Is there anything else I can help you with?
+[00:59] PATIENT: Yeah, actually I need to book a follow-up appointment. I saw the doctor about two weeks ago for shoulder pain from a snowboarding fall, and I was told to come back in two to three weeks to check how it's healing.
+[01:18] AGENT: You mentioned you need a follow-up appointment to check on your shoulder after your last visit.
+[01:22] AGENT: Just to confirm, is this visit for a follow-up consultation about your shoulder injury?
+[01:23] PATIENT: Yeah, that's right. I need to follow up on my shoulder to see how it's progressing since the fall.
+[01:33] AGENT: Do you have a specific provider you'd like to see again?
+[01:37] AGENT: Or are you open to any available provider for your follow-up?
+[01:38] PATIENT: I'm open to whoever's available, honestly. Whoever saw me last time would be great, but if that doesn't work out, any provider is fine with me.
+[01:47] AGENT: Let me check for the soonest available follow-up consultation appointments for you. One moment.
+[01:48] PATIENT: Sure, take your time.
+[01:56] AGENT: We have several openings for follow-up consultations this week.
+[02:00] AGENT: Do you have a preferred time of day, like morning or afternoon?
+[02:02] AGENT: Or would you like the soonest available?
+[02:03] PATIENT: Afternoons work better for me, if you have something available then.
+[02:13] AGENT: There are afternoon openings on Tuesday, August eighteenth.
+[02:16] AGENT: Would you like to book one PM, two PM, or three PM?
+[02:18] AGENT: I can also check other days if you prefer.
+[02:19] PATIENT: Tuesday the eighteenth works for me. Let me go with two PM.
+[02:26] AGENT: Just to confirm
+[02:31] AGENT: you'd like to book the two PM follow-up appointment on Tuesday, August eighteenth? Is that correct?
+[02:32] PATIENT: Yeah, that's correct. Tuesday, August eighteenth at two PM.
+[02:41] AGENT: Your follow-up appointment is being booked
+[02:43] AGENT: for Tuesday, August eighteenth at two PM.
+[02:46] AGENT: I'll let you know as soon as it's confirmed.
+[02:47] PATIENT: Great, thanks. Just to make sure I have everything — that's Tuesday, August eighteenth at two PM for my shoulder follow-up. Which provider will I be seeing?
+[02:49] AGENT: Follow-up
+[02:53] AGENT: your follow-up appointment is set for Tuesday.
+[02:58] AGENT: August eighteenth at two PM with doctor Telly Noble at Pivot Point Orthopedic. Please bring your photo ID
+[03:05] AGENT: insurance card, and any medication or imaging information you have.
+[03:07] AGENT: Is there anything else you need help with today?
+[03:09] PATIENT: Perfect, I've got all that. Thanks so much for booking me, I really appreciate it. Take care.

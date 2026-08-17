@@ -1,0 +1,266 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.073,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.157,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile",
+    "ts": 12.959,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 15.347,
+    "stamp": "00:15"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, thanks for calling. My name is Matthew Kim.",
+    "ts": 16.15,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 26.707,
+    "stamp": "00:26"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth",
+    "ts": 29.172,
+    "stamp": "00:29"
+  },
+  {
+    "speaker": "agent",
+    "text": "two thousand for demo purposes.",
+    "ts": 31.316,
+    "stamp": "00:31"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually",
+    "ts": 31.956,
+    "stamp": "00:31"
+  },
+  {
+    "speaker": "agent",
+    "text": "How may I help you today?",
+    "ts": 33.104,
+    "stamp": "00:33"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, um, my date of birth is March twenty third, two thousand six, not July fourth. Can you correct that for me?",
+    "ts": 34.158,
+    "stamp": "00:34"
+  },
+  {
+    "speaker": "agent",
+    "text": "I see there is already a case open to update your date of birth to March twenty third. Two thousand six.",
+    "ts": 51.455,
+    "stamp": "00:51"
+  },
+  {
+    "speaker": "agent",
+    "text": "The clinic staff will review and make the correction.",
+    "ts": 55.76,
+    "stamp": "00:55"
+  },
+  {
+    "speaker": "agent",
+    "text": "Is there anything else I can help you with?",
+    "ts": 57.819,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, actually I need to book a follow-up appointment. I saw the doctor about two weeks ago for shoulder pain from a snowboarding fall, and I was told to come back in two to three weeks to check how it's healing.",
+    "ts": 59.227,
+    "stamp": "00:59"
+  },
+  {
+    "speaker": "agent",
+    "text": "You mentioned you need a follow-up appointment to check on your shoulder after your last visit.",
+    "ts": 78.196,
+    "stamp": "01:18"
+  },
+  {
+    "speaker": "agent",
+    "text": "Just to confirm, is this visit for a follow-up consultation about your shoulder injury?",
+    "ts": 82.975,
+    "stamp": "01:22"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that's right. I need to follow up on my shoulder to see how it's progressing since the fall.",
+    "ts": 83.973,
+    "stamp": "01:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "Do you have a specific provider you'd like to see again?",
+    "ts": 93.977,
+    "stamp": "01:33"
+  },
+  {
+    "speaker": "agent",
+    "text": "Or are you open to any available provider for your follow-up?",
+    "ts": 97.128,
+    "stamp": "01:37"
+  },
+  {
+    "speaker": "patient",
+    "text": "I'm open to whoever's available, honestly. Whoever saw me last time would be great, but if that doesn't work out, any provider is fine with me.",
+    "ts": 98.341,
+    "stamp": "01:38"
+  },
+  {
+    "speaker": "agent",
+    "text": "Let me check for the soonest available follow-up consultation appointments for you. One moment.",
+    "ts": 107.297,
+    "stamp": "01:47"
+  },
+  {
+    "speaker": "patient",
+    "text": "Sure, take your time.",
+    "ts": 108.954,
+    "stamp": "01:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have several openings for follow-up consultations this week.",
+    "ts": 116.522,
+    "stamp": "01:56"
+  },
+  {
+    "speaker": "agent",
+    "text": "Do you have a preferred time of day, like morning or afternoon?",
+    "ts": 120.136,
+    "stamp": "02:00"
+  },
+  {
+    "speaker": "agent",
+    "text": "Or would you like the soonest available?",
+    "ts": 122.488,
+    "stamp": "02:02"
+  },
+  {
+    "speaker": "patient",
+    "text": "Afternoons work better for me, if you have something available then.",
+    "ts": 123.842,
+    "stamp": "02:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "There are afternoon openings on Tuesday, August eighteenth.",
+    "ts": 133.099,
+    "stamp": "02:13"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to book one PM, two PM, or three PM?",
+    "ts": 136.259,
+    "stamp": "02:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can also check other days if you prefer.",
+    "ts": 138.483,
+    "stamp": "02:18"
+  },
+  {
+    "speaker": "patient",
+    "text": "Tuesday the eighteenth works for me. Let me go with two PM.",
+    "ts": 139.537,
+    "stamp": "02:19"
+  },
+  {
+    "speaker": "agent",
+    "text": "Just to confirm",
+    "ts": 146.612,
+    "stamp": "02:26"
+  },
+  {
+    "speaker": "agent",
+    "text": "you'd like to book the two PM follow-up appointment on Tuesday, August eighteenth? Is that correct?",
+    "ts": 151.136,
+    "stamp": "02:31"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that's correct. Tuesday, August eighteenth at two PM.",
+    "ts": 152.947,
+    "stamp": "02:32"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your follow-up appointment is being booked",
+    "ts": 161.106,
+    "stamp": "02:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "for Tuesday, August eighteenth at two PM.",
+    "ts": 163.706,
+    "stamp": "02:43"
+  },
+  {
+    "speaker": "agent",
+    "text": "I'll let you know as soon as it's confirmed.",
+    "ts": 166.659,
+    "stamp": "02:46"
+  },
+  {
+    "speaker": "patient",
+    "text": "Great, thanks. Just to make sure I have everything \u2014 that's Tuesday, August eighteenth at two PM for my shoulder follow-up. Which provider will I be seeing?",
+    "ts": 167.848,
+    "stamp": "02:47"
+  },
+  {
+    "speaker": "agent",
+    "text": "Follow-up",
+    "ts": 169.274,
+    "stamp": "02:49"
+  },
+  {
+    "speaker": "agent",
+    "text": "your follow-up appointment is set for Tuesday.",
+    "ts": 173.863,
+    "stamp": "02:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "August eighteenth at two PM with doctor Telly Noble at Pivot Point Orthopedic. Please bring your photo ID",
+    "ts": 178.086,
+    "stamp": "02:58"
+  },
+  {
+    "speaker": "agent",
+    "text": "insurance card, and any medication or imaging information you have.",
+    "ts": 185.442,
+    "stamp": "03:05"
+  },
+  {
+    "speaker": "agent",
+    "text": "Is there anything else you need help with today?",
+    "ts": 187.829,
+    "stamp": "03:07"
+  },
+  {
+    "speaker": "patient",
+    "text": "Perfect, I've got all that. Thanks so much for booking me, I really appreciate it. Take care.",
+    "ts": 189.536,
+    "stamp": "03:09"
+  }
+]

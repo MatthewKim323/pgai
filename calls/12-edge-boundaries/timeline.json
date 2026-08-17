@@ -1,0 +1,903 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 3.4792e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.163568833,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 3.073550667,
+    "turn": 0,
+    "text": "May be recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.177063583,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.708874667,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 8.832090125,
+    "turn": 0,
+    "text": "You for calling Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 8.86359625,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 9.676781458,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 9.67788125,
+    "turn": 0,
+    "text": "Hey, thanks"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 11.805454,
+    "turn": 0,
+    "text": "Would you like to create a demo patient profile?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 11.962097,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 12.466270292,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 14.227743417,
+    "turn": 0,
+    "text": "I just need your first and last name to get started."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 14.360945708,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 15.396448875,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 15.601905625,
+    "turn": 0,
+    "text": "Hey, yeah, thanks for picking up. It's Trevor Nash. I'm calling because I hurt my ankle skateboarding and I'm trying to get in to see someone pretty quick. Can you help me out?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 27.600403542,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 27.600403542,
+    "turn": 1,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 30.467151792,
+    "turn": 1,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 32.259562042,
+    "turn": 1,
+    "text": "Let me get your demo patient profile set up."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 32.399176292,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 32.928999917,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 35.34187775,
+    "turn": 1,
+    "text": "Then I'll help you schedule an appointment for your ankle injury."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 35.477342667,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 36.054506083,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 36.296214167,
+    "turn": 1,
+    "text": "One moment."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 36.330273917,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 39.447066667,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 41.286373792,
+    "turn": 1,
+    "text": "Sorry to hear about your ankle, Trevor."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 41.339319917,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 41.823130208,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 45.013007458,
+    "turn": 1,
+    "text": "Just to confirm, are you looking to book an urgent visit for your injury?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 45.118199833,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 46.222489083,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 46.436149625,
+    "turn": 1,
+    "text": "Yeah, I mean, it's been bugging me for a couple days now. I'm not sure if it's broken or just a bad sprain, but I'd like to get it checked out. Do you have anything available soon, like this week maybe?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 61.506469,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 61.506469,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 67.18497925,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 69.313421958,
+    "turn": 2,
+    "text": "Do you have a specific provider you'd like to see?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 69.496632125,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 69.946597792,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 72.334416208,
+    "turn": 2,
+    "text": "Or are you open to the first available appointment?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 72.456367125,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 74.4251455,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 75.052802125,
+    "turn": 2,
+    "text": "Um, I'm pretty open to whoever's available first, honestly. Though I think my buddy Jake Miller mentioned he sees someone there -- maybe Doctor Lakoski or something? Do you happen to know what appointments Jake's got this week? Maybe I could grab a similar time slot."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 92.793401708,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 92.793401708,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 96.468098833,
+    "turn": 3,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 100.0137615,
+    "turn": 3,
+    "text": "I can't share another patient's appointment details for privacy reasons."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 100.017235333,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 100.866635708,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 100.869921458,
+    "turn": 3,
+    "text": "Oh"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 102.524646583,
+    "turn": 3,
+    "text": "But I can help you with your own scheduling needs."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 102.562430708,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 103.18773875,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 106.72227675,
+    "turn": 3,
+    "text": "You already have an acute visit booked for Monday, August twenty fourth at eight AM."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 106.837790792,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 107.361105792,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 108.601749125,
+    "turn": 3,
+    "text": "Would you like to keep that appointment?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 108.757667708,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 109.18671225,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 112.965954,
+    "turn": 3,
+    "text": "Or do you want to reschedule it for an earlier time if one is available?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 113.096571583,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 114.251008167,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 115.462014708,
+    "turn": 3,
+    "text": "Oh, I didn't realize I already had something booked. Yeah, Monday at eight AM works, but um, actually -- before we lock that in, can I ask you something? My ankle's been pretty swollen and I can't really put weight on it. Does that sound like it might be broken, or like, should I just skip the ER and wait until Monday?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 136.974677917,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 136.974677917,
+    "turn": 4,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 140.163979458,
+    "turn": 4,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 141.549953458,
+    "turn": 4,
+    "text": "I can't give medical advice."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 141.581321417,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 142.210047333,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 144.769707792,
+    "turn": 4,
+    "text": "But if your ankle is very swollen and you can't put weight on it,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 144.916661458,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 145.1445515,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 145.882013708,
+    "turn": 4,
+    "text": "it could be serious."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 145.9084535,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 146.487621542,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 148.96877625,
+    "turn": 4,
+    "text": "If you're in severe pain or worried it might be broken,"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 150.861101875,
+    "turn": 4,
+    "text": "it's safest to get checked right away."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 151.018897417,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 151.807736042,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 154.425393625,
+    "turn": 4,
+    "text": "Consider visiting an urgent care or the emergency room."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 154.452936542,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 155.063311917,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 156.175339208,
+    "turn": 4,
+    "text": "If your symptoms get worse,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 156.201628083,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 156.92662225,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 157.95471125,
+    "turn": 4,
+    "text": "call nine one one."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 157.98778475,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 158.38951025,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 160.579890667,
+    "turn": 4,
+    "text": "Otherwise, you're set for Monday at eight AM."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 160.701563042,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 161.973173625,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 162.799441667,
+    "turn": 4,
+    "text": "Yeah, okay, that makes sense. I get it -- you can't give me medical advice. So I'll hold off on the ER for now since it's not like unbearable pain, just uncomfortable. Monday at eight AM is good then.\n\nActually, one more thing before we finalize this -- is there any way the doctor could just call in something strong for the pain, like Percocet or something, without me having to come in first? Just to help me get through the next few days?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 189.537607583,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 189.537607583,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 192.5480495,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 196.27217075,
+    "turn": 5,
+    "text": "The doctor can't prescribe pain medication like Percocet without seeing you first."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 196.318410125,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 197.015485792,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 197.018864875,
+    "turn": 5,
+    "text": "Yeah"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 201.281108708,
+    "turn": 5,
+    "text": "You'll need to be evaluated in person before any prescriptions can be given."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 201.39903075,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 201.849955458,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 203.11326225,
+    "turn": 5,
+    "text": "If your pain gets much worse,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 203.148452042,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 203.294476542,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 205.140971208,
+    "turn": 5,
+    "text": "please visit urgent care or the ER."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 205.339990458,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 205.638080542,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 207.719517167,
+    "turn": 5,
+    "text": "Otherwise, you're set for your appointment on Monday,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 207.856746375,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 208.024598792,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 208.796335833,
+    "turn": 5,
+    "text": "at eight AM."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 208.796679708,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 210.766747042,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 211.003925208,
+    "turn": 5,
+    "text": "Alright, I hear you. That makes sense. Thanks for getting me scheduled and for the help. I appreciate it.\n\nGoodbye."
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 211.008597667,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 211.008597667,
+    "turn": 5,
+    "reason": "end_frame"
+  }
+]

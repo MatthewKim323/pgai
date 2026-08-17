@@ -100,7 +100,9 @@ def load_config(env: dict[str, str] | None = None) -> Config:
         elevenlabs_api_key=e.get("ELEVENLABS_API_KEY", ""),
         patient_model=e.get("PATIENT_MODEL", "claude-haiku-4-5-20251001"),
         judge_model=e.get("JUDGE_MODEL", "claude-sonnet-5"),
-        speculative=e.get("SPECULATIVE", "0") == "1",
+        # measured live (call 13): 12/12 speculation hits, zero misses, p50
+        # 1.07s with sub-second turns; on by default, SPECULATIVE=0 to disable
+        speculative=e.get("SPECULATIVE", "1") == "1",
         host=e.get("HOST", "0.0.0.0"),
         port=int(e.get("PORT", "8765")),
     )

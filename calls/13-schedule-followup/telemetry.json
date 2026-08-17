@@ -1,0 +1,118 @@
+{
+  "call_duration_secs": 189.541,
+  "completed_turns": 11,
+  "interruptions": 2,
+  "patient": {
+    "per_turn": [
+      {
+        "turn": 0,
+        "interrupted": false,
+        "llm_first_token": 0.621,
+        "response_latency": 0.959,
+        "speech_duration": 3.407
+      },
+      {
+        "turn": 1,
+        "interrupted": false,
+        "response_latency": 1.156,
+        "speech_duration": 6.211
+      },
+      {
+        "turn": 2,
+        "interrupted": false,
+        "llm_first_token": 0.728,
+        "response_latency": 1.127,
+        "speech_duration": 10.086
+      },
+      {
+        "turn": 3,
+        "interrupted": false,
+        "llm_first_token": 0.592,
+        "response_latency": 0.978,
+        "speech_duration": 4.924
+      },
+      {
+        "turn": 4,
+        "interrupted": true,
+        "llm_first_token": 0.494,
+        "response_latency": 0.881,
+        "speech_duration": 5.176
+      },
+      {
+        "turn": 5,
+        "interrupted": false,
+        "llm_first_token": 0.507,
+        "response_latency": 0.731,
+        "speech_duration": 1.566
+      },
+      {
+        "turn": 6,
+        "interrupted": false,
+        "llm_first_token": 0.991,
+        "response_latency": 1.348,
+        "speech_duration": 3.032
+      },
+      {
+        "turn": 7,
+        "interrupted": false,
+        "llm_first_token": 0.633,
+        "response_latency": 1.065,
+        "speech_duration": 3.565
+      },
+      {
+        "turn": 8,
+        "interrupted": false,
+        "llm_first_token": 0.951,
+        "response_latency": 1.058,
+        "speech_duration": 3.485
+      },
+      {
+        "turn": 9,
+        "interrupted": true,
+        "llm_first_token": 0.827,
+        "response_latency": 1.251,
+        "speech_duration": 0.761
+      },
+      {
+        "turn": 10,
+        "interrupted": false,
+        "llm_first_token": 1.141,
+        "response_latency": 1.465
+      }
+    ],
+    "response_latency": {
+      "count": 11,
+      "p50": 1.065,
+      "p95": 1.465,
+      "max": 1.465,
+      "mean": 1.093
+    },
+    "llm_first_token": {
+      "count": 10,
+      "p50": 0.68,
+      "p95": 1.141,
+      "max": 1.141,
+      "mean": 0.748
+    }
+  },
+  "agent_under_test": {
+    "response_gaps": [
+      0.182,
+      5.548,
+      7.41,
+      5.075,
+      2.228,
+      2.633,
+      3.475,
+      2.403,
+      2.903
+    ],
+    "response_gap": {
+      "count": 9,
+      "p50": 2.903,
+      "p95": 7.41,
+      "max": 7.41,
+      "mean": 3.54
+    }
+  }
+}

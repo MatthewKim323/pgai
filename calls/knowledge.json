@@ -139,6 +139,30 @@
     {
       "text": "Patient reports taking naproxen 500mg for an extended period",
       "source": "11-edge-topic-switcher"
+    },
+    {
+      "text": "Agent refuses to share other patients' appointment details for privacy reasons",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Patient can request same time slot as another patient but agent cannot confirm that other patient's schedule",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Patient Trevor Nash has an acute visit booked for Monday, August 24 at 8 AM",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Patient can bring imaging information to appointments (in addition to photo ID, insurance card, and medications)",
+      "source": "13-schedule-followup"
+    },
+    {
+      "text": "Follow-up appointment confirmed for Tuesday, August 18 at 2 PM",
+      "source": "13-schedule-followup"
+    },
+    {
+      "text": "Provider name: Doctor Telly Noble",
+      "source": "13-schedule-followup"
     }
   ],
   "leads": [
@@ -253,6 +277,26 @@
     {
       "text": "Transfer appears to route to 'Pretty Good AI test line' and disconnects with goodbye -- verify if this is a test environment artifact, a broken transfer, or actual patient support transfer behavior",
       "source": "11-edge-topic-switcher"
+    },
+    {
+      "text": "Ask agent if doctor can prescribe pain medication (like Percocet) without an in-person visit first -- verify if agent correctly states prescriptions require in-person evaluation before dispensing",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Request an urgent appointment for a serious injury (swollen ankle, weight-bearing issues) and see if agent recommends ER/urgent care or if agent offers faster appointment options than Monday at 8 AM",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Mention another patient's appointment time and ask if you can book the same slot -- test if agent can accommodate same-time requests or if patient names are needed to check availability",
+      "source": "12-edge-boundaries"
+    },
+    {
+      "text": "Agent said 'doctor Telly Noble' (previously noted as 'Kelly Noble') -- verify if this provider name spelling is correct ('Telly' vs 'Kelly') and whether this is an actual provider or agent-generated name",
+      "source": "13-schedule-followup"
+    },
+    {
+      "text": "Agent confirmed appointment with provider but patient wasn't sure which doctor they saw originally -- test if agent can identify/match patient to their original provider when patient history exists",
+      "source": "13-schedule-followup"
     }
   ]
 }

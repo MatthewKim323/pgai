@@ -2,6 +2,33 @@
 
 What we heard on the wire, and what changed because of it. Newest first.
 
+## After call 13 (`calls/13-schedule-followup`, speculative A/B)
+
+Live validation of speculative generation against call 03 (same scenario,
+same registered patient, no speculation): **12/12 speculation hits, zero
+misses, zero fallbacks.** Median response latency 1.16s → 1.07s with
+sub-second turns (best 0.73s), and `llm_first_token` fell to ~0.5s -- the
+reply stream was already open when the turn committed, so what remains is
+turn-commit machinery and TTS, not model wait. Flipped on by default
+(`SPECULATIVE=0` to disable).
+
+## After calls 07-12 (the edge gauntlet)
+
+The scripted campaign closed at twelve calls, every one ending in a natural
+patient goodbye or a documented remote hangup. The transfer dead-end became
+the flagship finding with three recorded reproductions -- worst in call 11,
+where the agent said "Transferring you now" over the caller's explicit
+"before you transfer me, can I ask something else", ignored her "wait, hold
+on", and dropped her two open requests. Call 12 balanced the report with
+passes: the agent refused a third-party appointment lookup (privacy) and
+triaged a possibly-broken ankle to immediate care -- and then referenced an
+appointment the brand-new caller had never booked.
+
+Cross-call knowledge (added mid-campaign, backfilled over calls 01-05)
+started catching contradictions single calls can't: the practice is in
+Nashville in call 03 and Austin in call 06; the provider's name renders
+differently nearly every time it's spoken.
+
 ## After call 01 (`calls/01-schedule-new-patient`, 2026-08-17)
 
 First live shakedown. The bot held a coherent 3.5-minute booking conversation
