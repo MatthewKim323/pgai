@@ -2,6 +2,7 @@ id: edge-confused
 title: Confused caller with an unclear, shifting request
 category: edge
 persona:
+  voice_id: aura-2-orpheus-en
   first_name: Harold
   last_name: Greaves
   dob: 1949-12-05

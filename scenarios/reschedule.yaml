@@ -2,6 +2,7 @@ id: reschedule
 title: Existing patient moves an upcoming appointment
 category: rescheduling
 persona:
+  voice_id: aura-2-arcas-en
   registered: true
   background: >
     Has an upcoming appointment at the practice but a work conflict came up.

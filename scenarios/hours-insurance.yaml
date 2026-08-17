@@ -2,6 +2,7 @@ id: hours-insurance
 title: Prospective patient asks about hours, location, and insurance
 category: questions
 persona:
+  voice_id: aura-2-orion-en
   first_name: Robert
   last_name: Tanaka
   dob: 1958-11-02

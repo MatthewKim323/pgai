@@ -2,6 +2,7 @@ id: edge-interrupter
 title: Impatient caller talks over the agent
 category: edge
 persona:
+  voice_id: aura-2-zeus-en
   first_name: Marcus
   last_name: Bell
   dob: 1983-04-17

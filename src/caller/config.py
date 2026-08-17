@@ -34,8 +34,9 @@ class Config:
     public_base_url: str
     deepgram_api_key: str
     anthropic_api_key: str
+    tts_provider: str  # "deepgram" (default) or "elevenlabs"
+    default_voice: str
     elevenlabs_api_key: str
-    elevenlabs_voice_id: str
     patient_model: str
     judge_model: str
     host: str
@@ -49,12 +50,11 @@ REQUIRED = (
     "PUBLIC_BASE_URL",
     "DEEPGRAM_API_KEY",
     "ANTHROPIC_API_KEY",
-    "ELEVENLABS_API_KEY",
 )
 
-#: ElevenLabs premade voice ("Rachel") -- a sensible default patient voice when
-#: neither the scenario nor the env picks one.
-DEFAULT_VOICE_ID = "21m00Tcm4TlvDq8ikWAM"
+#: default patient voice per provider, when neither the scenario nor the env
+#: picks one. Deepgram: an Aura-2 voice; ElevenLabs: premade "Rachel".
+DEFAULT_VOICES = {"deepgram": "aura-2-thalia-en", "elevenlabs": "21m00Tcm4TlvDq8ikWAM"}
 
 
 def load_config(env: dict[str, str] | None = None) -> Config:
@@ -80,6 +80,12 @@ def load_config(env: dict[str, str] | None = None) -> Config:
     if not base_url.startswith("https://"):
         raise ConfigError(f"PUBLIC_BASE_URL must be https (Twilio requires it), got {base_url!r}")
 
+    tts_provider = e.get("TTS_PROVIDER", "deepgram")
+    if tts_provider not in DEFAULT_VOICES:
+        raise ConfigError(f"TTS_PROVIDER must be one of {sorted(DEFAULT_VOICES)}")
+    if tts_provider == "elevenlabs" and not e.get("ELEVENLABS_API_KEY"):
+        raise ConfigError("TTS_PROVIDER=elevenlabs requires ELEVENLABS_API_KEY")
+
     return Config(
         twilio_account_sid=e["TWILIO_ACCOUNT_SID"],
         twilio_auth_token=e["TWILIO_AUTH_TOKEN"],
@@ -88,8 +94,9 @@ def load_config(env: dict[str, str] | None = None) -> Config:
         public_base_url=base_url,
         deepgram_api_key=e["DEEPGRAM_API_KEY"],
         anthropic_api_key=e["ANTHROPIC_API_KEY"],
-        elevenlabs_api_key=e["ELEVENLABS_API_KEY"],
-        elevenlabs_voice_id=e.get("ELEVENLABS_VOICE_ID") or DEFAULT_VOICE_ID,
+        tts_provider=tts_provider,
+        default_voice=e.get("TTS_VOICE") or DEFAULT_VOICES[tts_provider],
+        elevenlabs_api_key=e.get("ELEVENLABS_API_KEY", ""),
         patient_model=e.get("PATIENT_MODEL", "claude-haiku-4-5-20251001"),
         judge_model=e.get("JUDGE_MODEL", "claude-sonnet-5"),
         host=e.get("HOST", "0.0.0.0"),

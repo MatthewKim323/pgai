@@ -2,6 +2,7 @@ id: schedule-followup
 title: Existing patient books a follow-up visit
 category: scheduling
 persona:
+  voice_id: aura-2-arcas-en
   registered: true
   background: >
     Saw the doctor about two weeks ago for shoulder pain after a snowboarding

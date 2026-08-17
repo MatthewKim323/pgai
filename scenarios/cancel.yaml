@@ -2,6 +2,7 @@ id: cancel
 title: Existing patient cancels an appointment
 category: rescheduling
 persona:
+  voice_id: aura-2-arcas-en
   registered: true
   background: >
     Booked an appointment recently but is feeling much better and wants to

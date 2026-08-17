@@ -11,7 +11,6 @@ GOOD_ENV = {
     "PUBLIC_BASE_URL": "https://abc.ngrok.app/",
     "DEEPGRAM_API_KEY": "dg",
     "ANTHROPIC_API_KEY": "an",
-    "ELEVENLABS_API_KEY": "el",
 }
 
 
@@ -21,7 +20,8 @@ class TestLoadConfig:
         assert cfg.target_number == TEST_LINE
         assert cfg.public_base_url == "https://abc.ngrok.app"  # trailing slash stripped
         assert cfg.patient_model.startswith("claude-haiku")
-        assert cfg.elevenlabs_voice_id  # falls back to the default voice
+        assert cfg.tts_provider == "deepgram"
+        assert cfg.default_voice.startswith("aura-2")
 
     def test_all_missing_vars_reported_at_once(self):
         dropped = ("DEEPGRAM_API_KEY", "ANTHROPIC_API_KEY")
@@ -38,6 +38,16 @@ class TestLoadConfig:
     def test_http_base_url_rejected(self):
         with pytest.raises(ConfigError, match="https"):
             load_config({**GOOD_ENV, "PUBLIC_BASE_URL": "http://abc.ngrok.app"})
+
+    def test_elevenlabs_provider_requires_its_key(self):
+        with pytest.raises(ConfigError, match="ELEVENLABS_API_KEY"):
+            load_config({**GOOD_ENV, "TTS_PROVIDER": "elevenlabs"})
+        cfg = load_config({**GOOD_ENV, "TTS_PROVIDER": "elevenlabs", "ELEVENLABS_API_KEY": "el"})
+        assert cfg.default_voice == "21m00Tcm4TlvDq8ikWAM"
+
+    def test_unknown_tts_provider_rejected(self):
+        with pytest.raises(ConfigError, match="TTS_PROVIDER"):
+            load_config({**GOOD_ENV, "TTS_PROVIDER": "espeak"})
 
 
 class TestDialGuard:

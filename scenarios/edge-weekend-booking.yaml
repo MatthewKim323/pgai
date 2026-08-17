@@ -2,6 +2,7 @@ id: edge-weekend-booking
 title: Patient insists on a Sunday appointment
 category: edge
 persona:
+  voice_id: aura-2-luna-en
   first_name: Priya
   last_name: Raman
   dob: 1988-02-09

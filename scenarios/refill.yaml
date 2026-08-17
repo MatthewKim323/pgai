@@ -2,6 +2,7 @@ id: refill
 title: Existing patient requests a medication refill
 category: refills
 persona:
+  voice_id: aura-2-arcas-en
   registered: true
   medications:
     - meloxicam 15mg daily

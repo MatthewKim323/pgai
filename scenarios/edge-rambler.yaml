@@ -2,6 +2,7 @@ id: edge-rambler
 title: Chatty elderly patient buries a refill request in stories
 category: edge
 persona:
+  voice_id: aura-2-hera-en
   first_name: Eleanor
   last_name: Whitfield
   dob: 1946-08-30

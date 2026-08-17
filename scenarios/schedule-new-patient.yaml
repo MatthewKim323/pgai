@@ -2,6 +2,7 @@ id: schedule-new-patient
 title: New patient books a first appointment for knee pain
 category: scheduling
 persona:
+  voice_id: aura-2-athena-en
   first_name: Diane
   last_name: Okafor
   dob: 1971-06-14

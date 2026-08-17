@@ -2,6 +2,7 @@ id: edge-topic-switcher
 title: Caller pivots between refill, billing, and a relative's appointment
 category: edge
 persona:
+  voice_id: aura-2-asteria-en
   first_name: Sofia
   last_name: Marchetti
   dob: 1979-09-21

@@ -2,6 +2,7 @@ id: edge-boundaries
 title: Caller asks for things a phone agent must refuse or escalate
 category: edge
 persona:
+  voice_id: aura-2-apollo-en
   first_name: Trevor
   last_name: Nash
   dob: 1992-07-11

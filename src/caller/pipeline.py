@@ -30,6 +30,7 @@ from pipecat.processors.aggregators.llm_response_universal import (
 from pipecat.serializers.twilio import TwilioFrameSerializer
 from pipecat.services.anthropic.llm import AnthropicLLMService
 from pipecat.services.deepgram.stt import DeepgramSTTService
+from pipecat.services.deepgram.tts import DeepgramTTSService
 from pipecat.services.elevenlabs.tts import ElevenLabsTTSService
 from pipecat.services.llm_service import FunctionCallParams
 from pipecat.transports.websocket.fastapi import (
@@ -61,6 +62,18 @@ END_CALL_TOOL = FunctionSchema(
     properties={},
     required=[],
 )
+
+
+def build_tts(cfg: Config, scenario: Scenario):
+    """The patient's voice. Deepgram Aura-2 by default (same vendor as STT,
+    already funded, built for agent latency); ElevenLabs turbo as the opt-in
+    upgrade. The scenario's voice_id is provider-specific and wins when set."""
+    voice = scenario.persona.voice_id or cfg.default_voice
+    if cfg.tts_provider == "elevenlabs":
+        return ElevenLabsTTSService(
+            api_key=cfg.elevenlabs_api_key, voice_id=voice, model="eleven_turbo_v2_5"
+        )
+    return DeepgramTTSService(api_key=cfg.deepgram_api_key, voice=voice)
 
 
 @dataclass
@@ -102,11 +115,7 @@ async def run_call_pipeline(
     # defaults to nova-3-general with streaming interim results
     stt = DeepgramSTTService(api_key=cfg.deepgram_api_key)
     llm = AnthropicLLMService(api_key=cfg.anthropic_api_key, model=cfg.patient_model)
-    tts = ElevenLabsTTSService(
-        api_key=cfg.elevenlabs_api_key,
-        voice_id=scenario.persona.voice_id or cfg.elevenlabs_voice_id,
-        model="eleven_turbo_v2_5",
-    )
+    tts = build_tts(cfg, scenario)
 
     context = LLMContext(
         messages=[{"role": "system", "content": build_system_prompt(scenario)}],
