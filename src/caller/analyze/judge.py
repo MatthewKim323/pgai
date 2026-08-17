@@ -85,6 +85,16 @@ MERGE_TOOL = {
                         "title": {"type": "string"},
                         "severity": {"type": "string", "enum": list(SEVERITIES)},
                         "category": {"type": "string"},
+                        "confidence": {
+                            "type": "string",
+                            "enum": ["confirmed", "needs_audio_verification"],
+                            "description": (
+                                "needs_audio_verification when the claim could be an "
+                                "artifact of OUR speech-to-text rather than the agent's "
+                                "actual speech (garbled words, name spellings, 'PTO' vs "
+                                "'PPO'); confirmed otherwise"
+                            ),
+                        },
                         "details": {"type": "string"},
                         "citations": {
                             "type": "array",
@@ -100,11 +110,22 @@ MERGE_TOOL = {
                             },
                         },
                     },
-                    "required": ["title", "severity", "category", "details", "citations"],
+                    "required": [
+                        "title", "severity", "category", "confidence", "details", "citations",
+                    ],
                 },
-            }
+            },
+            "worked_well": {
+                "type": "array",
+                "description": (
+                    "Notable things the agent handled CORRECTLY (privacy refusals, safety "
+                    "triage, graceful recoveries), each one sentence with its call id. A "
+                    "fair report gives credit."
+                ),
+                "items": {"type": "string"},
+            },
         },
-        "required": ["bugs"],
+        "required": ["bugs", "worked_well"],
     },
 }
 
@@ -143,7 +164,17 @@ behavior belongs in the report.
 
 Never silently drop a high-severity finding. In particular, distinct defects must stay \
 distinct: an agent transferring callers into a line that says goodbye and disconnects is its \
-own bug, separate from any general 'call ended unresolved' pattern."""
+own bug, separate from any general 'call ended unresolved' pattern.
+
+The transcripts were produced by OUR speech-to-text listening to the agent. Any claim that \
+could plausibly be a transcription artifact rather than the agent's actual speech -- garbled \
+single words, name spellings varying, 'PTO' vs 'PPO' -- must be marked \
+confidence=needs_audio_verification, so a human checks the recording before it's reported as \
+fact. Structural claims (wrong actions, contradictions across calls, dead-end transfers, \
+measured latency) are confirmed by the transcript itself.
+
+Also file worked_well: real things the agent handled correctly. A report that gives credit \
+where due is more credible than one that only complains."""
 
 
 def build_judge_prompt(call: dict[str, Any]) -> str:
@@ -228,14 +259,14 @@ def judge_call(client: anthropic.Anthropic, model: str, call_dir: Path,
 
 
 def merge_findings(client: anthropic.Anthropic, model: str,
-                   per_call: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+                   per_call: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
     flat = [
         {**f, "call": call_id}
         for call_id, findings in per_call.items()
         for f in findings
     ]
     if not flat:
-        return []
+        return {"bugs": [], "worked_well": []}
     raw = _forced_tool_call(
         client,
         model,
@@ -252,15 +283,19 @@ def merge_findings(client: anthropic.Anthropic, model: str,
         if "watchdog" not in f"{b.get('title', '')} {b.get('details', '')}".lower()
     ]
     logger.info(f"merge: {len(flat)} findings -> {len(bugs)} bugs")
-    return bugs
+    return {"bugs": bugs, "worked_well": (raw or {}).get("worked_well", [])}
 
 
 def analyze_calls(cfg: Config, calls_dir: Path = store.CALLS_DIR,
                   force: bool = False) -> list[dict[str, Any]]:
     """Judge every completed call, then merge into the cross-call bug list."""
+    from caller.analyze.pinned import merge_with_pinned
+
     client = anthropic.Anthropic(api_key=cfg.anthropic_api_key)
     model = cfg.judge_model
     per_call: dict[str, list[dict[str, Any]]] = {}
     for call_dir in store.list_calls(calls_dir):
         per_call[call_dir.name] = judge_call(client, model, call_dir, force=force)
-    return merge_findings(client, model, per_call)
+    report = merge_findings(client, model, per_call)
+    report["bugs"] = merge_with_pinned(report["bugs"])
+    return report

@@ -129,6 +129,14 @@ def _cmd_latency(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_audioqa(args: argparse.Namespace) -> int:
+    from caller.analyze.audioqa import run
+
+    path = run()
+    print(path.read_text())
+    return 0
+
+
 def _cmd_hunt(args: argparse.Namespace) -> int:
     import anthropic
 
@@ -182,6 +190,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser(
         "latency", help="render the cross-call latency report"
     ).set_defaults(fn=_cmd_latency)
+
+    sub.add_parser(
+        "audioqa", help="measure the recordings themselves (overlap, dead air)"
+    ).set_defaults(fn=_cmd_audioqa)
 
     p_hunt = sub.add_parser("hunt", help="author a scenario from the open leads and run it")
     p_hunt.add_argument("--no-call", action="store_true", help="generate the YAML only")

@@ -99,13 +99,27 @@ class TestJudgeCall:
 class TestMerge:
     def test_flattens_with_call_ids_and_skips_api_when_empty(self):
         client = MagicMock()
-        assert merge_findings(client, "m", {"01-a": [], "02-b": []}) == []
+        empty = merge_findings(client, "m", {"01-a": [], "02-b": []})
+        assert empty == {"bugs": [], "worked_well": []}
         client.messages.create.assert_not_called()
 
-        client.messages.create.return_value = tool_response({"bugs": [{"title": "t"}]})
-        merge_findings(client, "m", {"01-a": [FINDING]})
+        client.messages.create.return_value = tool_response(
+            {"bugs": [{"title": "t"}], "worked_well": ["refused PHI lookup (12)"]}
+        )
+        merged = merge_findings(client, "m", {"01-a": [FINDING]})
+        assert merged["worked_well"] == ["refused PHI lookup (12)"]
         prompt = client.messages.create.call_args.kwargs["messages"][0]["content"]
         assert '"call": "01-a"' in prompt
+
+    def test_watchdog_selfreports_filtered(self):
+        client = MagicMock()
+        client.messages.create.return_value = tool_response(
+            {"bugs": [{"title": "Call ended by watchdog timeout", "details": ""},
+                      {"title": "Real bug", "details": "x"}],
+             "worked_well": []}
+        )
+        merged = merge_findings(client, "m", {"01-a": [FINDING]})
+        assert [b["title"] for b in merged["bugs"]] == ["Real bug"]
 
 
 class TestReport:
@@ -122,8 +136,52 @@ class TestReport:
         text = path.read_text()
         assert text.index("Sunday booking") < text.index("Minor thing")
         assert "`07-edge-weekend-booking` at 01:23" in text
-        assert "2 bugs" in text
+        assert "2 confirmed bugs" in text
+
+    def test_sections_for_unverified_and_praise(self, tmp_path):
+        report = {
+            "bugs": [
+                {"title": "Dead-end transfer", "severity": "high", "category": "task-failure",
+                 "confidence": "confirmed", "details": "d", "citations": []},
+                {"title": "Name garbled", "severity": "medium", "category": "correctness",
+                 "confidence": "needs_audio_verification", "details": "d", "citations": []},
+            ],
+            "worked_well": ["Refused a third-party appointment lookup (12-edge-boundaries)."],
+        }
+        text = render_bug_report(report, tmp_path / "BUGS.md").read_text()
+        assert "1 confirmed bugs" in text
+        assert "pending audio verification" in text
+        assert text.index("Dead-end transfer") < text.index("Name garbled")
+        assert "What the agent handled well" in text
+        assert "third-party appointment lookup" in text
 
     def test_empty_report(self, tmp_path):
         text = render_bug_report([], tmp_path / "BUGS.md").read_text()
         assert "No findings" in text
+
+
+class TestPinned:
+    def test_pinned_first_and_supersedes(self):
+        from caller.analyze.pinned import PINNED_BUGS, merge_with_pinned
+
+        merged = merge_with_pinned(
+            [
+                {"title": "Agent transfers callers to a dead end", "details": ""},
+                {"title": "Unrelated defect", "details": "something else"},
+            ]
+        )
+        titles = [b["title"] for b in merged]
+        assert titles[0] == PINNED_BUGS[0]["title"]
+        assert "Unrelated defect" in titles
+        assert "Agent transfers callers to a dead end" not in titles
+        assert all("supersedes_keywords" not in b for b in merged)
+
+    def test_pinned_citations_point_at_real_files(self):
+        from pathlib import Path
+
+        from caller.analyze.pinned import PINNED_BUGS
+
+        for bug in PINNED_BUGS:
+            for c in bug["citations"]:
+                transcript = Path("calls") / c["call"] / "transcript.txt"
+                assert transcript.exists(), f"missing {transcript}"
