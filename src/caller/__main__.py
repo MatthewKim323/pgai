@@ -120,6 +120,24 @@ def _cmd_knowledge(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_hunt(args: argparse.Namespace) -> int:
+    import anthropic
+
+    from caller import knowledge, orchestrate
+    from caller.hunt import generate_hunt
+
+    cfg = load_config()
+    hunt_id = generate_hunt(
+        anthropic.Anthropic(api_key=cfg.anthropic_api_key), cfg.judge_model, knowledge.load()
+    )
+    s = load_scenario(hunt_id)
+    print(f"generated scenarios/{hunt_id}.yaml: {s.title}")
+    if args.no_call:
+        return 0
+    _ensure_server(cfg)
+    return 0 if orchestrate.run_scenario(cfg, hunt_id) else 1
+
+
 def _cmd_dashboard(args: argparse.Namespace) -> int:
     import uvicorn
 
@@ -151,6 +169,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser(
         "knowledge", help="show the campaign's cross-call memory"
     ).set_defaults(fn=_cmd_knowledge)
+
+    p_hunt = sub.add_parser("hunt", help="author a scenario from the open leads and run it")
+    p_hunt.add_argument("--no-call", action="store_true", help="generate the YAML only")
+    p_hunt.set_defaults(fn=_cmd_hunt)
 
     p_dash = sub.add_parser("dashboard", help="serve the mission-control UI")
     p_dash.add_argument("--port", type=int, default=8090)
