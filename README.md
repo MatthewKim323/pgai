@@ -4,8 +4,25 @@ An automated "patient" that phone-calls the Pretty Good AI test line
 (+1-805-439-8008), holds a natural voice conversation with the agent,
 records and transcribes both sides, and mines the transcripts for bugs.
 
-Built for the Pretty Good AI engineering challenge. Design rationale lives in
-[ARCHITECTURE.md](ARCHITECTURE.md); found issues live in [BUGS.md](BUGS.md).
+## Results
+
+| | |
+|---|---|
+| Calls completed | **15**, each 1:40-4:45, every one a full conversation with a natural ending |
+| Bugs found | **14 confirmed (6 high)** + 4 pending audio verification -- [BUGS.md](BUGS.md) |
+| Flagships | transfers route to a dead-end line that hangs up (reproduced 3x); the practice is in Nashville in call 04 and at an Austin address in call 06 |
+| Our response latency | ~1.1s median, worst turn 1.6s after tuning -- [docs/LATENCY.md](docs/LATENCY.md) |
+| Audio quality | double-talk ≤2.3% on all 15 recordings, dead air attributable to the agent under test -- [docs/AUDIOQA.md](docs/AUDIOQA.md) |
+| Campaign cost | ≈$3.50 total ($0.12 call time + $1.15 number + ~$2 LLM; Deepgram fit in free credit) |
+
+**Reviewing this?** Fastest path: listen to `calls/14-hunt-1/recording.mp3`
+(a call whose persona the harness authored itself), then
+`calls/11-edge-topic-switcher/recording.mp3` at 1:29 (the flagship dead-end
+transfer, over the caller's objection), then read [BUGS.md](BUGS.md). Design
+rationale is in [ARCHITECTURE.md](ARCHITECTURE.md); the improvement arc,
+call by call, is in [docs/ITERATION.md](docs/ITERATION.md).
+
+## How it works
 
 ```
 Twilio outbound call ──websocket──▶ pipecat pipeline
@@ -21,15 +38,17 @@ Twilio dual-channel recording ──▶ mp3 (agent left, patient right)
 Three things make this more than a scripted dialer:
 
 - **Speculative generation** (`speculative.py`): the LLM request opens on each
-  final STT segment, while turn-detection is still deciding the agent is done.
-  Measured live: 12/12 hits, sub-second turns, the model wait effectively gone.
+  final STT segment, while turn-detection is still deciding whether the agent
+  is done. Validated live in an A/B against the same scenario: 12/12
+  speculation hits, zero fallbacks, sub-second turns.
 - **Cross-call knowledge** (`knowledge.py`): every call is mined for practice
-  facts (fed to later personas as natural hearsay) and suspicious leads. It
-  caught contradictions no single call could, like the practice being in
-  Nashville in call 03 and Austin in call 06.
+  facts (fed to later personas as natural hearsay) and suspicious leads. This
+  is what catches contradictions no single call can, like the
+  Nashville-vs-Austin location split between calls 04 and 06.
 - **Lead hunting** (`hunt.py`): `python -m caller hunt` has the system author
-  its own scenario from the open leads, validate it, and run it. Call 14's
-  persona was written entirely by the harness.
+  its own scenario from the open leads, validate it through the same loader as
+  the hand-written ones, and run it. Call 14's persona was written entirely by
+  the harness, and it surfaced a new outcome for the refill flow.
 
 ## Setup
 
@@ -86,8 +105,9 @@ python -m caller analyze                 # LLM judge -> findings.json + BUGS.md
 python -m caller knowledge               # the campaign's cross-call memory
 python -m caller hunt                    # author a scenario from open leads + run it
 python -m caller latency                 # cross-call latency report
+python -m caller audioqa                 # measure the recordings themselves
 python -m caller dashboard               # mission control at localhost:8090
-pytest                                   # 96 tests, no network needed
+pytest                                   # 100 tests, no network needed
 ```
 
 ## Scenarios
@@ -103,7 +123,7 @@ Adding coverage means adding a YAML file, not touching code.
 ## Artifacts
 
 ```
-calls/03-refill/
+calls/02-refill/
   meta.json         scenario, call sid, how the call ended
   transcript.txt    [mm:ss] AGENT/PATIENT lines (what BUGS.md cites)
   transcript.json   same, structured
