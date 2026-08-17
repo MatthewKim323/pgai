@@ -17,6 +17,8 @@ from dataclasses import dataclass
 from fastapi import WebSocket
 from pipecat.adapters.schemas.function_schema import FunctionSchema
 from pipecat.adapters.schemas.tools_schema import ToolsSchema
+from pipecat.audio.turn.smart_turn.base_smart_turn import SmartTurnParams
+from pipecat.audio.turn.smart_turn.local_smart_turn_v3 import LocalSmartTurnAnalyzerV3
 from pipecat.audio.vad.silero import SileroVADAnalyzer
 from pipecat.audio.vad.vad_analyzer import VADParams
 from pipecat.frames.frames import EndFrame, LLMMessagesAppendFrame
@@ -41,6 +43,7 @@ from pipecat.turns.user_start import (
     TranscriptionUserTurnStartStrategy,
     VADUserTurnStartStrategy,
 )
+from pipecat.turns.user_stop import TurnAnalyzerUserTurnStopStrategy
 from pipecat.turns.user_turn_strategies import UserTurnStrategies
 from pipecat.workers.runner import WorkerRunner
 
@@ -141,18 +144,26 @@ async def run_call_pipeline(
     # p99 collapses the transcript wait and stalls turns on the 5s aggregator
     # timeout instead (measured on shakedown call 01: 4-6s response latency).
     vad = SileroVADAnalyzer(params=VADParams(stop_secs=0.2))
+    # When the smart-turn model is unsure the speaker is done, it falls back
+    # to a silence timeout; the 3s default read as dead air on the wire
+    # (measured 4.9s worst-case turns on calls 01/03). 1.6s of silence is
+    # decisive enough on a phone call.
+    stop = [
+        TurnAnalyzerUserTurnStopStrategy(
+            turn_analyzer=LocalSmartTurnAnalyzerV3(params=SmartTurnParams(stop_secs=1.6))
+        )
+    ]
     if scenario.barge_in_policy is BargeInPolicy.HOLD:
-        user_params = LLMUserAggregatorParams(
-            vad_analyzer=vad,
-            user_turn_strategies=UserTurnStrategies(
-                start=[
-                    VADUserTurnStartStrategy(enable_interruptions=False),
-                    TranscriptionUserTurnStartStrategy(enable_interruptions=False),
-                ]
-            ),
+        strategies = UserTurnStrategies(
+            start=[
+                VADUserTurnStartStrategy(enable_interruptions=False),
+                TranscriptionUserTurnStartStrategy(enable_interruptions=False),
+            ],
+            stop=stop,
         )
     else:
-        user_params = LLMUserAggregatorParams(vad_analyzer=vad)
+        strategies = UserTurnStrategies(stop=stop)
+    user_params = LLMUserAggregatorParams(vad_analyzer=vad, user_turn_strategies=strategies)
 
     aggregators = LLMContextAggregatorPair(context, user_params=user_params)
 

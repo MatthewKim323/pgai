@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:02:27+00:00",
+  "scenario": "refill",
+  "title": "Existing patient requests a medication refill",
+  "category": "refills",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CAe2f719547d93cbb03e331540c267e39f",
+  "stream_sid": "MZ69bcb2b31a097db2a6741ac5ae050632",
+  "ended_by": "remote_hangup",
+  "model": "claude-haiku-4-5-20251001"
+}

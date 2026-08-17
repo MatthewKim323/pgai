@@ -1,0 +1,70 @@
+{
+  "call_duration_secs": 116.967,
+  "completed_turns": 5,
+  "interruptions": 3,
+  "patient": {
+    "per_turn": [
+      {
+        "turn": 0,
+        "interrupted": true,
+        "llm_first_token": 0.773,
+        "response_latency": 1.448,
+        "speech_duration": 12.469
+      },
+      {
+        "turn": 1,
+        "interrupted": false,
+        "response_latency": 4.858,
+        "speech_duration": 22.243
+      },
+      {
+        "turn": 2,
+        "interrupted": true,
+        "llm_first_token": 0.818,
+        "response_latency": 1.378,
+        "speech_duration": 4.174
+      },
+      {
+        "turn": 3,
+        "interrupted": true,
+        "llm_first_token": 0.762,
+        "response_latency": 1.061,
+        "speech_duration": 0.311
+      },
+      {
+        "turn": 4,
+        "interrupted": false,
+        "llm_first_token": 0.976,
+        "response_latency": 1.468,
+        "speech_duration": 6.925
+      }
+    ],
+    "response_latency": {
+      "count": 5,
+      "p50": 1.448,
+      "p95": 4.858,
+      "max": 4.858,
+      "mean": 2.043
+    },
+    "llm_first_token": {
+      "count": 4,
+      "p50": 0.795,
+      "p95": 0.976,
+      "max": 0.976,
+      "mean": 0.832
+    }
+  },
+  "agent_under_test": {
+    "response_gaps": [
+      0.188,
+      2.995
+    ],
+    "response_gap": {
+      "count": 2,
+      "p50": 1.592,
+      "p95": 2.995,
+      "max": 2.995,
+      "mean": 1.592
+    }
+  }
+}

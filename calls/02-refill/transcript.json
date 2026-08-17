@@ -1,0 +1,122 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Be recorded for quality and training purposes.",
+    "ts": 3.206,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.501,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 12.134,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.956,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, thanks for picking up. My name is Matthew Kim. And no, I'm not looking to create a new profile\u2014I'm actually calling about a prescription refill. I was in recently and got prescribed meloxicam for my knee, and I'm running pretty low on it. My bottle's gonna run out in just a few days.",
+    "ts": 16.75,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 30.188,
+    "stamp": "00:30"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth two thousand for demo purposes.",
+    "ts": 34.573,
+    "stamp": "00:34"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh",
+    "ts": 35.475,
+    "stamp": "00:35"
+  },
+  {
+    "speaker": "agent",
+    "text": "How may I help you today?",
+    "ts": 36.311,
+    "stamp": "00:36"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Matthew. How can I help you today?",
+    "ts": 46.48,
+    "stamp": "00:46"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, hold on\u2014my date of birth is March 23rd, 2006, not July fourth. Let me make sure that gets corrected in the system so there's no mix-up with my records.\n\nBut yeah, like I said, I'm calling because I need a refill on my meloxicam 15mg. I'm down to my last few pills and I need to get it sent to the CVS on Foothill Boulevard. Can you help me get that processed?",
+    "ts": 53.442,
+    "stamp": "00:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "I don't see any medications on chart that I can refill right now.",
+    "ts": 80.834,
+    "stamp": "01:20"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you'd like, I can connect you to our patient support team for further help.",
+    "ts": 85.017,
+    "stamp": "01:25"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to speak with someone from the clinic?",
+    "ts": 87.338,
+    "stamp": "01:27"
+  },
+  {
+    "speaker": "patient",
+    "text": "Um, yeah, that would help. Can you connect me to someone who can look into the prescription? I definitely got prescribed meloxicam at my last visit, so it should be in the system somewhere. Let me speak with the patient support team and we can sort this out.",
+    "ts": 88.972,
+    "stamp": "01:28"
+  },
+  {
+    "speaker": "agent",
+    "text": "Transferring you now. Thank you.",
+    "ts": 94.193,
+    "stamp": "01:34"
+  },
+  {
+    "speaker": "patient",
+    "text": "Thanks, I appreciate it.",
+    "ts": 95.11,
+    "stamp": "01:35"
+  },
+  {
+    "speaker": "agent",
+    "text": "Hello.",
+    "ts": 96.204,
+    "stamp": "01:36"
+  },
+  {
+    "speaker": "agent",
+    "text": "You've reached the Pretty Good AI test line. Goodbye.",
+    "ts": 98.644,
+    "stamp": "01:38"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait, hold on\u2014I think I got disconnected or something. I was trying to get a refill on my meloxicam. Is someone there?",
+    "ts": 103.838,
+    "stamp": "01:43"
+  }
+]

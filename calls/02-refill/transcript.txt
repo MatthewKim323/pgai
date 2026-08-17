@@ -1,0 +1,22 @@
+[00:03] AGENT: Be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:12] AGENT: Would you like to create a demo patient profile?
+[00:14] AGENT: I just need your first and last name to get started.
+[00:16] PATIENT: Hi, yes, thanks for picking up. My name is Matthew Kim. And no, I'm not looking to create a new profile—I'm actually calling about a prescription refill. I was in recently and got prescribed meloxicam for my knee, and I'm running pretty low on it. My bottle's gonna run out in just a few days.
+[00:30] AGENT: Your patient profile is set up.
+[00:34] AGENT: And your date of birth is July fourth two thousand for demo purposes.
+[00:35] PATIENT: Oh
+[00:36] AGENT: How may I help you today?
+[00:46] AGENT: Thanks, Matthew. How can I help you today?
+[00:53] PATIENT: Actually, hold on—my date of birth is March 23rd, 2006, not July fourth. Let me make sure that gets corrected in the system so there's no mix-up with my records.
+
+But yeah, like I said, I'm calling because I need a refill on my meloxicam 15mg. I'm down to my last few pills and I need to get it sent to the CVS on Foothill Boulevard. Can you help me get that processed?
+[01:20] AGENT: I don't see any medications on chart that I can refill right now.
+[01:25] AGENT: If you'd like, I can connect you to our patient support team for further help.
+[01:27] AGENT: Would you like to speak with someone from the clinic?
+[01:28] PATIENT: Um, yeah, that would help. Can you connect me to someone who can look into the prescription? I definitely got prescribed meloxicam at my last visit, so it should be in the system somewhere. Let me speak with the patient support team and we can sort this out.
+[01:34] AGENT: Transferring you now. Thank you.
+[01:35] PATIENT: Thanks, I appreciate it.
+[01:36] AGENT: Hello.
+[01:38] AGENT: You've reached the Pretty Good AI test line. Goodbye.
+[01:43] PATIENT: Wait, hold on—I think I got disconnected or something. I was trying to get a refill on my meloxicam. Is someone there?

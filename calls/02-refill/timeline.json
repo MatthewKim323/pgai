@@ -1,0 +1,559 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 4.0916e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.188253125,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 3.205657416,
+    "turn": 0,
+    "text": "Be recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.26584125,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.729448333,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 9.501465791,
+    "turn": 0,
+    "text": "Thank you for calling Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 9.50191875,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 10.070265791,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 12.1341025,
+    "turn": 0,
+    "text": "Would you like to create a demo patient profile?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 12.134473583,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 12.79140025,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 14.956536291,
+    "turn": 0,
+    "text": "I just need your first and last name to get started."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 14.982179791,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 16.430640125,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 16.749653291,
+    "turn": 0,
+    "text": "Hi, yes, thanks for picking up. My name is Matthew Kim. And no, I'm not looking to create a new profile\u2014I'm actually calling about a prescription refill. I was in recently and got prescribed meloxicam for my knee, and I'm running pretty low on it. My bottle's gonna run out in just a few days."
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 28.89467875,
+    "turn": 0,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 28.89467875,
+    "turn": 0,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 28.89467875,
+    "turn": 0
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 28.899857416,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 28.899857416,
+    "turn": 1,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 30.188497416,
+    "turn": 1,
+    "text": "Your patient profile is set up."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 30.240171875,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 30.772739916,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 34.573134708,
+    "turn": 1,
+    "text": "And your date of birth is July fourth two thousand for demo purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 34.573598291,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 35.471754333,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 35.475028458,
+    "turn": 1,
+    "text": "Oh"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 36.310576958,
+    "turn": 1,
+    "text": "How may I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 36.31118325,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 45.887082791,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 46.480106791,
+    "turn": 1,
+    "text": "Thanks, Matthew."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 46.631934958,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 47.15608925,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 48.195573958,
+    "turn": 1,
+    "text": "How can I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 48.199538458,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 53.057693541,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 53.442336166,
+    "turn": 1,
+    "text": "Actually, hold on\u2014my date of birth is March 23rd, 2006, not July fourth. Let me make sure that gets corrected in the system so there's no mix-up with my records.\n\nBut yeah, like I said, I'm calling because I need a refill on my meloxicam 15mg. I'm down to my last few pills and I need to get it sent to the CVS on Foothill Boulevard. Can you help me get that processed?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 75.300202375,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 75.300202375,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 78.29532475,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 80.833714791,
+    "turn": 2,
+    "text": "I don't see any medications on"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 81.327893875,
+    "turn": 2,
+    "text": "chart that I can refill right now."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 81.420374333,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 81.874535041,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 85.017030208,
+    "turn": 2,
+    "text": "If you'd like, I can connect you to our patient support team for further help."
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 87.337794958,
+    "turn": 2,
+    "text": "Would you like to speak with someone from the clinic?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 87.362693416,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 88.740939708,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 88.971890625,
+    "turn": 2,
+    "text": "Um, yeah, that would help. Can you connect me to someone who can look into the prescription? I definitely got prescribed meloxicam at my last visit, so it should be in the system somewhere. Let me speak with the patient support team and we can sort this out."
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 92.909050791,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 92.909050791,
+    "turn": 2,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 92.909050791,
+    "turn": 2
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 92.9150035,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 92.9150035,
+    "turn": 3,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 94.193291833,
+    "turn": 3,
+    "text": "Transferring you now. Thank you."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 94.193924083,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 95.110533166,
+    "turn": 3,
+    "text": "Thanks, I appreciate it."
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 95.255168625,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 95.560232791,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 95.560232791,
+    "turn": 3,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 95.560232791,
+    "turn": 3
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 95.566607041,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 95.566607041,
+    "turn": 4,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 96.204291666,
+    "turn": 4,
+    "text": "Hello."
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 98.644275333,
+    "turn": 4,
+    "text": "You've reached the Pretty Good AI test line."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 98.719802208,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 99.054104625,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 99.574249666,
+    "turn": 4,
+    "text": "Goodbye."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 102.467478125,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 103.837876291,
+    "turn": 4,
+    "text": "Wait, hold on\u2014I think I got disconnected or something. I was trying to get a refill on my meloxicam. Is someone there?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 103.935880625,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 110.860460958,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 110.860460958,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 116.967070833,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 116.967070833,
+    "turn": 5,
+    "reason": "end_frame"
+  }
+]
