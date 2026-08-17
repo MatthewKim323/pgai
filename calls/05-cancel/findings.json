@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agent required creation of a 'demo patient profile' before handling a real cancellation request",
+    "severity": "medium",
+    "category": "conversation-quality",
+    "timestamp": "00:12",
+    "quote": "Would you like to create a demo patient profile?",
+    "details": "The agent introduces an out-of-context 'demo patient profile' step and insists on it before addressing the caller's actual request, despite the caller already stating their intent to cancel an appointment. This is confusing and irrelevant to a real patient interaction, and creates friction with no clear purpose."
+  },
+  {
+    "title": "Agent mispronounces/garbles doctor's name inconsistently across the call",
+    "severity": "low",
+    "category": "correctness",
+    "timestamp": "01:51",
+    "quote": "and doctor Judy Hauser on August twenty fourth.",
+    "details": "The doctor's name is rendered differently multiple times (Dudeehauser, Dugge Hauser, Judy Hauser) and another doctor's name varies (Eberker vs Abreker). While likely a TTS/STT artifact, the inconsistent naming could confuse a caller trying to verify which appointments were affected, especially since it's inconsistent even in the same cancellation confirmation from the same appointment record."
+  },
+  {
+    "title": "Long response gap during appointment lookup",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "00:37",
+    "quote": "[00:30] PATIENT: Sure, no problem... [00:37] AGENT: You have two upcoming appointments.",
+    "details": "A gap of nearly 5.8 seconds (per telemetry, corresponds to the 5.765s gap) occurred while the agent processed the demo profile creation before returning appointment info, which is longer than the typical ~2-3s gaps seen elsewhere in the call and could feel like a stall to the caller."
+  }
+]

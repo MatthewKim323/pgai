@@ -26,7 +26,10 @@ FINDING = {
 
 def tool_response(payload):
     """Mimic an Anthropic messages.create response with one tool_use block."""
-    return SimpleNamespace(content=[SimpleNamespace(type="tool_use", input=payload)])
+    return SimpleNamespace(
+        stop_reason="tool_use",
+        content=[SimpleNamespace(type="tool_use", input=payload)],
+    )
 
 
 def make_call_dir(tmp_path, scenario="edge-weekend-booking"):

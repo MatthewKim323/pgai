@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Agent gives inconsistent doctor name (Zebigniew/Hauser confusion, then name mutates)",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "02:17",
+    "quote": "Your main doctor here is doctor Judy Hauser.",
+    "details": "The agent first states the doctor's name is 'Judy Hauser' and moments later, in the same context, states it as 'Dugi Hauser' (02:56). This is an internal inconsistency about a core patient record fact (provider name), which could confuse the patient about who their actual doctor is."
+  },
+  {
+    "title": "Doctor's first name changes between turns",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "02:56",
+    "quote": "Your doctor's name is doctor Dugi Hauser.",
+    "details": "Only 39 seconds earlier the agent said the doctor's name was 'Judy Hauser.' Giving two different first names for the same provider is a factual inconsistency that undermines trust in the agent's records."
+  },
+  {
+    "title": "Incorrect date of birth stated during profile creation",
+    "severity": "low",
+    "category": "correctness",
+    "timestamp": "00:34",
+    "quote": "Your date of birth is July fourth thousand for demo purposes. How may I help you today?",
+    "details": "The agent states an obviously garbled/placeholder date of birth ('July fourth thousand') rather than a real date, and the caller has to correct it. While flagged as 'for demo purposes' suggesting a known test artifact, in a real deployment this would be a serious data-integrity issue since it reads back an incorrect DOB to the patient."
+  },
+  {
+    "title": "Slow response latency at multiple points",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:24",
+    "quote": "I don't see any medications on your chart that I can refill right now.",
+    "details": "Telemetry shows response gaps of 2.7-3.6 seconds at several points in the call (e.g., 2.717s, 2.599s, 3.288s, 3.624s, 2.764s), which for a chatty elderly caller could feel like the agent is not keeping up, though none exceeded the ~4s flag threshold individually."
+  },
+  {
+    "title": "Phone number initially read back incorrectly, requiring correction",
+    "severity": "low",
+    "category": "correctness",
+    "timestamp": "04:10",
+    "quote": "I have your number as six five seven five six six five one three six",
+    "details": "The agent read back a phone number that did not match what the caller had just stated (six two six five five five nine zero four three), requiring the caller to correct it. This is a minor data-accuracy issue though the agent did correctly update it once flagged."
+  }
+]

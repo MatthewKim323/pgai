@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agent never updated the date of birth correction as requested",
+    "severity": "medium",
+    "category": "task-failure",
+    "timestamp": "00:35",
+    "quote": "Actually, I need to correct that. My date of birth is February ninth, nineteen eighty-eight, not July fourth. Can you update that for me?",
+    "details": "The caller explicitly asked the agent to correct her date of birth from July 4, 2000 (an incorrect demo placeholder) to February 9, 1988. The agent never acknowledged or confirmed this correction at any point in the call, instead moving straight into discussing the wrist pain and Sunday appointment request. This leaves patient record data incorrect, which is a real task failure with downstream correctness implications for the patient's file."
+  },
+  {
+    "title": "Agent booked appointment without addressing wrist pain complaint or triage",
+    "severity": "low",
+    "category": "task-failure",
+    "timestamp": "00:35",
+    "quote": "And I'm calling because I have wrist pain from my work. I was hoping to get an appointment this Sunday at ten in the morning if that's possible.",
+    "details": "The patient mentioned wrist pain as the reason for the visit, but the agent never asked any follow-up or triage questions about the symptom (e.g., severity, numbness, when it started) before booking a routine appointment. While not a hard safety violation since this appears to be non-emergent, a more thorough orthopedic receptionist agent would typically acknowledge the reason for the visit or confirm appointment type/reason is captured for the visit record."
+  },
+  {
+    "title": "Latency: multiple agent response gaps exceeding 4 seconds",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:12",
+    "quote": "AGENT gaps of 4.215s and 5.147s recorded in telemetry",
+    "details": "The telemetry shows response gaps of 4.215s and 5.147s during the call (following the patient's Sunday appointment pushback), which could create a noticeably slow, awkward pause for the caller especially in a fairly simple exchange."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Agent said 'Pickup.' - garbled/nonsensical utterance",
+    "severity": "medium",
+    "category": "conversation-quality",
+    "timestamp": "00:55",
+    "quote": "AGENT: Pickup.",
+    "details": "The agent produced a nonsensical single-word utterance ('Pickup.') that confused the caller ('What? Pickup? I don't... what are you asking me?'). This is a clear conversational glitch that would confuse a real patient and disrupt call flow."
+  },
+  {
+    "title": "Agent never confirmed practice name mismatch clearly before caller had to ask twice",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "02:04",
+    "quote": "PATIENT: Wait, hold on. To The Point? I thought this was Pivot Point Orthopedics. Are those the same place or\u2014what's the address?",
+    "details": "The agent initially said 'To The Point Orthopedics' (likely a mis-transcription/mis-speak of Pivot Point), causing caller confusion about which practice they were booking with. It took two follow-up prompts and a bare 'Yes.' before the agent clarified 'This is Pivot Point Orthopaedics.' This name inconsistency could alarm a patient about calling the wrong office."
+  },
+  {
+    "title": "Agent never provided the office address despite repeated requests",
+    "severity": "medium",
+    "category": "task-failure",
+    "timestamp": "02:04",
+    "quote": "PATIENT: Wait, hold on. To The Point? I thought this was Pivot Point Orthopedics. Are those the same place or\u2014what's the address?",
+    "details": "The caller asked for the address/location multiple times (02:04, 02:53) but the agent never provided it, instead just confirming the practice name and appointment time. The caller's direct question about address was dropped entirely, and the call ended without this information being given."
+  },
+  {
+    "title": "Long response gap of 6.86s during availability lookup",
+    "severity": "medium",
+    "category": "latency",
+    "timestamp": "00:59",
+    "quote": "AGENT: Let me set up your pro",
+    "details": "Telemetry shows a 6.861s gap in the agent's response after the caller pressed for availability at 00:59, before the agent replied at 01:18 with 'We have openings this Tuesday with two providers.' This is a significant delay for an impatient caller who explicitly stated urgency (double-parked, phone dying)."
+  },
+  {
+    "title": "Multiple gaps over 2.5s during a time-sensitive call",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "00:18",
+    "quote": "AGENT: We can get started. But",
+    "details": "Several response gaps in the 2.4-3.2s range (2.683, 3.008, 2.432, 2.738, 2.481, 2.639, 2.294, 3.198) occurred throughout the call. While individually under the 4s flag threshold, cumulatively they added friction for a caller who repeatedly stated they were in a hurry."
+  }
+]

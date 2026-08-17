@@ -1,0 +1,34 @@
+[
+  {
+    "title": "14.8s response gap after DOB correction request",
+    "severity": "medium",
+    "category": "latency",
+    "timestamp": "00:42",
+    "quote": "AGENT: I can't update your date of birth directly, but I can let our clinic support team know to correct it for you.",
+    "details": "The telemetry shows a 14.773s gap between the patient's message at 00:42 and the agent's response at 00:57. This is a significant delay that would feel like a dead line to a real caller."
+  },
+  {
+    "title": "Agent opens by offering to create a 'demo patient profile'",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "00:11",
+    "quote": "Would you like to create a demo patient profile?",
+    "details": "The agent asks the caller to create a 'demo patient profile' and later states the DOB is set 'for demo purposes' (00:37-00:39). This is a real scheduling call, not a demo, and referencing demo mode undermines trust that the appointment/record is real and could confuse the caller about whether the booking is legitimate."
+  },
+  {
+    "title": "Call ended via watchdog timeout without final confirmation or closing",
+    "severity": "high",
+    "category": "task-failure",
+    "quote": "AGENT: Yes. Please bring your referral.",
+    "timestamp": "03:27",
+    "details": "The call terminated via watchdog_timeout immediately after the agent's last line, with no confirmation that imaging was or wasn't needed, no summary recap, and no closing/goodbye. The caller's goal was to get date, time, location, and items to bring confirmed out loud before hanging up; while most items were confirmed, the call cut off abruptly without a proper close, leaving the imaging question seemingly unanswered and no final wrap-up."
+  },
+  {
+    "title": "Agent garbles insurance name and gives generic non-answer to direct question",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "02:53",
+    "quote": "AGENT: Including Aetna PTO.",
+    "details": "The patient specifically asked whether Pivot Point takes 'Aetna PPO' insurance. The agent mispronounces/mistranscribes it as 'Aetna PTO' and only gives a generic 'accepts most insurance plans' answer rather than a direct confirmation, which could leave the caller uncertain if their specific plan is accepted."
+  }
+]

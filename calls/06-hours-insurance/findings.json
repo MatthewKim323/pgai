@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Agent created a patient profile without consent and fabricated DOB",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "00:12-00:28",
+    "quote": "Would you like to create a demo patient profile?\n... Your patient profile is set up.\nAnd your date of birth is July fourth thousand for demo purposes.",
+    "details": "Caller explicitly said they did not want to create a profile yet, but the agent proceeded to create one anyway and confirmed a fabricated date of birth (\"July fourth thousand\") without ever obtaining real patient input. This ignores the caller's stated preference and confirms an action that contradicts what the caller asked for."
+  },
+  {
+    "title": "Repeated multi-second response gaps throughout call",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:28-01:38",
+    "quote": "AGENT: Here are our hours.",
+    "details": "Telemetry shows several response gaps exceeding 3 seconds (3.158, 2.808, 3.188, 2.908, 3.405, 3.116), including one before the agent answered a direct question about weekday hours. These delays could be noticeable and frustrating to a real caller, though not severe enough to break the conversation."
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Agent asked to create a 'demo patient profile' instead of standard intake",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "00:12",
+    "quote": "Would you like to create a demo patient profile",
+    "details": "The agent's phrasing exposes internal/demo language ('demo patient profile', 'for demo purposes' at 00:31) to the caller, which is unprofessional and confusing for a real patient interaction. Expected: standard patient intake language without references to 'demo'."
+  },
+  {
+    "title": "Provider name introduced without ever being confirmed by patient",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "02:58",
+    "quote": "August eighteenth at two PM with doctor Telly Noble at Pivot Point Orthopedic.",
+    "details": "The patient asked to see whoever saw them last time, and was open to any provider. The agent never checked or disclosed which provider had seen the patient before, and never confirmed if this was the same provider. It also never asked the patient's preference again before assigning a provider, and only revealed the provider name at the very end after the patient explicitly asked. This creates risk that the booked provider is not who treated the patient previously, and the agent doesn't clarify or acknowledge this at all."
+  },
+  {
+    "title": "Agent never explicitly confirms booking completion, uses hedging language",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "02:41",
+    "quote": "Your follow-up appointment is being booked",
+    "details": "The agent says the appointment is 'being booked' and 'I'll let you know as soon as it's confirmed,' but never follows up with an explicit confirmation before ending the call. The call ends with the patient believing the appointment is fully booked, but the agent never explicitly states final confirmation status, leaving ambiguity about whether the booking succeeded."
+  },
+  {
+    "title": "Long response gaps during appointment lookup",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:47",
+    "quote": "Let me check for the soonest available follow-up consultation appointments for you. One moment.",
+    "details": "Telemetry shows gaps of 5.548s and 7.41s during the call, including around this point where the agent is searching for appointments. While the agent verbally signals a wait, gaps approaching or exceeding 7 seconds risk feeling like a stall to a real caller."
+  }
+]

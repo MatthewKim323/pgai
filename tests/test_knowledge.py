@@ -10,7 +10,10 @@ from caller.turnstate import TurnStateMachine
 
 
 def tool_response(payload):
-    return SimpleNamespace(content=[SimpleNamespace(type="tool_use", input=payload)])
+    return SimpleNamespace(
+        stop_reason="tool_use",
+        content=[SimpleNamespace(type="tool_use", input=payload)],
+    )
 
 
 def seed_call(tmp_path, scenario="refill"):

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agent asked to create a demo patient profile instead of addressing caller's need",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "00:12",
+    "quote": "Would you like to create a demo patient profile,",
+    "details": "Before the caller even stated their reason for calling, the agent asked about creating a 'demo patient profile,' which is an odd, out-of-place prompt that doesn't fit a real patient interaction. This suggests leftover test/demo scaffolding in the agent's flow that could confuse real callers."
+  },
+  {
+    "title": "Inconsistent pronunciation/spelling of provider name across turns",
+    "severity": "low",
+    "category": "correctness",
+    "timestamp": "00:44",
+    "quote": "and the other is at two PM with Doo Dee Hauser.",
+    "details": "The provider's name is rendered inconsistently throughout the call: 'Doo Dee Hauser' (00:44), 'Doogie Howser' (01:04, 01:10), 'Dubehauser' (02:01), and 'Doobie Hauser' (02:20). While likely a TTS/name-parsing artifact, this inconsistency could make a real patient uncertain whether the correct provider was actually booked, especially since 'Doogie Howser' is a distinct pop-culture name that may raise doubts about data accuracy."
+  },
+  {
+    "title": "Long response gaps during rescheduling flow",
+    "severity": "medium",
+    "category": "latency",
+    "timestamp": "00:36",
+    "quote": "You have two upcoming appointments on Tuesday. August eighteenth.",
+    "details": "Telemetry shows response gaps of 7.199s and 7.287s (and several others near 3-4s) during the call. A patient waiting 7+ seconds mid-conversation for a response, particularly right after providing their name/reason, is a noticeable delay that could feel like the system stalled."
+  }
+]

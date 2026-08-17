@@ -134,7 +134,16 @@ confusion a real patient would feel; low = minor but real quality issue."""
 MERGE_SYSTEM = """You are consolidating QA findings from many test calls against the same \
 AI phone agent into one bug list. Merge findings that describe the same underlying defect \
 (keep every citation). Keep titles crisp and factual. Drop anything that reads as a nitpick \
-or lacks evidence. Order nothing -- the renderer sorts by severity."""
+or lacks evidence. Order nothing -- the renderer sorts by severity.
+
+Important context: the CALLER on every recording is our own simulated patient bot. Behaviors \
+of the caller (its scripted goodbyes, its watchdog cutting a call short, its repeated \
+phrasing) are NOT bugs in the agent under test -- exclude them entirely. Only the AGENT's \
+behavior belongs in the report.
+
+Never silently drop a high-severity finding. In particular, distinct defects must stay \
+distinct: an agent transferring callers into a line that says goodbye and disconnects is its \
+own bug, separate from any general 'call ended unresolved' pattern."""
 
 
 def build_judge_prompt(call: dict[str, Any]) -> str:
@@ -166,15 +175,19 @@ File your findings for this call now."""
 
 
 def _forced_tool_call(client: anthropic.Anthropic, model: str, system: str, prompt: str,
-                      tool: dict[str, Any]) -> dict[str, Any]:
+                      tool: dict[str, Any], max_tokens: int = 4096) -> dict[str, Any]:
     resp = client.messages.create(
         model=model,
-        max_tokens=4096,
+        max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": prompt}],
         tools=[tool],
         tool_choice={"type": "tool", "name": tool["name"]},
     )
+    if resp.stop_reason == "max_tokens":
+        raise RuntimeError(
+            f"{tool['name']} output truncated at {max_tokens} tokens; raise the budget"
+        )
     for block in resp.content:
         if block.type == "tool_use":
             return block.input
@@ -229,8 +242,17 @@ def merge_findings(client: anthropic.Anthropic, model: str,
         MERGE_SYSTEM,
         "Raw findings from all calls:\n" + json.dumps(flat, indent=2),
         MERGE_TOOL,
+        max_tokens=16384,  # 50+ findings with citations do not fit in 4k
     )
-    return (raw or {}).get("bugs", [])
+    bugs = (raw or {}).get("bugs", [])
+    # Deterministic guard: 'watchdog' is our harness's own mechanism; any bug
+    # attributing behavior to it is a self-report, not an agent defect.
+    bugs = [
+        b for b in bugs
+        if "watchdog" not in f"{b.get('title', '')} {b.get('details', '')}".lower()
+    ]
+    logger.info(f"merge: {len(flat)} findings -> {len(bugs)} bugs")
+    return bugs
 
 
 def analyze_calls(cfg: Config, calls_dir: Path = store.CALLS_DIR,

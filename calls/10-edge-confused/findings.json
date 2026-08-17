@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Agent asked to create a 'demo patient profile' instead of normal intake",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "00:11",
+    "quote": "Would you like to create a demo patient profile?",
+    "details": "The agent references a 'demo patient profile' and later says a DOB is set 'for demo purposes,' which is inappropriate/confusing language for a live patient-facing call and suggests leaked internal/test terminology reaching the caller."
+  },
+  {
+    "title": "Agent fabricated/auto-filled a wrong date of birth without asking",
+    "severity": "high",
+    "category": "correctness",
+    "timestamp": "00:32",
+    "quote": "And your date of birth is July fourth thousand for demo purposes.",
+    "details": "The agent asserted a specific DOB (July 4th) that the caller never provided, then treats it as fact needing 'correction' rather than never having asked for it in the first place. This risks creating or confirming incorrect patient records, and having incorrect data on file is a real patient-safety/data-integrity concern for a medical office."
+  },
+  {
+    "title": "DOB correction not actually applied, only queued as a note",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "00:57",
+    "quote": "I documented your request to update your date of birth to December fifth. Nineteen forty nine. Our clinic support team will review and correct this as soon as possible.",
+    "details": "The agent does not confirm the patient's identity/DOB was corrected in the system, only that a note was left for staff to fix later. This means the caller's identity may remain misregistered in the interim, which could affect care coordination or future authentication for this call."
+  },
+  {
+    "title": "Long latency gaps during a confused caller interaction",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:36",
+    "quote": "You have two upcoming appointments with doctor Zedneel Lukowski.",
+    "details": "Telemetry shows response gaps of 5.364s and 8.286s early in the call (during profile setup) which, combined with a caller already confused, could add to frustration; while the agent stayed patient in content, these delays are worth flagging as latency issues that a real patient would notice."
+  },
+  {
+    "title": "Agent never clarified which appointment is for hip vs knee/scan despite multiple mentions",
+    "severity": "medium",
+    "category": "task-failure",
+    "timestamp": "02:22",
+    "quote": "The appointment details on file don't specify which one is for your hit.",
+    "details": "The caller's original ask (probably a scan or follow-up, then said knee, then hip) was never resolved -- the agent punts to 'clinic will call back' without attempting any lookup by appointment type/reason, leaving the caller's actual need unresolved at call end (task not accomplished, only deferred)."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agent booked appointment with a follow-up but requested provider was open-ended, yet caller wasn't asked to confirm provider name before booking",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "02:15",
+    "quote": "You're all set for a follow-up appointment tomorrow.",
+    "details": "The agent asked whether the caller had a specific provider preference, caller said open to anyone, but the agent never mentioned which provider would be assigned until after booking was already finalized. This is a minor task-flow issue but not a hard error since the caller did confirm openness to any provider."
+  },
+  {
+    "title": "Long response gaps (10s and 9.6s) during profile creation and follow-up request",
+    "severity": "medium",
+    "category": "latency",
+    "timestamp": "00:17",
+    "quote": "10.06, 9.643",
+    "details": "Telemetry shows two gaps of over 9-10 seconds early in the call (after patient gave name at 00:17 and after patient described follow-up need at 01:12). These are significant delays that a real patient would notice and could cause frustration or perceived unresponsiveness."
+  },
+  {
+    "title": "Agent misheard/mis-repeated phone number back to caller",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "02:52",
+    "quote": "I have your number as six five seven five six six five one three six",
+    "details": "Caller stated phone number as 6575665136, but the agent repeated it back as 'six five seven five six six five one three six' which does not match (transposed digits). The agent did not pause to verify correctness with the caller, risking the appointment reminder text going to a wrong or invalid number."
+  }
+]

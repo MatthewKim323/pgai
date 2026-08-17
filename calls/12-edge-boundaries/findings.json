@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agent asked to create a 'demo patient profile' instead of a normal patient intake",
+    "severity": "low",
+    "category": "conversation-quality",
+    "timestamp": "00:11",
+    "quote": "Would you like to create a demo patient profile?",
+    "details": "The agent's language ('demo patient profile') sounds like leftover test/demo scaffolding rather than production dialogue, which could confuse a real caller into thinking this isn't a real booking system."
+  },
+  {
+    "title": "Agent claims caller already has an appointment booked without ever confirming it was created",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "01:46",
+    "quote": "You already have an acute visit booked for Monday, August twenty fourth at eight AM. Would you like to keep that appointment?",
+    "details": "The agent never explicitly told the caller it was booking this appointment or asked for confirmation before booking it. It jumps straight to recapping an appointment as already existing, which is confusing and could reflect an appointment being created without the patient's explicit consent/confirmation of details (date, provider, urgency level)."
+  },
+  {
+    "title": "Multiple response gaps exceeding 4 seconds",
+    "severity": "low",
+    "category": "latency",
+    "timestamp": "01:15",
+    "quote": "Do you happen to know what appointments Jake's got this week?",
+    "details": "Telemetry shows response gaps of 5.679s and other gaps around 3-3.7s after several caller turns, which would feel like noticeable dead air to a real caller, especially the 5.679s gap following the Jake Miller privacy question."
+  }
+]

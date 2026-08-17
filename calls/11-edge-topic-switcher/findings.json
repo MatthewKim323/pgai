@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Agent fabricates/creates demo patient profile and DOB without real confirmation",
+    "severity": "high",
+    "category": "correctness",
+    "timestamp": "00:12",
+    "quote": "Would you like to create a demo patient profile? I just need your first and last name.",
+    "details": "The agent references a 'demo patient profile' and later asserts 'Your patient profile is set up' and invents a date of birth ('July fourth two thousand for demo purposes') the caller never provided. This is a fabricated/incorrect record-keeping action that could cause real confusion about what identity information is on file, and it never actually confirms real patient identity before discussing prescriptions."
+  },
+  {
+    "title": "Agent never confirms the DOB correction was applied",
+    "severity": "medium",
+    "category": "task-failure",
+    "timestamp": "00:34",
+    "quote": "Actually, I need to correct that \u2014 my date of birth is September 21st, 1979, not July fourth. Can you update that in the system?",
+    "details": "Caller explicitly asks the agent to correct her date of birth. The agent never acknowledges or confirms this correction was made in any subsequent turn, leaving the request unresolved/unclear whether her file is accurate."
+  },
+  {
+    "title": "Agent transfers/hangs up without addressing billing or son's physical questions",
+    "severity": "high",
+    "category": "task-failure",
+    "timestamp": "01:24",
+    "quote": "Um, okay. Yeah, that's frustrating \u2014 I've been on naproxen 500mg for a while now. Before you transfer me, though, can I ask you something else real quick? I got a billing statement in the mail a couple days ago and I'm confused about a charge on it.",
+    "details": "The caller's stated goal included getting billing explained and asking about her son's sports physical, in addition to the refill. The agent ignores the billing question entirely, says 'Transferring you now. Thank you.' and then the call abruptly ends with a goodbye message, meaning two of the three tasks (billing question, son's appointment) were never even acknowledged, let alone resolved."
+  },
+  {
+    "title": "Agent abruptly ends call over caller's objection, ignoring interruption",
+    "severity": "high",
+    "category": "conversation-quality",
+    "timestamp": "01:32",
+    "quote": "Wait, hold on \u2014\n[01:32] AGENT: Hello.\n[01:35] AGENT: You've reached the Pretty Good AI test line. Goodbye.",
+    "details": "Caller attempts to stop the transfer and ask a further question ('Wait, hold on \u2014') but the agent proceeds to a scripted goodbye/hang-up message ('You've reached the Pretty Good AI test line. Goodbye.'), talking over/ignoring the caller's direct attempt to continue the conversation. This results in the call ending with none of the three goals accomplished."
+  }
+]

@@ -28,7 +28,10 @@ SPEC = {
 
 
 def tool_response(payload):
-    return SimpleNamespace(content=[SimpleNamespace(type="tool_use", input=payload)])
+    return SimpleNamespace(
+        stop_reason="tool_use",
+        content=[SimpleNamespace(type="tool_use", input=payload)],
+    )
 
 
 class TestGenerateHunt:
