@@ -10,10 +10,13 @@ websocket feeds a [Pipecat](https://github.com/pipecat-ai/pipecat) pipeline:
 Deepgram nova-3 transcribes the agent's speech as it streams in, a
 Claude Haiku "patient" — prompted from a YAML persona with a goal, a behavior
 profile, and strict phone-voice discipline — decides what to say, and
-ElevenLabs turbo speaks it back into the call. End-of-turn detection is
-semantic (Pipecat's local smart-turn model over Silero VAD) rather than a
-fixed silence gap, which is most of why the bot doesn't leave dead air or
-talk over the agent's pauses. A pure, I/O-free turn-state machine observes
+Deepgram Aura-2 speaks it back into the call in a per-persona voice.
+End-of-turn detection is semantic (Pipecat's local smart-turn model over
+Silero VAD) rather than a fixed silence gap, and replies are *speculative*:
+the LLM request opens on each final STT segment, while turn-detection is
+still deciding the agent has finished, so by the time the turn commits the
+reply stream is usually already flowing (measured live: 12/12 speculation
+hits, sub-second turns). A pure, I/O-free turn-state machine observes
 the whole exchange; the transcript, the turn-state timeline, and the latency
 telemetry are all projections of its single event record, so the artifacts
 can never disagree with each other. After hangup, an LLM judge (Sonnet) reads
@@ -41,3 +44,24 @@ state machine** is the piece that makes the rest honest: turn-taking policy
 is unit-tested without a phone call, and "our response latency" vs. "the
 agent's response gaps" come from the same clock, so the telemetry that tunes
 our bot is also admissible evidence in the bug report.
+
+## The adaptive loop
+
+Ten scripted calls make a fine benchmark and a boring test campaign, so the
+harness learns as it goes. After every call, an extraction pass mines the
+transcript into a shared knowledge store with two deliberately separate
+buckets: *practice facts* (things a real patient could plausibly repeat —
+later personas receive them as hearsay, "a friend of yours goes there") and
+*leads* (suspicious agent behaviors, fed to later personas as their own idle
+inclinations, so a caller never knows something a patient couldn't). This is
+what catches cross-call contradictions a single conversation can't — the
+practice claiming Nashville in one call and Austin in another, a provider
+whose name renders differently every time it's spoken. The loop closes with
+`hunt`: a generator reads the open leads, authors a brand-new scenario
+through the same loader and validation as the hand-written ones, and dials
+it. The final call of this campaign was designed by the harness itself, and
+it surfaced a third distinct outcome for the same refill request. The bug
+report is produced the same way in reverse: a judge files findings per call
+with verbatim quotes, a merge pass dedups them across calls, and
+deterministic guards keep the harness's own behavior out of the agent's
+report.
