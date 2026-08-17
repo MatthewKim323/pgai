@@ -73,7 +73,9 @@ def build_tts(cfg: Config, scenario: Scenario):
         return ElevenLabsTTSService(
             api_key=cfg.elevenlabs_api_key, voice_id=voice, model="eleven_turbo_v2_5"
         )
-    return DeepgramTTSService(api_key=cfg.deepgram_api_key, voice=voice)
+    return DeepgramTTSService(
+        api_key=cfg.deepgram_api_key, settings=DeepgramTTSService.Settings(voice=voice)
+    )
 
 
 @dataclass
@@ -114,7 +116,15 @@ async def run_call_pipeline(
 
     # defaults to nova-3-general with streaming interim results
     stt = DeepgramSTTService(api_key=cfg.deepgram_api_key)
-    llm = AnthropicLLMService(api_key=cfg.anthropic_api_key, model=cfg.patient_model)
+    # Prompt caching shaves time-to-first-token on every turn after the first
+    # (the persona system prompt dominates the context); max_tokens capped
+    # because phone replies are short and runaway generations block the turn.
+    llm = AnthropicLLMService(
+        api_key=cfg.anthropic_api_key,
+        settings=AnthropicLLMService.Settings(
+            model=cfg.patient_model, enable_prompt_caching=True, max_tokens=300
+        ),
+    )
     tts = build_tts(cfg, scenario)
 
     context = LLMContext(
@@ -165,6 +175,14 @@ async def run_call_pipeline(
         # a phone call has natural silences; don't let idle detection kill it
         idle_timeout_secs=60,
     )
+
+    # The remote side hanging up on us is a normal outcome (and sometimes the
+    # finding itself -- e.g. a transfer to a dead end). Without this, the
+    # websocket dies quietly and the pipeline sits on the idle timeout while
+    # the call's artifacts never get written.
+    @transport.event_handler("on_client_disconnected")
+    async def on_client_disconnected(_transport, _websocket) -> None:
+        await worker.queue_frame(EndFrame())
 
     async def end_call(params: FunctionCallParams) -> None:
         nonlocal ended_by

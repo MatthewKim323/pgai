@@ -49,7 +49,7 @@ def start_server_thread(cfg: Config) -> uvicorn.Server:
 
 
 def find_call_dir(call_sid: str, calls_dir: Path = store.CALLS_DIR,
-                  timeout_secs: float = 30.0) -> Path | None:
+                  timeout_secs: float = 90.0) -> Path | None:
     """Locate the artifact dir the websocket session wrote for this call.
 
     Artifacts land when the pipeline finishes, which can lag the telephony
