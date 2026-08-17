@@ -1,0 +1,34 @@
+[00:02] AGENT: Recorded for quality and training purposes.
+[00:07] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:10] PATIENT: Hi
+[00:12] AGENT: Would you like to create a demo patient profile?
+[00:15] AGENT: I just need your first and last name to get started.
+[00:16] PATIENT: Hi, yes, I'd like to book an appointment. My name is Priya Raman.
+[00:25] AGENT: Your patient profile is set up.
+[00:29] AGENT: And your date of birth is July fourth two thousand for demo purposes. How can I help you today?
+[00:35] PATIENT: Actually, I need to correct that. My date of birth is February ninth, nineteen eighty-eight, not July fourth. Can you update that for me?
+
+And I'm calling because I have wrist pain from my work. I was hoping to get an appointment this Sunday at ten in the morning if that's possible.
+[00:57] AGENT: There are no openings this Sunday.
+[01:00] AGENT: But we do have several options on Monday, August twenty fourth.
+[01:03] AGENT: Would you like a morning slot with doctor Zebigniew Likosky or doctor Kelly Noble, For example, we have eight
+[01:11] AGENT: PM
+[01:12] PATIENT: Oh, I really was hoping for Sunday morning since I work two jobs during the week and that's pretty much the only day I have free. Are you sure there's nothing on Sunday at all? Even just this coming Sunday?
+[01:13] AGENT: eight fifteen AM, and
+[01:16] PATIENT: Oh, um, I really need a Sunday appointment if possible. I work two jobs during the week, so weekdays are really tough for me. Are you sure there's nothing on Sunday at all? Even later in the day would work.
+[01:42] AGENT: I checked for Sunday.
+[01:47] AGENT: August twenty third, and, unfortunately, there are no available appointments day, morning, or afternoon.
+[01:50] AGENT: The soonest openings are on Monday.
+[01:55] AGENT: Would you like to look at early morning or late afternoon Monday slots, or would you prefer I note your request
+[01:59] AGENT: for a Sunday appointment for the office to follow-up if something opens up?
+[02:00] PATIENT: Okay, I understand. Yeah, if you could note that request for a Sunday slot in case something opens up, that would be great. But um, let me also look at those Monday options you mentioned. You said Monday, August twenty fourth? What times did you have available again?
+[02:21] AGENT: We have openings on Monday. August twenty fourth,
+[02:26] AGENT: Would you prefer an early morning or a later time in the day?
+[02:27] PATIENT: Early morning would be better for me if possible. What times do you have in the morning on Monday the twenty fourth?
+[02:37] AGENT: We have an opening at eight AM on Monday. August twenty fourth. Would you like to book that slot?
+[02:42] PATIENT: Yeah, eight AM works. Let me just confirm before I book it—that's Monday, August twenty fourth at eight in the morning, right? And who would I be seeing?
+[02:54] AGENT: Yes.
+[02:56] AGENT: Your appointment would be Monday, August twenty fourth at eight AM
+[03:03] AGENT: with doctor Zebigniew Likoski at Pivot Point Orthopedics.
+[03:05] AGENT: Would you like to confirm this booking?
+[03:07] PATIENT: Yes, that's perfect. Thank you so much for getting me scheduled. I really appreciate your help. Goodbye.

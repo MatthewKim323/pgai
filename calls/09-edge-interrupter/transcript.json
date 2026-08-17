@@ -1,0 +1,248 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Recorded for quality and training purposes.",
+    "ts": 2.981,
+    "stamp": "00:02"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, I heard that. Look, I'm actually double-parked outside, so I gotta make this quick. I'm calling to book an appointment for my back. Lower back pain. Can you get me in this week?",
+    "ts": 4.484,
+    "stamp": "00:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "We can get started. But",
+    "ts": 18.502,
+    "stamp": "00:18"
+  },
+  {
+    "speaker": "patient",
+    "text": "Great. So what do you need from me? Name, date of birth, all that? Yeah, go ahead.",
+    "ts": 19.509,
+    "stamp": "00:19"
+  },
+  {
+    "speaker": "agent",
+    "text": "I'll need to create a demo",
+    "ts": 20.778,
+    "stamp": "00:20"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, okay, but like\u2014can we just skip ahead? I really need an appointment. My phone's almost dead and I'm parked illegally out here. What days do you have open this week?",
+    "ts": 22.226,
+    "stamp": "00:22"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to set up a quick demo profile.",
+    "ts": 43.182,
+    "stamp": "00:43"
+  },
+  {
+    "speaker": "patient",
+    "text": "Marcus Bell. That's M-A-R-C-U-S, B-E-L-L. Now what about availability this week?",
+    "ts": 44.729,
+    "stamp": "00:44"
+  },
+  {
+    "speaker": "agent",
+    "text": "Once I have that, I can check opens for you this week.",
+    "ts": 46.101,
+    "stamp": "00:46"
+  },
+  {
+    "speaker": "patient",
+    "text": "Marcus Bell. That's M-A-R-C-U-S B-E-L-L. Now what about this week\u2014you got anything?",
+    "ts": 47.335,
+    "stamp": "00:47"
+  },
+  {
+    "speaker": "agent",
+    "text": "Pickup.",
+    "ts": 55.254,
+    "stamp": "00:55"
+  },
+  {
+    "speaker": "patient",
+    "text": "What? Pickup? I don't... what are you asking me?",
+    "ts": 56.221,
+    "stamp": "00:56"
+  },
+  {
+    "speaker": "agent",
+    "text": "Marcus Bell.",
+    "ts": 56.252,
+    "stamp": "00:56"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that's me. So do you have openings this week or what?",
+    "ts": 57.161,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "Let me set up your pro",
+    "ts": 57.582,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, yeah, just hurry up. I got maybe two minutes here before a meter maid shows up. What times you got this week?",
+    "ts": 59.031,
+    "stamp": "00:59"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have openings this Tuesday with two providers.",
+    "ts": 78.104,
+    "stamp": "01:18"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, great. Tuesday works. What time and who are the providers?",
+    "ts": 79.133,
+    "stamp": "01:19"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you prefer to see doctor",
+    "ts": 80.377,
+    "stamp": "01:20"
+  },
+  {
+    "speaker": "patient",
+    "text": "Tuesday works. Yeah, yeah, who are the doctors? Just give me the names and I'll take whoever's faster.",
+    "ts": 83.587,
+    "stamp": "01:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "Tuesday, We have doctor",
+    "ts": 92.946,
+    "stamp": "01:32"
+  },
+  {
+    "speaker": "agent",
+    "text": "Zigniew Likoski and doctor Kelly Noble available.",
+    "ts": 97.968,
+    "stamp": "01:37"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, so Zigniew and Kelly Noble. What times do they have open on Tuesday? And which one can see me sooner?",
+    "ts": 99.222,
+    "stamp": "01:39"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to see either one or",
+    "ts": 100.011,
+    "stamp": "01:40"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, sure, whoever. What time on Tuesday? And where\u2014is this at your main location or what? Yeah, okay, so Tuesday. What time slots are open with those two? Just give me the times and I'll grab one.",
+    "ts": 101.014,
+    "stamp": "01:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "On Tuesday at To The Point Orthopedics,",
+    "ts": 122.839,
+    "stamp": "02:02"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait, hold on. To The Point? I thought this was Pivot Point Orthopedics. Are those the same place or\u2014what's the address?",
+    "ts": 124.025,
+    "stamp": "02:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have these times. Doctor. Zigbingo",
+    "ts": 125.613,
+    "stamp": "02:05"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hold on, hold on. You're cutting out a little. Did you say To The Point? I thought this was Pivot Point. And what times are you saying? Can you just give me the times on Tuesday?",
+    "ts": 128.558,
+    "stamp": "02:08"
+  },
+  {
+    "speaker": "agent",
+    "text": "Yes.",
+    "ts": 145.497,
+    "stamp": "02:25"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yes what? Yes it's Pivot Point, or yes those are the times? I didn't catch the times. What times on Tuesday do you have open?",
+    "ts": 146.559,
+    "stamp": "02:26"
+  },
+  {
+    "speaker": "agent",
+    "text": "This is Pivot Point Orthopaedics.",
+    "ts": 147.647,
+    "stamp": "02:27"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, Pivot Point. Got it. So what times on Tuesday do you have with those doctors? Just the times, please.",
+    "ts": 148.584,
+    "stamp": "02:28"
+  },
+  {
+    "speaker": "agent",
+    "text": "On Tuesday, we have openings at ten AM, ten thirty AM,",
+    "ts": 165.456,
+    "stamp": "02:45"
+  },
+  {
+    "speaker": "patient",
+    "text": "Ten AM works. What else? You said you had two times or\u2014is that it, just ten?",
+    "ts": 168.806,
+    "stamp": "02:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "eleven AM, eleven",
+    "ts": 170.026,
+    "stamp": "02:50"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, ten and ten thirty. What else? Do you have anything later in the day?Ten and ten thirty, got it. Anything else on Tuesday or is that it?",
+    "ts": 170.336,
+    "stamp": "02:50"
+  },
+  {
+    "speaker": "patient",
+    "text": "Ten AM works. I'll take ten AM Tuesday. Who's that with\u2014Zigniew or Kelly Noble? And I need to confirm the address real quick.Ten AM Tuesday. That's with who? And where exactly are you located?",
+    "ts": 173.184,
+    "stamp": "02:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your appointment is set for Tuesday at ten AM with",
+    "ts": 203.002,
+    "stamp": "03:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "doctor Zebigniew Lakoski at Pivot Point Orthopaedics.",
+    "ts": 205.485,
+    "stamp": "03:25"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, got it. Tuesday ten AM with Zigniew at Pivot Point. Thanks a lot. I gotta run. Bye.",
+    "ts": 206.678,
+    "stamp": "03:26"
+  }
+]

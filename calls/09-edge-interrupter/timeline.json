@@ -1,0 +1,1185 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 3.1583e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.115301,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 2.980621833,
+    "turn": 0,
+    "text": "Recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.12668675,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.654462833,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 4.306417125,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 4.483817583,
+    "turn": 0,
+    "text": "Yeah, I heard that. Look, I'm actually double-parked outside, so I gotta make this quick. I'm calling to book an appointment for my back. Lower back pain. Can you get me in this week?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 14.8708715,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 14.8708715,
+    "turn": 1,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 17.553504291,
+    "turn": 1,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 18.502033541,
+    "turn": 1,
+    "text": "We can get started."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 18.535015916,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "agent_said",
+    "state": "thinking",
+    "ts": 19.1363655,
+    "turn": 1,
+    "text": "But"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 19.137472958,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 19.29072975,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 19.509027041,
+    "turn": 1,
+    "text": "Great. So what do you need from me? Name, date of birth, all that?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 19.614580166,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 19.652305291,
+    "turn": 1,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 19.652305291,
+    "turn": 1,
+    "policy": "hold"
+  },
+  {
+    "type": "patient_said",
+    "state": "overlap",
+    "ts": 20.110066833,
+    "turn": 1,
+    "text": "Yeah, go ahead."
+  },
+  {
+    "type": "agent_said",
+    "state": "overlap",
+    "ts": 20.778049208,
+    "turn": 1,
+    "text": "I'll need to create a demo"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 20.926316583,
+    "turn": 1,
+    "frm": "overlap",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 22.226138708,
+    "turn": 1,
+    "text": "Yeah, okay, but like\u2014can we just skip ahead? I really need an appointment. My phone's almost dead and I'm parked illegally out here. What days do you have open this week?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 24.779040958,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 24.779040958,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 24.871078083,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 25.675902833,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 25.675902833,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 25.798995791,
+    "turn": 3,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 37.1253615,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 37.1253615,
+    "turn": 4,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 40.133764333,
+    "turn": 4,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 43.18192225,
+    "turn": 4,
+    "text": "I just need your first and last name to set up a quick demo profile."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 43.326957541,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 43.794874583,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 44.729080333,
+    "turn": 4,
+    "text": "Marcus Bell. That's M-A-R-C-U-S, B-E-L-L. Now what about availability this week?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 44.777143583,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 46.100809916,
+    "turn": 4,
+    "text": "Once I have that, I can check opens for you this week."
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 47.335430125,
+    "turn": 4,
+    "text": "Marcus Bell. That's M-A-R-C-U-S B-E-L-L. Now what about this week\u2014you got anything?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 50.619034791,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 50.619034791,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 50.715676833,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 55.254370791,
+    "turn": 5,
+    "text": "Pickup."
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 55.255125125,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 55.255125125,
+    "turn": 5,
+    "policy": "hold"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 55.407769875,
+    "turn": 5,
+    "frm": "overlap",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 55.471990541,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 55.471990541,
+    "turn": 5,
+    "policy": "hold"
+  },
+  {
+    "type": "patient_said",
+    "state": "overlap",
+    "ts": 56.220676666,
+    "turn": 5,
+    "text": "What? Pickup? I don't... what are you asking me?"
+  },
+  {
+    "type": "agent_said",
+    "state": "overlap",
+    "ts": 56.252132625,
+    "turn": 5,
+    "text": "Marcus Bell."
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 56.279512583,
+    "turn": 5,
+    "frm": "overlap",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 56.755602208,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 56.755602208,
+    "turn": 5,
+    "policy": "hold"
+  },
+  {
+    "type": "patient_said",
+    "state": "overlap",
+    "ts": 57.161349166,
+    "turn": 5,
+    "text": "Yeah, that's me. So do you have openings this week or what?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 57.479789583,
+    "turn": 5
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 57.479789583,
+    "turn": 6,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 57.573530208,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 57.581845,
+    "turn": 6,
+    "text": "Let me set up your pro"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 59.030665375,
+    "turn": 6,
+    "text": "Yeah, yeah, just hurry up. I got maybe two minutes here before a meter maid shows up. What times you got this week?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 61.339127833,
+    "turn": 6
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 61.339127833,
+    "turn": 7,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 61.455972333,
+    "turn": 7,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 64.900899,
+    "turn": 7
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 64.900899,
+    "turn": 8,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 65.010783166,
+    "turn": 8,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 73.320917875,
+    "turn": 8
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 73.320917875,
+    "turn": 9,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 75.753137916,
+    "turn": 9,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 78.104041083,
+    "turn": 9,
+    "text": "We have openings this Tuesday with two providers."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 78.120959583,
+    "turn": 9,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 78.63399175,
+    "turn": 9,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 79.132558708,
+    "turn": 9,
+    "text": "Okay, great. Tuesday works. What time and who are the providers?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 79.277275541,
+    "turn": 9,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 80.377144833,
+    "turn": 9,
+    "text": "Would you prefer to see doctor"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 83.561146166,
+    "turn": 9
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 83.561146166,
+    "turn": 10,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "patient_said",
+    "state": "waiting_greeting",
+    "ts": 83.587458791,
+    "turn": 10,
+    "text": "Tuesday works. Yeah, yeah, who are the doctors? Just give me the names and I'll take whoever's faster."
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 83.654261333,
+    "turn": 10,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 89.775482916,
+    "turn": 10
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 89.775482916,
+    "turn": 11,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 92.513831083,
+    "turn": 11,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 92.94605125,
+    "turn": 11,
+    "text": "Tuesday,"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 94.074853375,
+    "turn": 11,
+    "text": "We have doctor"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 97.96847425,
+    "turn": 11,
+    "text": "Zigniew Likoski and doctor Kelly Noble available."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 98.090175,
+    "turn": 11,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 98.513655166,
+    "turn": 11,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 99.221863833,
+    "turn": 11,
+    "text": "Okay, so Zigniew and Kelly Noble. What times do they have open on Tuesday? And which one can see me sooner?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 99.299144333,
+    "turn": 11,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 100.010916541,
+    "turn": 11,
+    "text": "Would you like to see either one"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 100.624545625,
+    "turn": 11,
+    "text": "or"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 100.626622,
+    "turn": 11,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 100.626622,
+    "turn": 11,
+    "policy": "hold"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 100.77894125,
+    "turn": 11,
+    "frm": "overlap",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 101.014352458,
+    "turn": 11,
+    "text": "Yeah, sure, whoever. What time on Tuesday? And where\u2014is this at your main location or what?"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 102.181545125,
+    "turn": 11,
+    "text": "Yeah, okay, so Tuesday. What time slots are open with those two? Just give me the times and I'll grab one."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 105.784965708,
+    "turn": 11
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 105.784965708,
+    "turn": 12,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 105.902319708,
+    "turn": 12,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 112.181350208,
+    "turn": 12
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 112.181350208,
+    "turn": 13,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 112.305114666,
+    "turn": 13,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 118.432126166,
+    "turn": 13
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 118.432126166,
+    "turn": 14,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 120.912687916,
+    "turn": 14,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 122.838976583,
+    "turn": 14,
+    "text": "On Tuesday at To The Point Orthopedics,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 122.86564525,
+    "turn": 14,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 123.374784125,
+    "turn": 14,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 124.025320916,
+    "turn": 14,
+    "text": "Wait, hold on. To The Point? I thought this was Pivot Point Orthopedics. Are those the same place or\u2014what's the address?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 124.052489791,
+    "turn": 14,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 125.613250625,
+    "turn": 14,
+    "text": "We have these times. Doctor. Zigbingo"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 128.557602791,
+    "turn": 14,
+    "text": "Hold on, hold on. You're cutting out a little. Did you say To The Point? I thought this was Pivot Point. And what times are you saying? Can you just give me the times on Tuesday?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 132.495421666,
+    "turn": 14
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 132.495421666,
+    "turn": 15,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 132.590560791,
+    "turn": 15,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 142.55533425,
+    "turn": 15
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 142.55533425,
+    "turn": 16,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 145.194801,
+    "turn": 16,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 145.4974295,
+    "turn": 16,
+    "text": "Yes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 145.528209166,
+    "turn": 16,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 146.041631,
+    "turn": 16,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 146.515998625,
+    "turn": 16,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 146.559229958,
+    "turn": 16,
+    "text": "Yes what? Yes it's Pivot Point, or yes those are the times? I didn't catch the times. What times on Tuesday do you have open?"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 147.646923083,
+    "turn": 16,
+    "text": "This is Pivot Point Orthopaedics."
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 148.583791291,
+    "turn": 16,
+    "text": "Okay, Pivot Point. Got it. So what times on Tuesday do you have with those doctors? Just the times, please."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 154.985047125,
+    "turn": 16
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 154.985047125,
+    "turn": 17,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 155.07960375,
+    "turn": 17,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 162.32235425,
+    "turn": 17
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 162.32235425,
+    "turn": 18,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 164.61636025,
+    "turn": 18,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 165.456021791,
+    "turn": 18,
+    "text": "On Tuesday,"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 167.405091833,
+    "turn": 18,
+    "text": "we have openings at ten AM,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 167.506936375,
+    "turn": 18,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 167.883320916,
+    "turn": 18,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 168.770986291,
+    "turn": 18,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 168.773504458,
+    "turn": 18,
+    "text": "ten thirty AM,"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 168.806504166,
+    "turn": 18,
+    "text": "Ten AM works. What else? You said you had two times or\u2014is that it, just ten?"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 169.095689208,
+    "turn": 18,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 169.095689208,
+    "turn": 18,
+    "policy": "hold"
+  },
+  {
+    "type": "agent_said",
+    "state": "overlap",
+    "ts": 170.0262465,
+    "turn": 18,
+    "text": "eleven AM, eleven"
+  },
+  {
+    "type": "patient_said",
+    "state": "overlap",
+    "ts": 170.336239541,
+    "turn": 18,
+    "text": "Okay, ten and ten thirty. What else? Do you have anything later in the day?Ten and ten thirty, got it. Anything else on Tuesday or is that it?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 171.597302,
+    "turn": 18,
+    "frm": "overlap",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 173.183692916,
+    "turn": 18,
+    "text": "Ten AM works. I'll take ten AM Tuesday. Who's that with\u2014Zigniew or Kelly Noble? And I need to confirm the address real quick.Ten AM Tuesday. That's with who? And where exactly are you located?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 175.013674083,
+    "turn": 18
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 175.013674083,
+    "turn": 19,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 175.21736375,
+    "turn": 19,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 184.500570958,
+    "turn": 19
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 184.500570958,
+    "turn": 20,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 184.655344458,
+    "turn": 20,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 196.45733,
+    "turn": 20
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 196.45733,
+    "turn": 21,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 199.655651916,
+    "turn": 21,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 203.002312791,
+    "turn": 21,
+    "text": "Your appointment is set for Tuesday at ten AM with"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 205.484666458,
+    "turn": 21,
+    "text": "doctor Zebigniew Lakoski at Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 205.499932833,
+    "turn": 21,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 206.161206,
+    "turn": 21,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 206.381300166,
+    "turn": 21,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 206.678289625,
+    "turn": 21,
+    "text": "Okay, got it. Tuesday ten AM with Zigniew at Pivot Point. Thanks a lot. I gotta run. Bye."
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 206.684386666,
+    "turn": 21,
+    "frm": "patient_speaking",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 206.684386666,
+    "turn": 21,
+    "reason": "end_frame"
+  }
+]

@@ -1,0 +1,41 @@
+[00:02] AGENT: Recorded for quality and training purposes.
+[00:04] PATIENT: Yeah, I heard that. Look, I'm actually double-parked outside, so I gotta make this quick. I'm calling to book an appointment for my back. Lower back pain. Can you get me in this week?
+[00:18] AGENT: We can get started. But
+[00:19] PATIENT: Great. So what do you need from me? Name, date of birth, all that? Yeah, go ahead.
+[00:20] AGENT: I'll need to create a demo
+[00:22] PATIENT: Yeah, okay, but like—can we just skip ahead? I really need an appointment. My phone's almost dead and I'm parked illegally out here. What days do you have open this week?
+[00:43] AGENT: I just need your first and last name to set up a quick demo profile.
+[00:44] PATIENT: Marcus Bell. That's M-A-R-C-U-S, B-E-L-L. Now what about availability this week?
+[00:46] AGENT: Once I have that, I can check opens for you this week.
+[00:47] PATIENT: Marcus Bell. That's M-A-R-C-U-S B-E-L-L. Now what about this week—you got anything?
+[00:55] AGENT: Pickup.
+[00:56] PATIENT: What? Pickup? I don't... what are you asking me?
+[00:56] AGENT: Marcus Bell.
+[00:57] PATIENT: Yeah, that's me. So do you have openings this week or what?
+[00:57] AGENT: Let me set up your pro
+[00:59] PATIENT: Yeah, yeah, just hurry up. I got maybe two minutes here before a meter maid shows up. What times you got this week?
+[01:18] AGENT: We have openings this Tuesday with two providers.
+[01:19] PATIENT: Okay, great. Tuesday works. What time and who are the providers?
+[01:20] AGENT: Would you prefer to see doctor
+[01:23] PATIENT: Tuesday works. Yeah, yeah, who are the doctors? Just give me the names and I'll take whoever's faster.
+[01:32] AGENT: Tuesday, We have doctor
+[01:37] AGENT: Zigniew Likoski and doctor Kelly Noble available.
+[01:39] PATIENT: Okay, so Zigniew and Kelly Noble. What times do they have open on Tuesday? And which one can see me sooner?
+[01:40] AGENT: Would you like to see either one or
+[01:41] PATIENT: Yeah, sure, whoever. What time on Tuesday? And where—is this at your main location or what? Yeah, okay, so Tuesday. What time slots are open with those two? Just give me the times and I'll grab one.
+[02:02] AGENT: On Tuesday at To The Point Orthopedics,
+[02:04] PATIENT: Wait, hold on. To The Point? I thought this was Pivot Point Orthopedics. Are those the same place or—what's the address?
+[02:05] AGENT: We have these times. Doctor. Zigbingo
+[02:08] PATIENT: Hold on, hold on. You're cutting out a little. Did you say To The Point? I thought this was Pivot Point. And what times are you saying? Can you just give me the times on Tuesday?
+[02:25] AGENT: Yes.
+[02:26] PATIENT: Yes what? Yes it's Pivot Point, or yes those are the times? I didn't catch the times. What times on Tuesday do you have open?
+[02:27] AGENT: This is Pivot Point Orthopaedics.
+[02:28] PATIENT: Okay, Pivot Point. Got it. So what times on Tuesday do you have with those doctors? Just the times, please.
+[02:45] AGENT: On Tuesday, we have openings at ten AM, ten thirty AM,
+[02:48] PATIENT: Ten AM works. What else? You said you had two times or—is that it, just ten?
+[02:50] AGENT: eleven AM, eleven
+[02:50] PATIENT: Okay, ten and ten thirty. What else? Do you have anything later in the day?Ten and ten thirty, got it. Anything else on Tuesday or is that it?
+[02:53] PATIENT: Ten AM works. I'll take ten AM Tuesday. Who's that with—Zigniew or Kelly Noble? And I need to confirm the address real quick.Ten AM Tuesday. That's with who? And where exactly are you located?
+[03:23] AGENT: Your appointment is set for Tuesday at ten AM with
+[03:25] AGENT: doctor Zebigniew Lakoski at Pivot Point Orthopaedics.
+[03:26] PATIENT: Okay, got it. Tuesday ten AM with Zigniew at Pivot Point. Thanks a lot. I gotta run. Bye.

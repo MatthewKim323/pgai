@@ -1,0 +1,194 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Recorded for quality and training purposes.",
+    "ts": 2.979,
+    "stamp": "00:02"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 7.63,
+    "stamp": "00:07"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi",
+    "ts": 10.076,
+    "stamp": "00:10"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 12.533,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 15.217,
+    "stamp": "00:15"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, I'd like to book an appointment. My name is Priya Raman.",
+    "ts": 16.49,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 25.453,
+    "stamp": "00:25"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth two thousand for demo purposes. How can I help you today?",
+    "ts": 29.842,
+    "stamp": "00:29"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, I need to correct that. My date of birth is February ninth, nineteen eighty-eight, not July fourth. Can you update that for me?\n\nAnd I'm calling because I have wrist pain from my work. I was hoping to get an appointment this Sunday at ten in the morning if that's possible.",
+    "ts": 35.101,
+    "stamp": "00:35"
+  },
+  {
+    "speaker": "agent",
+    "text": "There are no openings this Sunday.",
+    "ts": 57.495,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "But we do have several options on Monday, August twenty fourth.",
+    "ts": 60.844,
+    "stamp": "01:00"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like a morning slot with doctor Zebigniew Likosky or doctor Kelly Noble, For example, we have eight",
+    "ts": 63.727,
+    "stamp": "01:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "PM",
+    "ts": 71.53,
+    "stamp": "01:11"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh, I really was hoping for Sunday morning since I work two jobs during the week and that's pretty much the only day I have free. Are you sure there's nothing on Sunday at all? Even just this coming Sunday?",
+    "ts": 72.428,
+    "stamp": "01:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "eight fifteen AM, and",
+    "ts": 73.219,
+    "stamp": "01:13"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh, um, I really need a Sunday appointment if possible. I work two jobs during the week, so weekdays are really tough for me. Are you sure there's nothing on Sunday at all? Even later in the day would work.",
+    "ts": 76.252,
+    "stamp": "01:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "I checked for Sunday.",
+    "ts": 102.879,
+    "stamp": "01:42"
+  },
+  {
+    "speaker": "agent",
+    "text": "August twenty third, and, unfortunately, there are no available appointments day, morning, or afternoon.",
+    "ts": 107.98,
+    "stamp": "01:47"
+  },
+  {
+    "speaker": "agent",
+    "text": "The soonest openings are on Monday.",
+    "ts": 110.634,
+    "stamp": "01:50"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to look at early morning or late afternoon Monday slots, or would you prefer I note your request",
+    "ts": 115.633,
+    "stamp": "01:55"
+  },
+  {
+    "speaker": "agent",
+    "text": "for a Sunday appointment for the office to follow-up if something opens up?",
+    "ts": 119.38,
+    "stamp": "01:59"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, I understand. Yeah, if you could note that request for a Sunday slot in case something opens up, that would be great. But um, let me also look at those Monday options you mentioned. You said Monday, August twenty fourth? What times did you have available again?",
+    "ts": 120.989,
+    "stamp": "02:00"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have openings on Monday. August twenty fourth,",
+    "ts": 141.826,
+    "stamp": "02:21"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you prefer an early morning or a later time in the day?",
+    "ts": 146.37,
+    "stamp": "02:26"
+  },
+  {
+    "speaker": "patient",
+    "text": "Early morning would be better for me if possible. What times do you have in the morning on Monday the twenty fourth?",
+    "ts": 147.55,
+    "stamp": "02:27"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have an opening at eight AM on Monday. August twenty fourth. Would you like to book that slot?",
+    "ts": 157.305,
+    "stamp": "02:37"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, eight AM works. Let me just confirm before I book it\u2014that's Monday, August twenty fourth at eight in the morning, right? And who would I be seeing?",
+    "ts": 162.8,
+    "stamp": "02:42"
+  },
+  {
+    "speaker": "agent",
+    "text": "Yes.",
+    "ts": 174.693,
+    "stamp": "02:54"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your appointment would be Monday, August twenty fourth at eight AM",
+    "ts": 176.971,
+    "stamp": "02:56"
+  },
+  {
+    "speaker": "agent",
+    "text": "with doctor Zebigniew Likoski at Pivot Point Orthopedics.",
+    "ts": 183.935,
+    "stamp": "03:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to confirm this booking?",
+    "ts": 185.978,
+    "stamp": "03:05"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yes, that's perfect. Thank you so much for getting me scheduled. I really appreciate your help. Goodbye.",
+    "ts": 187.153,
+    "stamp": "03:07"
+  }
+]

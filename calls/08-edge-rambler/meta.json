@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:27:30+00:00",
+  "scenario": "edge-rambler",
+  "title": "Chatty elderly patient buries a refill request in stories",
+  "category": "edge",
+  "behavior": "rambler",
+  "barge_in_policy": "yield",
+  "call_sid": "CAd52b9c4090d81154fdae6ba71c31bdc0",
+  "stream_sid": "MZffe9363f7a3981ffd34fed0c928e8952",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

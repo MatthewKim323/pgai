@@ -52,6 +52,7 @@ from caller import knowledge
 from caller.config import Config
 from caller.observer import TurnStateObserver
 from caller.scenario import Scenario, build_system_prompt
+from caller.speculative import SpeculationTap, SpeculativeAnthropicLLMService
 from caller.turnstate import BargeInPolicy, TurnStateMachine
 
 #: time between the "wrap up now" nudge and the hard EndFrame, so a wedged
@@ -124,12 +125,14 @@ async def run_call_pipeline(
     # Prompt caching shaves time-to-first-token on every turn after the first
     # (the persona system prompt dominates the context); max_tokens capped
     # because phone replies are short and runaway generations block the turn.
-    llm = AnthropicLLMService(
-        api_key=cfg.anthropic_api_key,
-        settings=AnthropicLLMService.Settings(
-            model=cfg.patient_model, enable_prompt_caching=True, max_tokens=300
-        ),
+    # SPECULATIVE=1 swaps in the subclass that pre-starts the request on final
+    # STT segments, before turn-detection declares the agent done (see
+    # speculative.py).
+    llm_settings = AnthropicLLMService.Settings(
+        model=cfg.patient_model, enable_prompt_caching=True, max_tokens=300
     )
+    llm_cls = SpeculativeAnthropicLLMService if cfg.speculative else AnthropicLLMService
+    llm = llm_cls(api_key=cfg.anthropic_api_key, settings=llm_settings)
     tts = build_tts(cfg, scenario)
 
     context = LLMContext(
@@ -176,17 +179,20 @@ async def run_call_pipeline(
 
     aggregators = LLMContextAggregatorPair(context, user_params=user_params)
 
-    pipeline = Pipeline(
-        [
-            transport.input(),
-            stt,
-            aggregators.user(),
-            llm,
-            tts,
-            transport.output(),
-            aggregators.assistant(),
-        ]
-    )
+    stages = [
+        transport.input(),
+        stt,
+        aggregators.user(),
+        llm,
+        tts,
+        transport.output(),
+        aggregators.assistant(),
+    ]
+    if cfg.speculative:
+        # tap sits between STT and the aggregator so it sees final segments
+        # the moment they land
+        stages.insert(2, SpeculationTap(llm, context))
+    pipeline = Pipeline(stages)
 
     worker = PipelineWorker(
         pipeline,

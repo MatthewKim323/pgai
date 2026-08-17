@@ -1,0 +1,100 @@
+{
+  "call_duration_secs": 263.329,
+  "completed_turns": 9,
+  "interruptions": 3,
+  "patient": {
+    "per_turn": [
+      {
+        "turn": 0,
+        "interrupted": true,
+        "llm_first_token": 0.645,
+        "response_latency": 1.083,
+        "speech_duration": 15.146
+      },
+      {
+        "turn": 1,
+        "interrupted": false,
+        "llm_first_token": 0.681,
+        "response_latency": 1.076,
+        "speech_duration": 39.403
+      },
+      {
+        "turn": 2,
+        "interrupted": true,
+        "response_latency": 1.044,
+        "speech_duration": 28.153
+      },
+      {
+        "turn": 3,
+        "interrupted": true,
+        "llm_first_token": 0.693,
+        "response_latency": 1.086,
+        "speech_duration": 1.511
+      },
+      {
+        "turn": 4,
+        "interrupted": false,
+        "llm_first_token": 0.524,
+        "response_latency": 0.942,
+        "speech_duration": 8.405
+      },
+      {
+        "turn": 5,
+        "interrupted": false,
+        "llm_first_token": 0.592,
+        "response_latency": 0.983,
+        "speech_duration": 28.924
+      },
+      {
+        "turn": 6,
+        "interrupted": false,
+        "llm_first_token": 0.661,
+        "response_latency": 1.139,
+        "speech_duration": 19.125
+      },
+      {
+        "turn": 7,
+        "interrupted": false,
+        "llm_first_token": 0.654,
+        "response_latency": 1.249,
+        "speech_duration": 21.495
+      },
+      {
+        "turn": 8,
+        "interrupted": false,
+        "response_latency": 1.238
+      }
+    ],
+    "response_latency": {
+      "count": 9,
+      "p50": 1.083,
+      "p95": 1.249,
+      "max": 1.249,
+      "mean": 1.093
+    },
+    "llm_first_token": {
+      "count": 7,
+      "p50": 0.654,
+      "p95": 0.693,
+      "max": 0.693,
+      "mean": 0.636
+    }
+  },
+  "agent_under_test": {
+    "response_gaps": [
+      0.173,
+      2.717,
+      2.599,
+      3.288,
+      3.624,
+      2.764
+    ],
+    "response_gap": {
+      "count": 6,
+      "p50": 2.74,
+      "p95": 3.624,
+      "max": 3.624,
+      "mean": 2.528
+    }
+  }
+}

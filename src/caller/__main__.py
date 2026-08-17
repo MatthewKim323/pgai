@@ -120,6 +120,15 @@ def _cmd_knowledge(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_latency(args: argparse.Namespace) -> int:
+    from caller.analyze.latency import collect, render
+
+    path = render(collect())
+    print(path.read_text())
+    print(f"written to {path}")
+    return 0
+
+
 def _cmd_hunt(args: argparse.Namespace) -> int:
     import anthropic
 
@@ -169,6 +178,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser(
         "knowledge", help="show the campaign's cross-call memory"
     ).set_defaults(fn=_cmd_knowledge)
+
+    sub.add_parser(
+        "latency", help="render the cross-call latency report"
+    ).set_defaults(fn=_cmd_latency)
 
     p_hunt = sub.add_parser("hunt", help="author a scenario from the open leads and run it")
     p_hunt.add_argument("--no-call", action="store_true", help="generate the YAML only")

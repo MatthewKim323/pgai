@@ -75,6 +75,54 @@
     {
       "text": "Agent asks for reason before canceling appointments",
       "source": "05-cancel"
+    },
+    {
+      "text": "Provider name: Doctor Zebigniew Likoski",
+      "source": "07-edge-weekend-booking"
+    },
+    {
+      "text": "Monday, August 24 appointments available: 8 AM",
+      "source": "07-edge-weekend-booking"
+    },
+    {
+      "text": "Sunday appointments are not available (confirmed for at least August 23)",
+      "source": "07-edge-weekend-booking"
+    },
+    {
+      "text": "Agent offered to create a 'dental patient profile' (likely meant 'patient profile' -- possible speech recognition error or confusion about service type)",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Provider name: Doctor Dugi Hauser (agent spelled this version late in call)",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent documented refill request and patient concerns for clinic support team review",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Clinic support team expected to follow up with patient directly regarding refills and prescription issues",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent estimated clinic support team follow-up within a few days",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent initially misspoke or was misheard saying 'To The Point Orthopedics' but clarified the correct name is 'Pivot Point Orthopaedics'",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Tuesday appointments include 10 AM and 10:30 AM availability (additional time slot not previously documented)",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Tuesday appointments include 11 AM availability (additional time slot not previously documented)",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Provider name: Doctor Zebigniew Lakoski (different spelling variant from previously documented 'Zebigniew Likoski')",
+      "source": "09-edge-interrupter"
     }
   ],
   "leads": [
@@ -121,6 +169,54 @@
     {
       "text": "Agent can cancel multiple appointments in single call -- test edge cases like attempting to cancel non-existent appointments or testing cancellation process limitations",
       "source": "05-cancel"
+    },
+    {
+      "text": "Agent offers to note Sunday appointment requests for follow-up if something opens up -- verify if office actually follows up on these requests",
+      "source": "07-edge-weekend-booking"
+    },
+    {
+      "text": "Agent mentioned 'doctor Kelly Noble' as an available provider option but never confirmed this provider exists or has appointments -- test if this provider is real or if agent generated a false name",
+      "source": "07-edge-weekend-booking"
+    },
+    {
+      "text": "Agent initially said patient's DOB was 'July fourth thousand for demo purposes' -- clarify if agent correctly interprets placeholder date instructions or if this is a mishandling of demo account setup",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent said medication not visible in chart when patient requested celecoxib refill, but patient claims taking it for 2+ years -- test if refill requests for established medications are being properly escalated or if medication records are incomplete",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent provided patient's phone number (657-566-5136) that patient immediately corrected -- verify if agent has access to correct stored contact information or if this represents a data accuracy problem",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent said 'It's possible' to patient's question about provider, leaving answer ambiguous -- test if agent can clearly confirm or deny provider assignments without vague responses",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent initially said 'doctor Judy Hauser' then later corrected to 'doctor Dugi Hauser' within same call -- clarify if agent has inconsistent data or if these are spelling variation issues affecting provider matching",
+      "source": "08-edge-rambler"
+    },
+    {
+      "text": "Agent struggled significantly with call flow when patient interrupted with time-sensitive requests (double-parked, low battery) -- test how agent handles impatient callers and multiple simultaneous questions",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Agent said 'Pickup' in response to patient name confirmation, which was confusing and unexplained -- clarify what this utterance was intended to mean",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Agent offered 'doctor Kelly Noble' as available provider on Tuesday but previously marked as unverified -- verify if Kelly Noble is an actual provider or if agent generated a false name again",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Provider name spelling remains inconsistent: 'Zigniew Likoski' mentioned earlier in call, then 'Zigbingo' (garbled), then 'Zebigniew Lakoski' in confirmation -- verify correct spelling and test if agent has reliable provider data",
+      "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Agent appeared to struggle with audio clarity or call quality during patient requests for information ('cutting out a little') -- test if agent reliably conveys information under poor audio conditions",
+      "source": "09-edge-interrupter"
     }
   ]
 }

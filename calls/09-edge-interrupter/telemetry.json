@@ -1,0 +1,105 @@
+{
+  "call_duration_secs": 206.684,
+  "completed_turns": 9,
+  "interruptions": 4,
+  "patient": {
+    "per_turn": [
+      {
+        "turn": 0,
+        "interrupted": false,
+        "llm_first_token": 0.779,
+        "response_latency": 1.18,
+        "speech_duration": 10.564
+      },
+      {
+        "turn": 1,
+        "interrupted": true,
+        "response_latency": 0.324,
+        "speech_duration": 5.164
+      },
+      {
+        "turn": 4,
+        "interrupted": false,
+        "llm_first_token": 0.986,
+        "response_latency": 1.45,
+        "speech_duration": 5.842
+      },
+      {
+        "turn": 9,
+        "interrupted": false,
+        "llm_first_token": 0.793,
+        "response_latency": 1.156,
+        "speech_duration": 4.284
+      },
+      {
+        "turn": 11,
+        "interrupted": true,
+        "llm_first_token": 0.77,
+        "response_latency": 1.209,
+        "speech_duration": 6.486
+      },
+      {
+        "turn": 14,
+        "interrupted": false,
+        "llm_first_token": 0.757,
+        "response_latency": 1.187,
+        "speech_duration": 8.443
+      },
+      {
+        "turn": 16,
+        "interrupted": false,
+        "llm_first_token": 0.596,
+        "response_latency": 0.988,
+        "speech_duration": 8.469
+      },
+      {
+        "turn": 18,
+        "interrupted": true,
+        "llm_first_token": 0.896,
+        "response_latency": 1.264,
+        "speech_duration": 6.243
+      },
+      {
+        "turn": 21,
+        "interrupted": false,
+        "llm_first_token": 0.775,
+        "response_latency": 0.881
+      }
+    ],
+    "response_latency": {
+      "count": 9,
+      "p50": 1.18,
+      "p95": 1.45,
+      "max": 1.45,
+      "mean": 1.071
+    },
+    "llm_first_token": {
+      "count": 8,
+      "p50": 0.777,
+      "p95": 0.986,
+      "max": 0.986,
+      "mean": 0.794
+    }
+  },
+  "agent_under_test": {
+    "response_gaps": [
+      0.115,
+      2.683,
+      3.008,
+      6.861,
+      2.432,
+      2.738,
+      2.481,
+      2.639,
+      2.294,
+      3.198
+    ],
+    "response_gap": {
+      "count": 10,
+      "p50": 2.661,
+      "p95": 6.861,
+      "max": 6.861,
+      "mean": 2.845
+    }
+  }
+}

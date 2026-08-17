@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:22:24+00:00",
+  "scenario": "edge-weekend-booking",
+  "title": "Patient insists on a Sunday appointment",
+  "category": "edge",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CAff478c2e8d836ce7fe7128c52a824c11",
+  "stream_sid": "MZe1a70d2521d6d1a322a1a431d06fed51",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

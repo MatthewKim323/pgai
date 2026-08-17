@@ -1,0 +1,898 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 3.1666e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.114026,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 2.979122416,
+    "turn": 0,
+    "text": "Recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.106027333,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.654350625,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 7.629759125,
+    "turn": 0,
+    "text": "Thank you for"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 9.418235458,
+    "turn": 0,
+    "text": "calling Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 9.448105583,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 10.048928208,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 10.076102791,
+    "turn": 0,
+    "text": "Hi"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 12.532789458,
+    "turn": 0,
+    "text": "Would you like to create a demo patient profile?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 12.548653958,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 12.948445583,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 15.217046666,
+    "turn": 0,
+    "text": "I just need your first and last name to get started."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 15.347000875,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 16.490459083,
+    "turn": 0,
+    "text": "Hi, yes, I'd like to book an appointment. My name is Priya Raman."
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 16.57756225,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 20.781971958,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 20.781971958,
+    "turn": 1,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 24.997456625,
+    "turn": 1,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 25.45278025,
+    "turn": 1,
+    "text": "Your"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 27.373386958,
+    "turn": 1,
+    "text": "patient profile is set up."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 27.403956458,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 27.836611833,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 29.841540708,
+    "turn": 1,
+    "text": "And your date of birth is July fourth"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 29.869811,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 30.156758375,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 31.741843958,
+    "turn": 1,
+    "text": "two thousand for demo purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 31.928944083,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 32.357398875,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 33.312891375,
+    "turn": 1,
+    "text": "How can I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 33.471496375,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 34.652223166,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 35.101070291,
+    "turn": 1,
+    "text": "Actually, I need to correct that. My date of birth is February ninth, nineteen eighty-eight, not July fourth. Can you update that for me?\n\nAnd I'm calling because I have wrist pain from my work. I was hoping to get an appointment this Sunday at ten in the morning if that's possible."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 50.296183083,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 50.296183083,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 55.443054333,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 57.495503583,
+    "turn": 2,
+    "text": "There are no openings this Sunday."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 57.691177583,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 57.903362958,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 60.844458041,
+    "turn": 2,
+    "text": "But we do have several options on Monday, August twenty fourth."
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 63.726814,
+    "turn": 2,
+    "text": "Would you like a morning slot with doctor"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 65.37232375,
+    "turn": 2,
+    "text": "Zebigniew Likosky"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 67.085956083,
+    "turn": 2,
+    "text": "or doctor Kelly Noble,"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 68.966315541,
+    "turn": 2,
+    "text": "For example, we have"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 69.32136225,
+    "turn": 2,
+    "text": "eight"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 71.01084975,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 71.011050083,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 71.530217416,
+    "turn": 2,
+    "text": "PM"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 72.314074708,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 72.427824166,
+    "turn": 2,
+    "text": "Oh, I really was hoping for Sunday morning since I work two jobs during the week and that's pretty much the only day I have free. Are you sure there's nothing on Sunday at all? Even just this coming Sunday?"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 73.218891708,
+    "turn": 2,
+    "text": "eight fifteen AM,"
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 73.674881208,
+    "turn": 2,
+    "text": "and"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 76.251959708,
+    "turn": 2,
+    "text": "Oh, um, I really need a Sunday appointment if possible. I work two jobs during the week, so weekdays are really tough for me. Are you sure there's nothing on Sunday at all? Even later in the day would work."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 83.076904625,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 83.076904625,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 83.189669583,
+    "turn": 3,
+    "frm": "waiting_greeting",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 98.91374475,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 98.91374475,
+    "turn": 4,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 101.5969655,
+    "turn": 4,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 102.879383583,
+    "turn": 4,
+    "text": "I checked for Sunday."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 103.013053833,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 103.136822166,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 107.980120541,
+    "turn": 4,
+    "text": "August twenty third, and, unfortunately, there are no available appointments"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 108.529214125,
+    "turn": 4,
+    "text": "day, morning, or afternoon."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 108.6688945,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 108.936812541,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 110.633619125,
+    "turn": 4,
+    "text": "The soonest openings are on Monday."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 110.634182458,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 111.018638541,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 115.633264875,
+    "turn": 4,
+    "text": "Would you like to look at early morning or late afternoon Monday slots, or would you"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 115.887465458,
+    "turn": 4,
+    "text": "prefer I note your request"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 115.907807958,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 116.099036333,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 119.379977583,
+    "turn": 4,
+    "text": "for a Sunday appointment for the office to follow-up if something opens up?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 119.549379208,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 120.81648075,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 120.989111166,
+    "turn": 4,
+    "text": "Okay, I understand. Yeah, if you could note that request for a Sunday slot in case something opens up, that would be great. But um, let me also look at those Monday options you mentioned. You said Monday, August twenty fourth? What times did you have available again?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 137.78006625,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 137.78006625,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 140.317266375,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 141.826259125,
+    "turn": 5,
+    "text": "We have openings on Monday."
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 143.020214833,
+    "turn": 5,
+    "text": "August twenty fourth,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 143.05120125,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 143.45865025,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 146.3695515,
+    "turn": 5,
+    "text": "Would you prefer an early morning or a later time in the day?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 146.653699583,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 147.550167416,
+    "turn": 5,
+    "text": "Early morning would be better for me if possible. What times do you have in the morning on Monday the twenty fourth?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 147.64255525,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 153.405255541,
+    "turn": 5
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 153.405255541,
+    "turn": 6,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 155.944172375,
+    "turn": 6,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 157.30510075,
+    "turn": 6,
+    "text": "We have an opening at"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 158.077387125,
+    "turn": 6,
+    "text": "eight AM on Monday."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 158.208305458,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 158.335812166,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 159.323725833,
+    "turn": 6,
+    "text": "August twenty fourth."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 159.349896166,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 159.876651291,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 161.179064666,
+    "turn": 6,
+    "text": "Would you like to book that slot?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 161.181929833,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 162.799999875,
+    "turn": 6,
+    "text": "Yeah, eight AM works. Let me just confirm before I book it\u2014that's Monday, August twenty fourth at eight in the morning, right? And who would I be seeing?"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 162.83784325,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 171.722499625,
+    "turn": 6
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 171.722499625,
+    "turn": 7,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 174.378978625,
+    "turn": 7,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 174.692723666,
+    "turn": 7,
+    "text": "Yes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 174.730666583,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 175.178056375,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 176.971213708,
+    "turn": 7,
+    "text": "Your appointment would be Monday,"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 178.536191208,
+    "turn": 7,
+    "text": "August twenty fourth at"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 179.580238875,
+    "turn": 7,
+    "text": "eight AM"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 183.934751166,
+    "turn": 7,
+    "text": "with doctor Zebigniew Likoski at Pivot Point Orthopedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 184.030686875,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 184.558951416,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 185.978079583,
+    "turn": 7,
+    "text": "Would you like to confirm this booking?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 186.109710833,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 187.153206875,
+    "turn": 7,
+    "text": "Yes, that's perfect. Thank you so much for getting me scheduled. I really appreciate your help. Goodbye."
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 187.156731833,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 187.156731833,
+    "turn": 7,
+    "reason": "end_frame"
+  }
+]

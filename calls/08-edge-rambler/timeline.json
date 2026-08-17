@@ -1,0 +1,1075 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 3.5e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.173288459,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 3.066884334,
+    "turn": 0,
+    "text": "May be recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.207666542,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.772730209,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 9.599940084,
+    "turn": 0,
+    "text": "Thank you for calling Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 9.615767584,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 10.319981542,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 12.214473459,
+    "turn": 0,
+    "text": "Would you like to create a dental patient profile?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 12.326001459,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 12.77760975,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 14.842089584,
+    "turn": 0,
+    "text": "I just need your first and last name to get started."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 14.934030375,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 16.0166155,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 17.609209542,
+    "turn": 0,
+    "text": "Oh, hello there! Yes, thank you for picking up. My name is Eleanor Whitfield. \n\nBut I have to say, before we dive into all that paperwork, you won't believe the week I've had with my garden. The tomatoes have just been spectacular this year -- I planted them a bit later than usual, figured with the heat we've been getting they'd do better. And they have! Though I've got to tell you, the rabbits have discovered them too, so I'm out there practically every morning shooing them away. Gets me moving, anyway, which is good for the joints.\n\nSo yes, Eleanor Whitfield. W-H-I-T-F-I-E-L-D."
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 31.155724917,
+    "turn": 0,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 31.155724917,
+    "turn": 0,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 31.155724917,
+    "turn": 0
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 31.162679417,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 31.162679417,
+    "turn": 1,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 32.599534209,
+    "turn": 1,
+    "text": "Your patient profile is up."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 32.6475565,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 33.261255834,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 34.951027667,
+    "turn": 1,
+    "text": "Your date of birth is July fourth"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 34.964616792,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 35.072836417,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 36.6437515,
+    "turn": 1,
+    "text": "thousand for demo purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 36.666047417,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 37.356033125,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 38.4375385,
+    "turn": 1,
+    "text": "How may I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 38.538492084,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 39.614912459,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 41.85889825,
+    "turn": 1,
+    "text": "Oh, well, that's not quite right, dear. My date of birth is August thirtieth, nineteen forty-six. Not July fourth. Let me just make sure you've got that correct before we go any further -- August thirtieth, nineteen forty-six. I want to make sure your records are straight, you know how it is.\n\nBut anyway, the reason I'm calling today is I need a refill on my celecoxib. That's the two hundred milligram tablets I take for my arthritis. My knees have been acting up something fierce, especially with all the bending down I do in that garden I was just telling you about. The weeding alone just kills me some days. I ran out about a week ago and I've been making do, but I really do need to get that prescription refilled if you can help me with that."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 79.017468625,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 79.017468625,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 81.73399625,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 84.66401175,
+    "turn": 2,
+    "text": "I don't see any medications on your chart that I can refill right now."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 84.68606225,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 85.1533565,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 88.247691625,
+    "turn": 2,
+    "text": "If you'd like, I can connect you to our patient support team for more help."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 88.331466417,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 88.972798334,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 88.975943,
+    "turn": 2,
+    "text": "Oh"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 90.496597084,
+    "turn": 2,
+    "text": "Would you like to speak with someone directly?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 90.625755584,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 91.669989667,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 93.756426292,
+    "turn": 2,
+    "text": "Well, that's strange. I've been taking that celecoxib for quite a while now -- must be at least a couple years, maybe longer. Let me think... oh, it was right around the time my cat Gravy had that urinary tract infection, so that would've been... gosh, maybe two thousand twenty-two or twenty-three? Anyway, the point is, I know I'm on it because I take it every single day. Could it be under a different name, maybe? Or perhaps my doctor needs to send in a new prescription? Who's my provider there, by the way? I want to make sure we're looking at the right account. My friend mentioned she sees Doctor Zebigniew there -- is that who I see, or am I mixed up?"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 119.816685209,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 119.816685209,
+    "turn": 2,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 119.816685209,
+    "turn": 2
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 119.822652042,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 119.822652042,
+    "turn": 3,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 120.199838042,
+    "turn": 3,
+    "text": "It's possible"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 120.229175334,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 121.314703875,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 122.499603667,
+    "turn": 3,
+    "text": "It's possible? Well, I suppose that means yes, then? I do see Doctor Zebigniew? Or -- um, I'm sorry, how do you spell that last name? I want to make sure I'm getting it right. And yes, maybe that's the issue -- perhaps he needs to send in a fresh prescription for the celecoxib. Could you maybe reach out to his office or give me a number to call him directly? I really do need to get that medication sorted out soon. The arthritis doesn't wait around, you know."
+  },
+  {
+    "type": "agent_said",
+    "state": "patient_speaking",
+    "ts": 122.819742917,
+    "turn": 3,
+    "text": "it's"
+  },
+  {
+    "type": "state_changed",
+    "state": "overlap",
+    "ts": 122.820751042,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "overlap"
+  },
+  {
+    "type": "agent_barge_in",
+    "state": "overlap",
+    "ts": 122.820751042,
+    "turn": 3,
+    "policy": "yield"
+  },
+  {
+    "type": "cancel_patient_speech",
+    "state": "overlap",
+    "ts": 122.820751042,
+    "turn": 3
+  },
+  {
+    "type": "turn_complete",
+    "state": "overlap",
+    "ts": 122.825600917,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 122.825600917,
+    "turn": 4,
+    "frm": "overlap",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 122.974069,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 123.916117542,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 124.009912584,
+    "turn": 4,
+    "text": "It's what, dear? I'm sorry, the line got a bit fuzzy there. Could you spell out that last name for me? I want to make sure we've got the right doctor on my chart."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 132.320711834,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 132.320711834,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 134.91924025,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 137.164713834,
+    "turn": 5,
+    "text": "Your main doctor here is doctor Judy Hauser."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 137.285667625,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 137.7353,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 139.957248,
+    "turn": 5,
+    "text": "Would you like to confirm anything else about your chart?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 140.228925667,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 140.655464917,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 141.466745834,
+    "turn": 5,
+    "text": "Or your prescription?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 141.4857795,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 142.468559875,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 143.544639,
+    "turn": 5,
+    "text": "Oh, Judy Hauser! All right, that's helpful. So it's Doctor Judy Hauser I see here. Well, that's different from what my friend mentioned, but no matter. So if my celecoxib isn't showing up in your system, do you think Doctor Hauser needs to send in a new prescription, or should I call her office directly? I'm still taking it every day, two hundred milligrams, so I really do need to get that straightened out. It's for my arthritis, you see. Been a lifesaver, honestly. My knees were just bone-on-bone before I started it."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 171.392981709,
+    "turn": 5
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 171.392981709,
+    "turn": 6,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 174.681127417,
+    "turn": 6,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 176.823445625,
+    "turn": 6,
+    "text": "Your doctor's name is doctor Dugi Hauser."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 176.931415667,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 177.316080792,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 178.974924209,
+    "turn": 6,
+    "text": "I've documented your refill request"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 178.975300417,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 179.076627917,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 181.092766709,
+    "turn": 6,
+    "text": "and your concerns for our clinic support team."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 181.227843042,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 181.659342459,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 185.759971875,
+    "turn": 6,
+    "text": "They'll review your chart and get back to you as soon as possible about your celecoxib prescription."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 185.864903709,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 186.355399959,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 188.571827959,
+    "turn": 6,
+    "text": "There's no need to call the office separately right now."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 188.760124875,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 189.396167084,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 190.551698959,
+    "turn": 6,
+    "text": "They'll follow-up with you directly."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 190.688526542,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 191.827612334,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 192.390499042,
+    "turn": 6,
+    "text": "All right, so it's Doctor Dugi Hauser -- got it. And you've put in that refill request for my celecoxib, the two hundred milligram tablets. That's wonderful. So the support team will call me back to sort this out? How long do you think that might take? I'm running pretty low, and my knees are really bothering me. A few days, a week?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 210.952348709,
+    "turn": 6
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 210.952348709,
+    "turn": 7,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 214.576843334,
+    "turn": 7,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 217.269327875,
+    "turn": 7,
+    "text": "The clinic support team will get back to you as soon as they can."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 217.40648175,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 217.716011167,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 218.777883125,
+    "turn": 7,
+    "text": "Easily within a few days."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 218.877697167,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 219.337002375,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 220.67293725,
+    "turn": 7,
+    "text": "If your pain gets much worse,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 220.686284042,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 221.34740925,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 222.384372209,
+    "turn": 7,
+    "text": "or you need help sooner,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 222.537665459,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 222.918283792,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 223.815205375,
+    "turn": 7,
+    "text": "let them know when they call."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 223.908524584,
+    "turn": 7,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 225.15767175,
+    "turn": 7,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 225.830672292,
+    "turn": 7,
+    "text": "Oh, that's very good to know. Thank you for that. A few days should be all right -- I can manage. And yes, I'll let them know if things get worse. You've been very helpful, really. I appreciate you getting all that sorted out for me and documenting everything. So they'll be calling me back at this number, six two six five five five nine zero four three, is that right?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 246.652590292,
+    "turn": 7
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 246.652590292,
+    "turn": 8,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 249.416453875,
+    "turn": 8,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 250.695252875,
+    "turn": 8,
+    "text": "I have your number as six"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 251.791612584,
+    "turn": 8,
+    "text": "five seven"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 251.895632292,
+    "turn": 8,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 252.273101667,
+    "turn": 8,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 252.983749209,
+    "turn": 8,
+    "text": "five six six"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 253.006813542,
+    "turn": 8,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 253.682311042,
+    "turn": 8,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 254.889405834,
+    "turn": 8,
+    "text": "five one three six"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 254.890043375,
+    "turn": 8,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 255.779912584,
+    "turn": 8,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 255.782343125,
+    "turn": 8,
+    "text": "Oh"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 258.105580625,
+    "turn": 8,
+    "text": "Is that correct, or would you like to update it to six two six?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 258.109825792,
+    "turn": 8,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 258.566937917,
+    "turn": 8,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 259.486155417,
+    "turn": 8,
+    "text": "Five five five"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 261.455507417,
+    "turn": 8,
+    "text": "nine zero four three"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 261.608159459,
+    "turn": 8,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 262.846040709,
+    "turn": 8,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 263.32593525,
+    "turn": 8,
+    "text": "Oh no, that's not right at all, dear. Yes, please update that. My number is six two six five five five nine zero four three. That's the correct one. Thank you so much for catching that and getting it fixed. I really do appreciate your help today. You take care now, and I'll look forward to hearing from the support team soon. Goodbye!"
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 263.328607584,
+    "turn": 8,
+    "frm": "patient_speaking",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 263.328607584,
+    "turn": 8,
+    "reason": "end_frame"
+  }
+]

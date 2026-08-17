@@ -1,0 +1,38 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:12] AGENT: Would you like to create a dental patient profile?
+[00:14] AGENT: I just need your first and last name to get started.
+[00:17] PATIENT: Oh, hello there! Yes, thank you for picking up. My name is Eleanor Whitfield. 
+
+But I have to say, before we dive into all that paperwork, you won't believe the week I've had with my garden. The tomatoes have just been spectacular this year -- I planted them a bit later than usual, figured with the heat we've been getting they'd do better. And they have! Though I've got to tell you, the rabbits have discovered them too, so I'm out there practically every morning shooing them away. Gets me moving, anyway, which is good for the joints.
+
+So yes, Eleanor Whitfield. W-H-I-T-F-I-E-L-D.
+[00:32] AGENT: Your patient profile is up.
+[00:34] AGENT: Your date of birth is July fourth thousand for demo purposes. How may I help you today?
+[00:41] PATIENT: Oh, well, that's not quite right, dear. My date of birth is August thirtieth, nineteen forty-six. Not July fourth. Let me just make sure you've got that correct before we go any further -- August thirtieth, nineteen forty-six. I want to make sure your records are straight, you know how it is.
+
+But anyway, the reason I'm calling today is I need a refill on my celecoxib. That's the two hundred milligram tablets I take for my arthritis. My knees have been acting up something fierce, especially with all the bending down I do in that garden I was just telling you about. The weeding alone just kills me some days. I ran out about a week ago and I've been making do, but I really do need to get that prescription refilled if you can help me with that.
+[01:24] AGENT: I don't see any medications on your chart that I can refill right now.
+[01:28] AGENT: If you'd like, I can connect you to our patient support team for more help.
+[01:28] PATIENT: Oh
+[01:30] AGENT: Would you like to speak with someone directly?
+[01:33] PATIENT: Well, that's strange. I've been taking that celecoxib for quite a while now -- must be at least a couple years, maybe longer. Let me think... oh, it was right around the time my cat Gravy had that urinary tract infection, so that would've been... gosh, maybe two thousand twenty-two or twenty-three? Anyway, the point is, I know I'm on it because I take it every single day. Could it be under a different name, maybe? Or perhaps my doctor needs to send in a new prescription? Who's my provider there, by the way? I want to make sure we're looking at the right account. My friend mentioned she sees Doctor Zebigniew there -- is that who I see, or am I mixed up?
+[02:00] AGENT: It's possible
+[02:02] PATIENT: It's possible? Well, I suppose that means yes, then? I do see Doctor Zebigniew? Or -- um, I'm sorry, how do you spell that last name? I want to make sure I'm getting it right. And yes, maybe that's the issue -- perhaps he needs to send in a fresh prescription for the celecoxib. Could you maybe reach out to his office or give me a number to call him directly? I really do need to get that medication sorted out soon. The arthritis doesn't wait around, you know.
+[02:02] AGENT: it's
+[02:04] PATIENT: It's what, dear? I'm sorry, the line got a bit fuzzy there. Could you spell out that last name for me? I want to make sure we've got the right doctor on my chart.
+[02:17] AGENT: Your main doctor here is doctor Judy Hauser.
+[02:19] AGENT: Would you like to confirm anything else about your chart? Or your prescription?
+[02:23] PATIENT: Oh, Judy Hauser! All right, that's helpful. So it's Doctor Judy Hauser I see here. Well, that's different from what my friend mentioned, but no matter. So if my celecoxib isn't showing up in your system, do you think Doctor Hauser needs to send in a new prescription, or should I call her office directly? I'm still taking it every day, two hundred milligrams, so I really do need to get that straightened out. It's for my arthritis, you see. Been a lifesaver, honestly. My knees were just bone-on-bone before I started it.
+[02:56] AGENT: Your doctor's name is doctor Dugi Hauser.
+[02:58] AGENT: I've documented your refill request
+[03:01] AGENT: and your concerns for our clinic support team.
+[03:05] AGENT: They'll review your chart and get back to you as soon as possible about your celecoxib prescription.
+[03:08] AGENT: There's no need to call the office separately right now. They'll follow-up with you directly.
+[03:12] PATIENT: All right, so it's Doctor Dugi Hauser -- got it. And you've put in that refill request for my celecoxib, the two hundred milligram tablets. That's wonderful. So the support team will call me back to sort this out? How long do you think that might take? I'm running pretty low, and my knees are really bothering me. A few days, a week?
+[03:37] AGENT: The clinic support team will get back to you as soon as they can. Easily within a few days. If your pain gets much worse, or you need help sooner, let them know when they call.
+[03:45] PATIENT: Oh, that's very good to know. Thank you for that. A few days should be all right -- I can manage. And yes, I'll let them know if things get worse. You've been very helpful, really. I appreciate you getting all that sorted out for me and documenting everything. So they'll be calling me back at this number, six two six five five five nine zero four three, is that right?
+[04:10] AGENT: I have your number as six five seven five six six five one three six
+[04:15] PATIENT: Oh
+[04:18] AGENT: Is that correct, or would you like to update it to six two six? Five five five nine zero four three
+[04:23] PATIENT: Oh no, that's not right at all, dear. Yes, please update that. My number is six two six five five five nine zero four three. That's the correct one. Thank you so much for catching that and getting it fixed. I really do appreciate your help today. You take care now, and I'll look forward to hearing from the support team soon. Goodbye!
