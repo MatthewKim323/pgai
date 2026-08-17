@@ -1,0 +1,218 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.244,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.626,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 12.444,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.798,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, thanks for picking up. My name is Robert Tanaka. And actually, I'm not looking to create a profile just yet \u2014 I had a few quick questions about the practice first, if that's okay.",
+    "ts": 16.056,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 26.304,
+    "stamp": "00:26"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth thousand for demo purposes. How may I help you today?",
+    "ts": 28.843,
+    "stamp": "00:28"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, thanks. But actually, my date of birth is November second, nineteen fifty-eight, not July fourth. I want to make sure that's corrected before we go any further.",
+    "ts": 33.557,
+    "stamp": "00:33"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks for letting me know.",
+    "ts": 47.963,
+    "stamp": "00:47"
+  },
+  {
+    "speaker": "patient",
+    "text": "Sure",
+    "ts": 48.768,
+    "stamp": "00:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "I see your date of birth is listed as July fourth two thousand, but you said it should be November second nineteen fifty eight.",
+    "ts": 53.057,
+    "stamp": "00:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "I'll make a note for the clinic support team to update your record.",
+    "ts": 57.795,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "patient",
+    "text": "Al",
+    "ts": 58.721,
+    "stamp": "00:58"
+  },
+  {
+    "speaker": "agent",
+    "text": "Let's continue. What would you like help with today?",
+    "ts": 60.399,
+    "stamp": "01:00"
+  },
+  {
+    "speaker": "patient",
+    "text": "Thanks, I appreciate that. So I'm looking at orthopedic practices for my hip, and I wanted to ask you a few things about Pivot Point before I decide. First, what are your office hours? And specifically, are you open on Saturdays?",
+    "ts": 62.607,
+    "stamp": "01:02"
+  },
+  {
+    "speaker": "agent",
+    "text": "Pivot Point Orthopedics is open Monday through Friday. We are not open on Saturdays.",
+    "ts": 82.983,
+    "stamp": "01:22"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like details on our weekday hours?",
+    "ts": 87.384,
+    "stamp": "01:27"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, I'd like to know the exact hours. What time do you open and close during the week?",
+    "ts": 88.601,
+    "stamp": "01:28"
+  },
+  {
+    "speaker": "agent",
+    "text": "Here are our hours.",
+    "ts": 98.325,
+    "stamp": "01:38"
+  },
+  {
+    "speaker": "agent",
+    "text": "Monday, Tuesday, and Thursday, nine AM to four PM, Wednesday,",
+    "ts": 101.974,
+    "stamp": "01:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "twelve PM to seven PM, Friday, nine AM to twelve PM.",
+    "ts": 104.07,
+    "stamp": "01:44"
+  },
+  {
+    "speaker": "patient",
+    "text": "Got",
+    "ts": 106.524,
+    "stamp": "01:46"
+  },
+  {
+    "speaker": "agent",
+    "text": "Let me know if you have any other questions.",
+    "ts": 108.0,
+    "stamp": "01:47"
+  },
+  {
+    "speaker": "patient",
+    "text": "Got it, so nine to four Monday, Tuesday, and Thursday, noon to seven on Wednesday, and nine to noon on Friday. That's helpful. Now, can you give me the office address and let me know what the parking situation is like?",
+    "ts": 109.127,
+    "stamp": "01:49"
+  },
+  {
+    "speaker": "agent",
+    "text": "Our office is at one two three four Recovery Way, suite two hundred. Austin.",
+    "ts": 129.643,
+    "stamp": "02:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Free patient parking is available in the surface lot in front of the building.",
+    "ts": 135.896,
+    "stamp": "02:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you need more details, just ask.",
+    "ts": 138.005,
+    "stamp": "02:18"
+  },
+  {
+    "speaker": "patient",
+    "text": "Perfect. So that's twelve thirty four Recovery Way, suite two hundred, in Austin, with free parking out front. Just to confirm \u2014 is that one two three four Recovery Way, or twelve thirty four?",
+    "ts": 140.828,
+    "stamp": "02:20"
+  },
+  {
+    "speaker": "agent",
+    "text": "It's one two three four Recovery Way, suite two hundred, Austin. Let me know if you need anything else.",
+    "ts": 161.473,
+    "stamp": "02:41"
+  },
+  {
+    "speaker": "patient",
+    "text": "Got it, one two three four Recovery Way, suite two hundred, Austin. Thanks. One more thing \u2014 do you accept Medicare with a UnitedHealthcare supplement?",
+    "ts": 164.357,
+    "stamp": "02:44"
+  },
+  {
+    "speaker": "agent",
+    "text": "Pivot Point Orthopedics accepts most insurance plans. Including Medicare.",
+    "ts": 181.14,
+    "stamp": "03:01"
+  },
+  {
+    "speaker": "patient",
+    "text": "Great",
+    "ts": 183.502,
+    "stamp": "03:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "For specific details about your UnitedHealthcare supplement,",
+    "ts": 185.926,
+    "stamp": "03:05"
+  },
+  {
+    "speaker": "agent",
+    "text": "I recommend bringing your insurance card to your first visit.",
+    "ts": 188.893,
+    "stamp": "03:08"
+  },
+  {
+    "speaker": "agent",
+    "text": "So the team can verify your coverage. Would you like help with anything else?",
+    "ts": 191.123,
+    "stamp": "03:11"
+  },
+  {
+    "speaker": "patient",
+    "text": "Alright, that's helpful. Thanks so much for the information \u2014 I've got what I need. I appreciate your time.\n\nGoodbye.",
+    "ts": 194.185,
+    "stamp": "03:14"
+  }
+]

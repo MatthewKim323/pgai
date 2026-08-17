@@ -1,0 +1,38 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:12] AGENT: Would you like to create a demo patient profile?
+[00:14] AGENT: I just need your first and last name to get started.
+[00:16] PATIENT: Hi, yes, thanks for picking up. My name is Robert Tanaka. And actually, I'm not looking to create a profile just yet — I had a few quick questions about the practice first, if that's okay.
+[00:26] AGENT: Your patient profile is set up.
+[00:28] AGENT: And your date of birth is July fourth thousand for demo purposes. How may I help you today?
+[00:33] PATIENT: Okay, thanks. But actually, my date of birth is November second, nineteen fifty-eight, not July fourth. I want to make sure that's corrected before we go any further.
+[00:47] AGENT: Thanks for letting me know.
+[00:48] PATIENT: Sure
+[00:53] AGENT: I see your date of birth is listed as July fourth two thousand, but you said it should be November second nineteen fifty eight.
+[00:57] AGENT: I'll make a note for the clinic support team to update your record.
+[00:58] PATIENT: Al
+[01:00] AGENT: Let's continue. What would you like help with today?
+[01:02] PATIENT: Thanks, I appreciate that. So I'm looking at orthopedic practices for my hip, and I wanted to ask you a few things about Pivot Point before I decide. First, what are your office hours? And specifically, are you open on Saturdays?
+[01:22] AGENT: Pivot Point Orthopedics is open Monday through Friday. We are not open on Saturdays.
+[01:27] AGENT: Would you like details on our weekday hours?
+[01:28] PATIENT: Yeah, I'd like to know the exact hours. What time do you open and close during the week?
+[01:38] AGENT: Here are our hours.
+[01:41] AGENT: Monday, Tuesday, and Thursday, nine AM to four PM, Wednesday,
+[01:44] AGENT: twelve PM to seven PM, Friday, nine AM to twelve PM.
+[01:46] PATIENT: Got
+[01:47] AGENT: Let me know if you have any other questions.
+[01:49] PATIENT: Got it, so nine to four Monday, Tuesday, and Thursday, noon to seven on Wednesday, and nine to noon on Friday. That's helpful. Now, can you give me the office address and let me know what the parking situation is like?
+[02:09] AGENT: Our office is at one two three four Recovery Way, suite two hundred. Austin.
+[02:15] AGENT: Free patient parking is available in the surface lot in front of the building.
+[02:18] AGENT: If you need more details, just ask.
+[02:20] PATIENT: Perfect. So that's twelve thirty four Recovery Way, suite two hundred, in Austin, with free parking out front. Just to confirm — is that one two three four Recovery Way, or twelve thirty four?
+[02:41] AGENT: It's one two three four Recovery Way, suite two hundred, Austin. Let me know if you need anything else.
+[02:44] PATIENT: Got it, one two three four Recovery Way, suite two hundred, Austin. Thanks. One more thing — do you accept Medicare with a UnitedHealthcare supplement?
+[03:01] AGENT: Pivot Point Orthopedics accepts most insurance plans. Including Medicare.
+[03:03] PATIENT: Great
+[03:05] AGENT: For specific details about your UnitedHealthcare supplement,
+[03:08] AGENT: I recommend bringing your insurance card to your first visit.
+[03:11] AGENT: So the team can verify your coverage. Would you like help with anything else?
+[03:14] PATIENT: Alright, that's helpful. Thanks so much for the information — I've got what I need. I appreciate your time.
+
+Goodbye.

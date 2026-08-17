@@ -15,6 +15,7 @@ import asyncio
 from dataclasses import dataclass
 
 from fastapi import WebSocket
+from loguru import logger
 from pipecat.adapters.schemas.function_schema import FunctionSchema
 from pipecat.adapters.schemas.tools_schema import ToolsSchema
 from pipecat.audio.turn.smart_turn.base_smart_turn import SmartTurnParams
@@ -219,21 +220,27 @@ async def run_call_pipeline(
         # hard kill mid-sentence). Hard: a grace period later, pull the plug.
         nonlocal ended_by
         await asyncio.sleep(scenario.max_minutes * 60)
-        await worker.queue_frame(
-            LLMMessagesAppendFrame(
-                messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "Time is up on this call. On your next reply, wrap up "
-                            "immediately: briefly thank them, say goodbye, then call "
-                            "the end_call tool. Do not ask anything new."
-                        ),
-                    }
-                ],
-                run_llm=False,
+        try:
+            await worker.queue_frame(
+                LLMMessagesAppendFrame(
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": (
+                                "Time is up on this call. On your next reply, wrap up "
+                                "immediately: briefly thank them, say goodbye, then call "
+                                "the end_call tool. Do not ask anything new."
+                            ),
+                        }
+                    ],
+                    run_llm=False,
+                )
             )
-        )
+        except Exception as e:  # noqa: BLE001 - the nudge is best-effort
+            # The hard kill below is the guarantee; it must run even if the
+            # nudge fails (this exact failure once left a call running 7+
+            # minutes past its budget).
+            logger.warning(f"wrap-up nudge failed: {e}")
         await asyncio.sleep(WRAP_UP_GRACE_SECS)
         ended_by = "watchdog_timeout"
         await worker.queue_frame(EndFrame())
