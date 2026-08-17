@@ -207,6 +207,38 @@
     {
       "text": "Agent does not have access to patient past visit details, only upcoming appointments",
       "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent initially stated practice name as 'Pitot Point Orthopaedics' (likely speech recognition error for 'Pivot Point Orthopaedics')",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Agent can accept and update patient date of birth information, claiming to update it in the system",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Practice offers sports physical appointments",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Patient insurance: Blue Cross HMO accepted",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Marco Marchetti has office visit scheduled for Tuesday, August 18 at 10 AM with doctor Zbigniew Lukowski",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Marco Marchetti has follow-up appointment scheduled for Tuesday, August 18 at 2 PM with doctor Kelly Noble",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Marco Marchetti has appointment scheduled for Monday, August 24 at 8 AM",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Provider name: Doctor Zbigniew Lukowski (spelling variation: 'Zigniew Lukowski' in agent speech)",
+      "source": "15-edge-topic-switcher"
     }
   ],
   "leads": [
@@ -381,6 +413,30 @@
     {
       "text": "Attempt to transfer to patient support and verify if connection is successful or if it routes to test line and disconnects like previous calls",
       "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent claims to update DOB in system but routes to support team -- verify if DOB corrections are actually processed or if agent just documents the request",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Patient requested billing charge review and agent created a case -- test if clinic staff actually follows up on billing inquiries or if these requests are lost",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Agent accepts naproxen refill request from established patient (patient says taking for 'a while') -- test if refill requests for established medications are processed differently than prior refill attempts from unknown patients",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Patient switched topics mid-call multiple times (refill \u2192 billing \u2192 sports physical \u2192 back to refill) -- test if agent maintains context or loses track of initial requests when patient adds new topics",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Agent did not explicitly ask for or confirm which of three appointments patient wanted to reschedule before asking follow-up questions -- test if agent should clarify patient intent before proceeding",
+      "source": "15-edge-topic-switcher"
+    },
+    {
+      "text": "Agent interrupted patient's question about naproxen refill by switching to Marco's appointments -- test if agent properly sequences multiple requests or if some get lost when patient adds new topics",
+      "source": "15-edge-topic-switcher"
     }
   ]
 }

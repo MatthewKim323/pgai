@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Agent fabricates unconfirmed appointments for the caller's son",
+    "severity": "high",
+    "category": "correctness",
+    "timestamp": "03:16",
+    "quote": "Marco already has an office visit scheduled for Tuesday, August eighteenth, at ten AM. Would you like to keep that appointment reschedule it for a weekday afternoon, or do something else?",
+    "details": "The caller never mentioned any pre-existing appointment for Marco (this was supposed to be a new sports physical booking request). The agent invents a scheduled office visit, then in the next turn expands this to three separate existing appointments across two different days with two different doctors (10am and 2pm on Aug 18, plus 8am on Aug 24) despite Marco never being an established scheduled patient in this conversation. This is either a hallucination or a mixing of another patient's data with this call, and it derails the caller's actual request (booking a new sports physical) into rescheduling appointments that likely don't exist."
+  },
+  {
+    "title": "Agent never actually books the sports physical",
+    "severity": "high",
+    "category": "task-failure",
+    "timestamp": "04:39",
+    "quote": "I'll make sure your naproxen refill request is sent to the patient's support team along with your billing question. Now for Marco's appointment, would you like to move his ten AM visit",
+    "details": "The caller's original request was to schedule a NEW sports physical for her son. Instead of booking anything, the agent got sidetracked into a fabricated rescheduling scenario for phantom appointments, and the call ends (via timeout) without ever confirming or scheduling the sports physical the caller asked for. The core goal of the call is left unresolved."
+  },
+  {
+    "title": "Agent silently created a demo profile and confirmed a fake DOB before caller clarified",
+    "severity": "medium",
+    "category": "correctness",
+    "timestamp": "00:25",
+    "quote": "Your patient profile is set up. And your date of birth is July fourth two thousand for demo purposes. How may I help you today?",
+    "details": "The agent asked if the caller wanted a demo profile, but before the caller could answer/decline (the caller was mid-explanation that she was an existing patient), the agent proceeded to create a demo profile and assign a fake DOB (July 4, 2000) that had to be manually corrected by the caller. This risks contaminating real patient records with placeholder/demo data and confused the identity-verification flow at the very start of the call."
+  },
+  {
+    "title": "Repeated response latency gaps during multi-topic juggling",
+    "severity": "low",
+    "category": "latency",
+    "quote": "gaps: 5.035s and 5.228s",
+    "timestamp": "04:00",
+    "details": "Several agent response gaps exceed 4 seconds (6.648s, 5.035s, 5.228s, 4.678s per telemetry), which would be noticeably slow to a caller actively switching between topics and waiting for confirmation on billing, refill, and scheduling threads."
+  },
+  {
+    "title": "Call ended via watchdog timeout with sports physical and billing threads unresolved",
+    "severity": "high",
+    "category": "task-failure",
+    "timestamp": "04:44",
+    "quote": "would you like to move his ten AM visit",
+    "details": "The call cuts off mid-sentence with the watchdog timeout, leaving the sports physical scheduling unresolved, the rescheduling question unanswered, and no final confirmation given to the caller on any of the three original goals (refill, billing explanation, sports physical). Only a billing case number and a promise to forward the refill request were given \u2014 no closure was reached on the appointment thread at all."
+  }
+]

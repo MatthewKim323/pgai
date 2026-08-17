@@ -1,0 +1,37 @@
+[00:03] AGENT: Recorded for quality and training purposes.
+[00:08] AGENT: Thank you for calling Pitot Point Orthopaedics.
+[00:11] AGENT: Would you like to create a demo patient profile
+[00:14] AGENT: I just need your first and last name,
+[00:15] PATIENT: Hi, yes, thanks for picking up. My name is Sofia Marchetti. And no, I don't need a new profile — I'm already a patient there. I'm calling because I need to get a refill on my naproxen, and I also had a quick question about a billing statement that came in the mail.
+[00:25] AGENT: Your patient profile is set up.
+[00:29] AGENT: And your date of birth is July fourth two thousand for demo purposes. How may I help you today?
+[00:32] PATIENT: Oh, um, actually that's not right. My date of birth is September twenty-first, nineteen seventy-nine. Let me give you my phone number to pull up the correct one — it's seven one four five five five three three one seven.
+[00:51] AGENT: I have your number as seven one four five five five three three one seven Is that correct?
+[00:57] PATIENT: Yes, that's right. Seven one four five five five three three one seven. So can you make sure that date of birth gets corrected to September twenty-first, nineteen seventy-nine?
+[01:14] AGENT: I'll update your date of birth to September twenty first nineteen seventy nine. How can I assist you today?
+[01:19] PATIENT: Great, thank you. So I need a refill on my naproxen — it's five hundred milligrams. I've been taking it for a while now and I'm running low. But before we get into all that, I got a statement in the mail last week and there's a charge on there that doesn't make sense to me. Can you look into that real quick?
+[01:44] AGENT: I see you have a couple of requests.
+[01:47] AGENT: Since you'd like to discuss a billing statement charge I'll focus on that first.
+[01:52] AGENT: I'll create a note for the clinic staff to review your billing question. Let's get that started now.
+[01:56] PATIENT: Okay, sure. So the
+[01:59] AGENT: I've created a case for your billing so our clinic team can review the charge and follow-up with you.
+[02:03] AGENT: Is there anything else you'd like help with today?
+[02:04] PATIENT: Yeah, actually — before we wrap up the billing thing, I also need to get my son in for a sports physical. He's starting a new season and the school's asking for it. Do you have any openings coming up, or how does that work?
+[02:22] AGENT: We can help schedule a sports physical for your son. Are you calling on his behalf?
+[02:28] AGENT: If so, I'll need to verify his information before booking the appointment.
+[02:29] PATIENT: Yeah, I'm calling for him. His name is Marco Marchetti. Um, let me think — his date of birth is March eighth, two thousand and eight. And I can give you my insurance info since I'm the parent handling it all. I have Blue Cross HMO.
+[02:51] AGENT: Thanks for sharing Marco's information and your insurance details.
+[02:54] AGENT: I'll help you schedule this sports physical.
+[02:57] AGENT: Do you have a preferred day or time of day for the appointment?
+[02:59] PATIENT: Um, let's see — weekday afternoons would be best if you have them. He's still in school during the morning. My friend actually mentioned you guys are only open till noon on Fridays, so that wouldn't work anyway. But any other weekday afternoon would be great.
+[03:16] AGENT: Marco already has an office
+[03:19] AGENT: visit scheduled for Tuesday, August eighteenth, at ten AM. Would you like to keep that appointment
+[03:26] AGENT: reschedule it for a weekday afternoon, or do something else?
+[03:27] PATIENT: Oh wait, he already has something scheduled? I didn't know that. Um, yeah, an afternoon would be better since he's in school. Can we reschedule that Tuesday one to an afternoon instead? What afternoons do you have open?
+[03:49] AGENT: Marco has an office visit scheduled for Tuesday, August eighteenth at ten AM with doctor Zigniew Lukowski.
+[03:54] AGENT: You also have a follow-up that same day at two PM. With doctor Kelly Noble
+[04:00] AGENT: and another appointment on Monday, August twenty fourth at eight AM.
+[04:03] AGENT: Which one would you like to move to a weekday afternoon?
+[04:06] PATIENT: Okay, so he's got three appointments that day — that's a lot. Um, the two PM one with Kelly Noble could stay since that's already afternoon, but can we move the ten AM with doctor Zbigniew Lukowski to an afternoon slot instead? And actually, sorry — before I forget, I still need to circle back to that naproxen refill we talked about at the start. Can you make sure that gets submitted to the patient support team?
+[04:39] AGENT: I'll make sure your naproxen refill request is sent to the patient's support team along with your billing question. Now for Marco's appointment,
+[04:44] AGENT: would you like to move his ten AM visit

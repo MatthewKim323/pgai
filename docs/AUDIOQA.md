@@ -21,3 +21,9 @@ ear-check. Note: the interrupter scenario overlaps by design.
 | 12-edge-boundaries | 220.0 | 60.8s | 75.6s | 0.0% | 5.5s | ok |
 | 13-schedule-followup | 195.5 | 72.5s | 26.4s | 0.6% | 7.1s | dead air 7.1s |
 | 14-hunt-1 | 230.1 | 68.2s | 65.7s | 0.6% | 4.7s | ok |
+| 15-edge-topic-switcher | 285.6 | 77.0s | 87.0s | 0.0% | 6.4s | dead air 6.4s |
+
+Attribution: per-call telemetry puts our patient's response latency at a
+~1.1s median across the campaign, while the agent under test left gaps of
+up to 14.8s -- the flagged dead air is the agent's silence, and the same
+moments are cited as latency findings in BUGS.md.

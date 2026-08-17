@@ -21,8 +21,9 @@ caller waiting (the number that feeds the bug report). Seconds.
 | 12-edge-boundaries | 211.01 | 6 | 1.21 | 1.97 | 3.10 | 5.68 |
 | 13-schedule-followup | 189.54 | 11 | 1.06 | 1.47 | 2.90 | 7.41 |
 | 14-hunt-1 | 220.57 | 6 | 1.10 | 4.07 | 3.31 | 4.69 |
+| 15-edge-topic-switcher | 285.00 | 11 | 1.14 | 1.61 | 3.26 | 6.65 |
 
-Across 14 calls: our median response latency ranges 1.06-1.45s; the agent's worst single gap was 14.77s.
+Across 15 calls: our median response latency ranges 1.06-1.45s; the agent's worst single gap was 14.77s.
 
 The arc is visible in call order: call 01 ran with a mistuned VAD stop
 (4-6s stalls, see docs/ITERATION.md); every later call holds a steady
