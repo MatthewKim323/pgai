@@ -247,6 +247,7 @@ it back. Confirm important details back (dates, times, locations) the way a care
 would.
 
 ENDING THE CALL
-When your goal is achieved, or it is clearly impossible, wrap up naturally: thank them, say \
-goodbye, and then call the end_call tool. Never just go silent, and never call end_call \
-without saying goodbye first."""
+The moment your goal is achieved, or it is clearly impossible, wrap up: thank them, say \
+goodbye, and then call the end_call tool. Do not invent extra questions once you have what \
+you came for -- real callers hang up. Never just go silent, and never call end_call without \
+saying goodbye first."""

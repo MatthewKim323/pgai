@@ -45,9 +45,12 @@ def patient_turn_metrics(turns: list[Turn]) -> list[dict[str, Any]]:
         if t.agent_stop_ts is None:
             continue
         row: dict[str, Any] = {"turn": t.index, "interrupted": t.interrupted}
-        if t.llm_first_token_ts is not None:
+        # On overlapped turns (barge-ins, speech spanning a turn boundary) a
+        # mark can land before agent_stop; a negative latency is bookkeeping
+        # noise, not a measurement, so it's dropped rather than averaged in.
+        if t.llm_first_token_ts is not None and t.llm_first_token_ts >= t.agent_stop_ts:
             row["llm_first_token"] = round(t.llm_first_token_ts - t.agent_stop_ts, 3)
-        if t.tts_first_audio_ts is not None:
+        if t.tts_first_audio_ts is not None and t.tts_first_audio_ts >= t.agent_stop_ts:
             row["response_latency"] = round(t.tts_first_audio_ts - t.agent_stop_ts, 3)
         if t.patient_stop_ts is not None and t.tts_first_audio_ts is not None:
             row["speech_duration"] = round(t.patient_stop_ts - t.tts_first_audio_ts, 3)

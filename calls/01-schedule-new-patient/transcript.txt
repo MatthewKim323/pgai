@@ -1,0 +1,36 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:11] AGENT: Would you like to create a demo patient profile?
+[00:14] AGENT: I just need your first and last name to get started.
+[00:15] PATIENT: Hi, yes, thank you. My name is Diane Okafor.
+[00:37] AGENT: Your patient profile is set up, and your date of birth is July fourth
+[00:39] AGENT: two thousand for demo purposes. How may I help you today?
+[00:42] PATIENT: Actually, I need to correct that. My date of birth is June 14th, 1971, not July fourth. Can we fix that in the system?
+[00:57] AGENT: I can't update your date of birth directly, but I can let our clinic support team know to correct it for you.
+[01:01] AGENT: Would you like me to document this request for follow-up?
+[01:04] PATIENT: Yes, please do document that. Thank you. So I'm calling because my left knee has been aching for about a month now, and it's gotten worse when I go down stairs. My primary care doctor referred me to your practice, and I'd like to schedule an appointment.
+[01:23] AGENT: It sounds like you're having knee pain that's getting worse. Especially on stairs.
+[01:28] AGENT: Is this your first visit with us, or have you seen someone here before?
+[01:31] AGENT: This will help me book the right type of appointment for you.
+[01:37] PATIENT: No, this is my first time. I've never been to Pivot Point before, so I'll need a new patient appointment.
+[01:47] AGENT: Thanks for confirming.
+[01:52] AGENT: Do you have a specific provider you'd like to see, or are you open to the first available?
+[01:53] PATIENT: I'm open to whoever's available first. I'd really like to get in as soon as possible, ideally a weekday morning if you have anything open.
+[01:58] AGENT: Let
+[02:04] AGENT: We have openings as soon as tomorrow.
+[02:07] AGENT: Would you like a morning or afternoon appointment?
+[02:08] PATIENT: Morning would be perfect. What time do you have available tomorrow morning?
+[02:15] AGENT: Tomorrow morning,
+[02:18] AGENT: we have a ten thirty AM slot with Abreaker. Would you like to book that time?
+[02:24] PATIENT: Yes, ten thirty AM tomorrow works for me. Before I confirm, I just need to check — does Pivot Point take Aetna PPO insurance? That's what I have.
+[02:39] AGENT: Your appointment is set for tomorrow at ten thirty AM
+[02:43] AGENT: with doctor Abricker at Pivot Point Orthopedics.
+[02:46] AGENT: Please bring your photo ID, insurance card,
+[02:48] AGENT: a list of your current medications.
+[02:51] AGENT: Pivot Point Orthopedics accepts most insurance plans.
+[02:52] PATIENT: Okay
+[02:53] AGENT: Including Aetna PTO.
+[02:58] AGENT: You'd like, I can update your insurance information now or let the team know to confirm it at your visit.
+[03:01] AGENT: Would you like to update your insurance details over the phone?
+[03:04] PATIENT: That's great that you take Aetna PPO. I can update it when I come in tomorrow, so no need to do it over the phone right now. Just to confirm everything — tomorrow at ten thirty AM with Doctor Abricker. And I should bring my photo ID, insurance card, and a list of my medications. Is there anything else I need to bring, like my referral from my primary care doctor or any imaging?
+[03:27] AGENT: Yes. Please bring your referral.

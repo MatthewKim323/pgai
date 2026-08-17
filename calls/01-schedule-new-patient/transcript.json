@@ -1,0 +1,218 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.094,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.173,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 11.779,
+    "stamp": "00:11"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.186,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, thank you. My name is Diane Okafor.",
+    "ts": 15.841,
+    "stamp": "00:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up, and your date of birth is July fourth",
+    "ts": 37.72,
+    "stamp": "00:37"
+  },
+  {
+    "speaker": "agent",
+    "text": "two thousand for demo purposes. How may I help you today?",
+    "ts": 39.731,
+    "stamp": "00:39"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, I need to correct that. My date of birth is June 14th, 1971, not July fourth. Can we fix that in the system?",
+    "ts": 42.416,
+    "stamp": "00:42"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can't update your date of birth directly, but I can let our clinic support team know to correct it for you.",
+    "ts": 57.378,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like me to document this request for follow-up?",
+    "ts": 61.55,
+    "stamp": "01:01"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yes, please do document that. Thank you. So I'm calling because my left knee has been aching for about a month now, and it's gotten worse when I go down stairs. My primary care doctor referred me to your practice, and I'd like to schedule an appointment.",
+    "ts": 64.023,
+    "stamp": "01:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "It sounds like you're having knee pain that's getting worse. Especially on stairs.",
+    "ts": 83.331,
+    "stamp": "01:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "Is this your first visit with us, or have you seen someone here before?",
+    "ts": 88.199,
+    "stamp": "01:28"
+  },
+  {
+    "speaker": "agent",
+    "text": "This will help me book the right type of appointment for you.",
+    "ts": 91.107,
+    "stamp": "01:31"
+  },
+  {
+    "speaker": "patient",
+    "text": "No, this is my first time. I've never been to Pivot Point before, so I'll need a new patient appointment.",
+    "ts": 97.259,
+    "stamp": "01:37"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks for confirming.",
+    "ts": 107.726,
+    "stamp": "01:47"
+  },
+  {
+    "speaker": "agent",
+    "text": "Do you have a specific provider you'd like to see, or are you open to the first available?",
+    "ts": 112.157,
+    "stamp": "01:52"
+  },
+  {
+    "speaker": "patient",
+    "text": "I'm open to whoever's available first. I'd really like to get in as soon as possible, ideally a weekday morning if you have anything open.",
+    "ts": 113.487,
+    "stamp": "01:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "Let",
+    "ts": 118.624,
+    "stamp": "01:58"
+  },
+  {
+    "speaker": "agent",
+    "text": "We have openings as soon as tomorrow.",
+    "ts": 124.93,
+    "stamp": "02:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like a morning or afternoon appointment?",
+    "ts": 127.936,
+    "stamp": "02:07"
+  },
+  {
+    "speaker": "patient",
+    "text": "Morning would be perfect. What time do you have available tomorrow morning?",
+    "ts": 128.859,
+    "stamp": "02:08"
+  },
+  {
+    "speaker": "agent",
+    "text": "Tomorrow morning,",
+    "ts": 135.756,
+    "stamp": "02:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "we have a ten thirty AM slot with Abreaker. Would you like to book that time?",
+    "ts": 138.455,
+    "stamp": "02:18"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yes, ten thirty AM tomorrow works for me. Before I confirm, I just need to check \u2014 does Pivot Point take Aetna PPO insurance? That's what I have.",
+    "ts": 144.819,
+    "stamp": "02:24"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your appointment is set for tomorrow at ten thirty AM",
+    "ts": 159.839,
+    "stamp": "02:39"
+  },
+  {
+    "speaker": "agent",
+    "text": "with doctor Abricker at Pivot Point Orthopedics.",
+    "ts": 163.296,
+    "stamp": "02:43"
+  },
+  {
+    "speaker": "agent",
+    "text": "Please bring your photo ID, insurance card,",
+    "ts": 166.143,
+    "stamp": "02:46"
+  },
+  {
+    "speaker": "agent",
+    "text": "a list of your current medications.",
+    "ts": 168.524,
+    "stamp": "02:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "Pivot Point Orthopedics accepts most insurance plans.",
+    "ts": 171.906,
+    "stamp": "02:51"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay",
+    "ts": 172.55,
+    "stamp": "02:52"
+  },
+  {
+    "speaker": "agent",
+    "text": "Including Aetna PTO.",
+    "ts": 173.997,
+    "stamp": "02:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "You'd like, I can update your insurance information now or let the team know to confirm it at your visit.",
+    "ts": 178.494,
+    "stamp": "02:58"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to update your insurance details over the phone?",
+    "ts": 181.998,
+    "stamp": "03:01"
+  },
+  {
+    "speaker": "patient",
+    "text": "That's great that you take Aetna PPO. I can update it when I come in tomorrow, so no need to do it over the phone right now. Just to confirm everything \u2014 tomorrow at ten thirty AM with Doctor Abricker. And I should bring my photo ID, insurance card, and a list of my medications. Is there anything else I need to bring, like my referral from my primary care doctor or any imaging?",
+    "ts": 184.253,
+    "stamp": "03:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "Yes. Please bring your referral.",
+    "ts": 207.212,
+    "stamp": "03:27"
+  }
+]

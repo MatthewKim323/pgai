@@ -19,7 +19,7 @@ from pipecat.adapters.schemas.function_schema import FunctionSchema
 from pipecat.adapters.schemas.tools_schema import ToolsSchema
 from pipecat.audio.vad.silero import SileroVADAnalyzer
 from pipecat.audio.vad.vad_analyzer import VADParams
-from pipecat.frames.frames import EndFrame
+from pipecat.frames.frames import EndFrame, LLMMessagesAppendFrame
 from pipecat.pipeline.pipeline import Pipeline
 from pipecat.pipeline.worker import PipelineParams, PipelineWorker
 from pipecat.processors.aggregators.llm_context import LLMContext
@@ -49,9 +49,9 @@ from caller.observer import TurnStateObserver
 from caller.scenario import Scenario, build_system_prompt
 from caller.turnstate import BargeInPolicy, TurnStateMachine
 
-#: hard ceiling past the scenario's own budget, so a wedged call can't run a
-#: phone bill forever
-GRACE_SECS = 30.0
+#: time between the "wrap up now" nudge and the hard EndFrame, so a wedged
+#: call can't run a phone bill forever
+WRAP_UP_GRACE_SECS = 45.0
 
 END_CALL_TOOL = FunctionSchema(
     name="end_call",
@@ -126,7 +126,11 @@ async def run_call_pipeline(
     # agent talks over us (polite caller). 'hold' turns interruption off so we
     # keep talking -- the point of those scenarios is to stress the AGENT's
     # barge-in handling, and the observer records the overlap either way.
-    vad = SileroVADAnalyzer(params=VADParams(stop_secs=0.4))
+    #
+    # stop_secs stays at pipecat's recommended 0.2: raising it past the STT's
+    # p99 collapses the transcript wait and stalls turns on the 5s aggregator
+    # timeout instead (measured on shakedown call 01: 4-6s response latency).
+    vad = SileroVADAnalyzer(params=VADParams(stop_secs=0.2))
     if scenario.barge_in_policy is BargeInPolicy.HOLD:
         user_params = LLMUserAggregatorParams(
             vad_analyzer=vad,
@@ -173,8 +177,27 @@ async def run_call_pipeline(
     llm.register_function("end_call", end_call)
 
     async def watchdog() -> None:
+        # Soft: at the scenario's time budget, tell the patient to wrap up so
+        # the call ends with a natural goodbye (shakedown call 01 ran into the
+        # hard kill mid-sentence). Hard: a grace period later, pull the plug.
         nonlocal ended_by
-        await asyncio.sleep(scenario.max_minutes * 60 + GRACE_SECS)
+        await asyncio.sleep(scenario.max_minutes * 60)
+        await worker.queue_frame(
+            LLMMessagesAppendFrame(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "Time is up on this call. On your next reply, wrap up "
+                            "immediately: briefly thank them, say goodbye, then call "
+                            "the end_call tool. Do not ask anything new."
+                        ),
+                    }
+                ],
+                run_llm=False,
+            )
+        )
+        await asyncio.sleep(WRAP_UP_GRACE_SECS)
         ended_by = "watchdog_timeout"
         await worker.queue_frame(EndFrame())
 
