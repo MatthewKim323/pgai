@@ -114,6 +114,10 @@ def generate_hunt(
     spec = next((b.input for b in resp.content if b.type == "tool_use"), None)
     if not spec:
         raise RuntimeError("scenario generator returned no tool call")
+    core = ("title", "first_name", "last_name", "dob", "phone", "insurance", "goal")
+    missing = [k for k in core if not spec.get(k)]
+    if missing:
+        raise RuntimeError(f"scenario generator omitted required fields: {', '.join(missing)}")
 
     hunt_id = _next_hunt_id(scenario_dir)
     doc = {
@@ -127,13 +131,13 @@ def generate_hunt(
             "dob": spec["dob"],
             "phone": spec["phone"],
             "insurance": spec["insurance"],
-            "background": spec["background"],
+            "background": spec.get("background", ""),
         },
         "goal": spec["goal"],
-        "steering": list(spec["steering"]),
+        "steering": list(spec.get("steering", [])),
         "max_minutes": 3,
         # provenance: which leads this scenario was authored to corner
-        "targeted_leads": list(spec["targeted_leads"]),
+        "targeted_leads": list(spec.get("targeted_leads", [])),
     }
     path = scenario_dir / f"{hunt_id}.yaml"
     path.write_text(yaml.safe_dump(doc, sort_keys=False, allow_unicode=True))

@@ -163,6 +163,50 @@
     {
       "text": "Provider name: Doctor Telly Noble",
       "source": "13-schedule-followup"
+    },
+    {
+      "text": "Practice location: Austin (not Nashville as previously documented)",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Office address: 1234 Recovery Way, suite 200, Austin",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Free patient parking available in surface lot in front of building",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Monday, Tuesday, Thursday hours: 9 AM to 4 PM",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Wednesday hours: 12 PM (noon) to 7 PM",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Friday hours: 9 AM to 12 PM (noon)",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Not open on Saturdays",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Accepts most insurance plans including Medicare",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Patient Marlene Foss has scheduled upcoming appointments with doctor Zbigniew Lukawski and doctor Kelly Noble",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent claims patient support team reviews refill requests and calls back 'usually within one business day'",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent does not have access to patient past visit details, only upcoming appointments",
+      "source": "14-hunt-1"
     }
   ],
   "leads": [
@@ -297,6 +341,46 @@
     {
       "text": "Agent confirmed appointment with provider but patient wasn't sure which doctor they saw originally -- test if agent can identify/match patient to their original provider when patient history exists",
       "source": "13-schedule-followup"
+    },
+    {
+      "text": "Agent creates patient profile without explicit patient consent ('Your patient profile is set up') \u2014 test if this is standard procedure or if agent should wait for patient to explicitly request profile creation",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Agent accepts insurance verification request but directs patient to bring card to first visit rather than checking coverage immediately \u2014 test if agent has real-time insurance verification capability or if this represents a system limitation",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Previously documented practice location as 'Nashville' but this call establishes location as 'Austin' \u2014 verify which location is correct or if practice has multiple locations",
+      "source": "06-hours-insurance"
+    },
+    {
+      "text": "Agent creates patient profile with demo DOB before patient explicitly consents or requests it -- confirm if this is standard procedure or if profile creation should require patient opt-in",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Patient reports picking up naproxen in June and taking it consistently for over 2 years, but agent cannot see any medications on chart -- verify if medication records are syncing correctly or if this represents a data completeness issue",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Patient claims to have seen doctor last month but agent says they don't have access to past visit details, only upcoming appointments -- test if agent should have access to visit history or if this is a system limitation affecting care continuity",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent spells 'Zbigniew Lukawski' letter-by-letter but earlier calls documented this provider as 'Zbigniew Likoski' / 'Zbigniew Lakoski' / 'Lukovsky' -- verify correct spelling and whether agent has consistent provider name data",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent confidently states Kelly Noble as a provider on upcoming appointments but prior calls marked this as an unverified/potentially false name -- verify if Kelly Noble is an actual provider or if agent is generating false provider names",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Agent claims support team will call back 'usually within one business day' but earlier documentation estimated 'a few days' -- clarify actual expected follow-up timeframe and whether agent is consistent",
+      "source": "14-hunt-1"
+    },
+    {
+      "text": "Attempt to transfer to patient support and verify if connection is successful or if it routes to test line and disconnects like previous calls",
+      "source": "14-hunt-1"
     }
   ]
 }

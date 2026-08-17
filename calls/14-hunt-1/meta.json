@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:52:45+00:00",
+  "scenario": "hunt-1",
+  "title": "Prescription Refill Escalation & Provider Verification Check",
+  "category": "hunt",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CA9b45173c081cf9ea3fcdb2921fdbef77",
+  "stream_sid": "MZaddaec60fc42161f15ed6b4406be19b6",
+  "ended_by": "watchdog_timeout",
+  "model": "claude-haiku-4-5-20251001"
+}

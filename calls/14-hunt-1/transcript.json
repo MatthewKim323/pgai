@@ -1,0 +1,194 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.019,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.321,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 11.88,
+    "stamp": "00:11"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.605,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, thank you. My name is Marlene Foss. But before we set anything up, I'm actually calling because I need a refill on my naproxen. I've been an established patient here, and I'm on naproxen 500mg for my knee pain. I've been taking it for over two years now, and I just saw the doctor last month. Can we get that taken care of?",
+    "ts": 19.634,
+    "stamp": "00:19"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 28.289,
+    "stamp": "00:28"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth",
+    "ts": 30.984,
+    "stamp": "00:30"
+  },
+  {
+    "speaker": "agent",
+    "text": "two thousand for demo purposes. How may I help you today?",
+    "ts": 33.19,
+    "stamp": "00:33"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait, hold on\u2014that's not right. My date of birth is March 14th, 1968, not July 4th, 2000. Can you correct that in my file? And I didn't ask to have my profile set up yet, but okay, it's done now. \n\nAnyway, like I said, I need a refill on my naproxen 500mg. I've been on it for over two years for my chronic knee pain, and I just had a visit with my orthopedic surgeon last month. Can you get that refill approved for me?",
+    "ts": 37.05,
+    "stamp": "00:37"
+  },
+  {
+    "speaker": "agent",
+    "text": "I don't see any medications on your chart that I can refill right now.",
+    "ts": 68.128,
+    "stamp": "01:08"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you'd like, I can connect you to our patient support team to help with your naproxen refill. Would you like me to do that?",
+    "ts": 73.628,
+    "stamp": "01:13"
+  },
+  {
+    "speaker": "patient",
+    "text": "That doesn't sound right. I just picked it up in June\u2014I've been taking it consistently. Let me ask you this: what exactly happens next if you transfer me to patient support? Will someone actually call me back, or does this just get lost in the system? And when would I hear back?\n\nI'm heading out of town next week, so I really need to get this sorted before I leave. Can you check with the doctor directly or see if there's another way to get this moving?",
+    "ts": 77.466,
+    "stamp": "01:17"
+  },
+  {
+    "speaker": "agent",
+    "text": "If I connect you to patient support,",
+    "ts": 105.771,
+    "stamp": "01:45"
+  },
+  {
+    "speaker": "agent",
+    "text": "your request will be documented and sent directly to the clinic team.",
+    "ts": 109.447,
+    "stamp": "01:49"
+  },
+  {
+    "speaker": "agent",
+    "text": "Someone from the clinic will review your refill request and call you back as soon as possible. Usually within one business day.",
+    "ts": 114.116,
+    "stamp": "01:54"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can't contact the doctor directly, but the support team will make sure your request is handled quickly.",
+    "ts": 121.011,
+    "stamp": "02:01"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like me to send your request to them now?",
+    "ts": 124.073,
+    "stamp": "02:04"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, that sounds reasonable. Yes, go ahead and connect me to patient support. But before you do, I need to confirm a couple of things. Who's my orthopedic surgeon? I want to make sure the right doctor gets this request, and I also need the correct spelling of their name for a work note I'm filling out. Can you tell me who I saw?",
+    "ts": 125.994,
+    "stamp": "02:05"
+  },
+  {
+    "speaker": "agent",
+    "text": "Upcoming appointments are with doctor Zebigniew Ukoski and doctor Kelly Noble. If you need the exact spelling, it's",
+    "ts": 154.368,
+    "stamp": "02:34"
+  },
+  {
+    "speaker": "agent",
+    "text": "z b I g n I e w",
+    "ts": 158.971,
+    "stamp": "02:38"
+  },
+  {
+    "speaker": "agent",
+    "text": "l u k a w s k I",
+    "ts": 161.672,
+    "stamp": "02:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "and k e l l y n o b l e.",
+    "ts": 166.712,
+    "stamp": "02:46"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like me to connect you to patient support now?",
+    "ts": 169.349,
+    "stamp": "02:49"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, so doctor Kelly Noble\u2014let me make sure I have that right. You said K-E-L-L-Y N-O-B-L-E, correct? I want to confirm that's the correct spelling because I could've sworn last time someone told me it was spelled differently. Can you double-check that against my actual chart to make sure it's right? And is Kelly Noble the doctor I saw last month, or is it the other one?",
+    "ts": 171.319,
+    "stamp": "02:51"
+  },
+  {
+    "speaker": "agent",
+    "text": "The spelling I have is Kelly Noble. K e l l y n o",
+    "ts": 196.468,
+    "stamp": "03:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Based on your upcoming appointments,",
+    "ts": 203.065,
+    "stamp": "03:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "you are scheduled to see both doctor Zigniew Likoski and doctor Kelly Noble.",
+    "ts": 207.554,
+    "stamp": "03:27"
+  },
+  {
+    "speaker": "agent",
+    "text": "I don't have access to your past visit details, only your upcoming appointments.",
+    "ts": 211.745,
+    "stamp": "03:31"
+  },
+  {
+    "speaker": "patient",
+    "text": "Thank",
+    "ts": 212.563,
+    "stamp": "03:32"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you need confirmation of who you saw last month,",
+    "ts": 214.775,
+    "stamp": "03:34"
+  },
+  {
+    "speaker": "agent",
+    "text": "the patient support team can look that up for you. Would you like me to connect you now?",
+    "ts": 217.231,
+    "stamp": "03:37"
+  },
+  {
+    "speaker": "patient",
+    "text": "Alright, thank you. Yes, go ahead and connect me to patient support now. They can help me with the refill and sort out those details about my last visit. I appreciate your help.",
+    "ts": 220.569,
+    "stamp": "03:40"
+  }
+]
