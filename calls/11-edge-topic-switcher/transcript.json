@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.131,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.475,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi",
+    "ts": 10.159,
+    "stamp": "00:10"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile? I just need your first and last name.",
+    "ts": 12.134,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yes, thanks for picking up. My name is Sofia Marchetti. I'm calling because I need to refill a prescription and also have a couple of other things to sort out while I have you on the line.",
+    "ts": 16.546,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 26.785,
+    "stamp": "00:26"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth two thousand for demo purposes. How may I help you today?",
+    "ts": 30.615,
+    "stamp": "00:30"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, I need to correct that \u2014 my date of birth is September 21st, 1979, not July fourth. Can you update that in the system?\n\nAnd like I said, I'm calling about a naproxen refill first. I'm on naproxen 500mg and I'm running low, so I need to get that sorted. Can you help me with that?",
+    "ts": 34.063,
+    "stamp": "00:34"
+  },
+  {
+    "speaker": "agent",
+    "text": "I don't see any medications on your chart that I can refill right now.",
+    "ts": 57.174,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you'd like, I can connect you to our patient support team for more help.",
+    "ts": 60.603,
+    "stamp": "01:00"
+  },
+  {
+    "speaker": "patient",
+    "text": "Um",
+    "ts": 61.407,
+    "stamp": "01:01"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to speak with someone?",
+    "ts": 62.593,
+    "stamp": "01:02"
+  },
+  {
+    "speaker": "agent",
+    "text": "I don't see naproxen or any other medications on your chart that I can refill.",
+    "ts": 75.754,
+    "stamp": "01:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can connect you to our patient support team if you'd like to discuss this further.",
+    "ts": 79.756,
+    "stamp": "01:19"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to speak with someone?",
+    "ts": 81.765,
+    "stamp": "01:21"
+  },
+  {
+    "speaker": "patient",
+    "text": "Um, okay. Yeah, that's frustrating \u2014 I've been on naproxen 500mg for a while now. Before you transfer me, though, can I ask you something else real quick? I got a billing statement in the mail a couple days ago and I'm confused about a charge on it. Do you have access to that kind of thing, or do I need to talk to a different department about that too?",
+    "ts": 84.215,
+    "stamp": "01:24"
+  },
+  {
+    "speaker": "agent",
+    "text": "Transferring you now. Thank you.",
+    "ts": 89.676,
+    "stamp": "01:29"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait, hold on \u2014",
+    "ts": 92.002,
+    "stamp": "01:32"
+  },
+  {
+    "speaker": "agent",
+    "text": "Hello.",
+    "ts": 92.504,
+    "stamp": "01:32"
+  },
+  {
+    "speaker": "agent",
+    "text": "You've reached the Pretty Good AI test line. Goodbye.",
+    "ts": 95.02,
+    "stamp": "01:35"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait \u2014 hello? Are you still there?",
+    "ts": 96.979,
+    "stamp": "01:36"
+  }
+]

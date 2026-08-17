@@ -123,6 +123,22 @@
     {
       "text": "Provider name: Doctor Zebigniew Lakoski (different spelling variant from previously documented 'Zebigniew Likoski')",
       "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Provider name: Zbigniew Lukovsky (agent spelled as 'z b I g n I e w l u k' and pronounced last name as 'Lukovsky')",
+      "source": "10-edge-confused"
+    },
+    {
+      "text": "Agent adds notes for clinic support team to clarify appointment purposes when details aren't specified in the system",
+      "source": "10-edge-confused"
+    },
+    {
+      "text": "Patient requested DOB correction to September 21st, 1979",
+      "source": "11-edge-topic-switcher"
+    },
+    {
+      "text": "Patient reports taking naproxen 500mg for an extended period",
+      "source": "11-edge-topic-switcher"
     }
   ],
   "leads": [
@@ -217,6 +233,26 @@
     {
       "text": "Agent appeared to struggle with audio clarity or call quality during patient requests for information ('cutting out a little') -- test if agent reliably conveys information under poor audio conditions",
       "source": "09-edge-interrupter"
+    },
+    {
+      "text": "Patient gave unclear information about appointment purpose (hip vs. scan vs. knee), then asked clinic to clarify -- test how agent handles vague appointment reason requests and whether follow-up notes resolve the ambiguity",
+      "source": "10-edge-confused"
+    },
+    {
+      "text": "Agent says appointment details on file don't specify which visit is for hip concern -- test whether agent should have access to appointment reason/type information or if this is a system limitation",
+      "source": "10-edge-confused"
+    },
+    {
+      "text": "Patient has billing question ('charge on it') -- test if agent can field billing/accounting inquiries or if all non-appointment/non-refill questions should be escalated",
+      "source": "11-edge-topic-switcher"
+    },
+    {
+      "text": "Patient requested to ask follow-up question before being transferred ('can I ask you something else real quick') but agent transferred immediately anyway -- test if agent should pause transfers for patient follow-up questions or confirm patient is ready before transferring",
+      "source": "11-edge-topic-switcher"
+    },
+    {
+      "text": "Transfer appears to route to 'Pretty Good AI test line' and disconnects with goodbye -- verify if this is a test environment artifact, a broken transfer, or actual patient support transfer behavior",
+      "source": "11-edge-topic-switcher"
     }
   ]
 }

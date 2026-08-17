@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:38:33+00:00",
+  "scenario": "edge-topic-switcher",
+  "title": "Caller pivots between refill, billing, and a relative's appointment",
+  "category": "edge",
+  "behavior": "topic_switcher",
+  "barge_in_policy": "yield",
+  "call_sid": "CA6d325ed70fd59d320b0f67027aabaa46",
+  "stream_sid": "MZ511e881805642b4e67123b4b34684893",
+  "ended_by": "remote_hangup",
+  "model": "claude-haiku-4-5-20251001"
+}

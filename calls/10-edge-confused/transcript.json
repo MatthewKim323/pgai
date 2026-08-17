@@ -1,0 +1,194 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.014,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.096,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh",
+    "ts": 9.848,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 11.894,
+    "stamp": "00:11"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name,",
+    "ts": 14.08,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh, hi there. Yeah, my daughter told me to call about, um, an appointment thing. My name is Harold Greaves.",
+    "ts": 15.333,
+    "stamp": "00:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your patient profile is set up.",
+    "ts": 29.993,
+    "stamp": "00:29"
+  },
+  {
+    "speaker": "agent",
+    "text": "And your date of birth is July fourth thousand for demo purposes. How can I help you today?",
+    "ts": 32.456,
+    "stamp": "00:32"
+  },
+  {
+    "speaker": "patient",
+    "text": "Well, hold on -- that's not right. My date of birth is December fifth, nineteen forty-nine. Not July fourth. Let me make sure that gets corrected before we go any further.",
+    "ts": 37.096,
+    "stamp": "00:37"
+  },
+  {
+    "speaker": "agent",
+    "text": "I documented your request",
+    "ts": 57.78,
+    "stamp": "00:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "to update your date of birth to December fifth. Nineteen forty nine.",
+    "ts": 60.423,
+    "stamp": "01:00"
+  },
+  {
+    "speaker": "agent",
+    "text": "Our clinic support team will review and correct this as soon as possible. How else can I help you today?",
+    "ts": 65.93,
+    "stamp": "01:05"
+  },
+  {
+    "speaker": "patient",
+    "text": "Okay, good. Thank you for that. So, um, my daughter left me a note about something I need to do here. She said there was an appointment or maybe a follow-up? I'm not entirely sure. Something about a scan, I think. Or maybe it was about my knee? No, wait -- my hip. It's my hip, I'm pretty sure.",
+    "ts": 70.027,
+    "stamp": "01:10"
+  },
+  {
+    "speaker": "agent",
+    "text": "You have two upcoming appointments with doctor Zedneel Lukowski.",
+    "ts": 96.588,
+    "stamp": "01:36"
+  },
+  {
+    "speaker": "agent",
+    "text": "The first is Tuesday, August eighteenth at ten AM.",
+    "ts": 99.929,
+    "stamp": "01:39"
+  },
+  {
+    "speaker": "agent",
+    "text": "And the second is Monday, August twenty fourth at eight AM.",
+    "ts": 103.527,
+    "stamp": "01:43"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you need to confirm which one is for your hip or want to make changes, just let me know.",
+    "ts": 108.126,
+    "stamp": "01:48"
+  },
+  {
+    "speaker": "patient",
+    "text": "Wait, hold on. Let me just make sure I'm hearing this right. You said the doctor's name is... Zedneel Lukowski? That doesn't sound quite right. Could you spell that for me? And which one of those appointments is the hip thing? The Tuesday one or the Monday one?",
+    "ts": 111.216,
+    "stamp": "01:51"
+  },
+  {
+    "speaker": "agent",
+    "text": "The doctor's name is spelled",
+    "ts": 131.394,
+    "stamp": "02:11"
+  },
+  {
+    "speaker": "agent",
+    "text": "z b I g n I e w l u k",
+    "ts": 136.433,
+    "stamp": "02:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "Both appointments are with this provider.",
+    "ts": 138.856,
+    "stamp": "02:18"
+  },
+  {
+    "speaker": "agent",
+    "text": "The appointment details on file don't specify which one is for your hit.",
+    "ts": 142.856,
+    "stamp": "02:22"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like me to add a note for the clinic to confirm which visit is for your hip concern?",
+    "ts": 147.906,
+    "stamp": "02:27"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, okay, that helps a bit. So Zbigniew -- is that how you say it? Zbigniew Lukow... ski? I'm still not quite getting the last name. Could you say it one more time, slower?\n\nAnd yes, please add that note. My daughter would know which one is which, but I've got the note here somewhere and I can't find my reading glasses. So yeah, have them call me or something to figure out which appointment is for the hip.",
+    "ts": 150.254,
+    "stamp": "02:30"
+  },
+  {
+    "speaker": "agent",
+    "text": "The doctor's last name is pronounced Lukovsky.",
+    "ts": 176.971,
+    "stamp": "02:56"
+  },
+  {
+    "speaker": "agent",
+    "text": "I've added a note for the clinic to confirm which appointment is for your hip.",
+    "ts": 182.063,
+    "stamp": "03:02"
+  },
+  {
+    "speaker": "agent",
+    "text": "The support team will reach out to you soon to clarify. Is there anything else you'd like help with?",
+    "ts": 184.889,
+    "stamp": "03:04"
+  },
+  {
+    "speaker": "patient",
+    "text": "Alright, Lukovsky. Got it. And they'll call me to figure out which one is the hip visit. That sounds good. Um, I think that's all I needed. My daughter said to call and get this sorted, and it sounds like we've done that. So I appreciate your patience with me here.",
+    "ts": 188.805,
+    "stamp": "03:08"
+  },
+  {
+    "speaker": "agent",
+    "text": "You're all set.",
+    "ts": 205.315,
+    "stamp": "03:25"
+  },
+  {
+    "speaker": "agent",
+    "text": "The clinic team will contact you soon to confirm which appointment is for your hip.",
+    "ts": 209.864,
+    "stamp": "03:29"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you need anything else, just give us a call. Have a great day.",
+    "ts": 212.456,
+    "stamp": "03:32"
+  },
+  {
+    "speaker": "patient",
+    "text": "Thank you, I appreciate it. You've been very helpful. Have a good one.",
+    "ts": 214.594,
+    "stamp": "03:34"
+  }
+]

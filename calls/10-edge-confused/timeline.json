@@ -1,0 +1,885 @@
+[
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 3.1792e-05,
+    "turn": 0,
+    "frm": "dialing",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 0.127377334,
+    "turn": 0,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 3.014220125,
+    "turn": 0,
+    "text": "May be recorded for quality and training purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 3.160913042,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 3.744110042,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 9.096281917,
+    "turn": 0,
+    "text": "Thank you for calling Pivot Point Orthopaedics."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 9.128831334,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 9.846436875,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "agent_speaking",
+    "ts": 9.848132125,
+    "turn": 0,
+    "text": "Oh"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 11.893993,
+    "turn": 0,
+    "text": "Would you like to create a demo patient profile?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 12.039591084,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 12.371446834,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 14.079949042,
+    "turn": 0,
+    "text": "I just need your first and last name,"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 14.217402709,
+    "turn": 0,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 15.265274667,
+    "turn": 0,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 15.333009834,
+    "turn": 0,
+    "text": "Oh, hi there. Yeah, my daughter told me to call about, um, an appointment thing. My name is Harold Greaves."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 22.785197125,
+    "turn": 0
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 22.785197125,
+    "turn": 1,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 28.149313167,
+    "turn": 1,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 29.99320325,
+    "turn": 1,
+    "text": "Your patient profile is set up."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 30.002526417,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 30.346381584,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 32.456116875,
+    "turn": 1,
+    "text": "And your date of birth is July fourth"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 32.463465042,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 32.590635375,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 34.21067125,
+    "turn": 1,
+    "text": "thousand for demo purposes."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 34.37804075,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 34.866764875,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 35.709849709,
+    "turn": 1,
+    "text": "How can I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 35.758390417,
+    "turn": 1,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 37.064059167,
+    "turn": 1,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 37.096102375,
+    "turn": 1,
+    "text": "Well, hold on -- that's not right. My date of birth is December fifth, nineteen forty-nine. Not July fourth. Let me make sure that gets corrected before we go any further."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 48.1864445,
+    "turn": 1
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 48.1864445,
+    "turn": 2,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 56.472809417,
+    "turn": 2,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 57.780362959,
+    "turn": 2,
+    "text": "I documented your request"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 57.810035334,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 57.927462709,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 60.423079125,
+    "turn": 2,
+    "text": "to update your date of birth to December fifth."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 60.426036667,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 60.877725,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 61.924803042,
+    "turn": 2,
+    "text": "Nineteen forty nine."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 61.927880542,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 62.246407125,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 65.930206709,
+    "turn": 2,
+    "text": "Our clinic support team will review and correct this as soon as possible."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 66.1194655,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 66.647942917,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 67.889122709,
+    "turn": 2,
+    "text": "How else can I help you today?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 67.944520459,
+    "turn": 2,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 69.263908292,
+    "turn": 2,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 70.026923042,
+    "turn": 2,
+    "text": "Okay, good. Thank you for that. So, um, my daughter left me a note about something I need to do here. She said there was an appointment or maybe a follow-up? I'm not entirely sure. Something about a scan, I think. Or maybe it was about my knee? No, wait -- my hip. It's my hip, I'm pretty sure."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 90.228080584,
+    "turn": 2
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 90.228080584,
+    "turn": 3,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 93.131731959,
+    "turn": 3,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 96.587898084,
+    "turn": 3,
+    "text": "You have two upcoming appointments with doctor Zedneel Lukowski."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 96.624393334,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 96.908972875,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 99.92899275,
+    "turn": 3,
+    "text": "The first is Tuesday, August eighteenth at ten AM."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 100.041159792,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 100.408497375,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 103.526888917,
+    "turn": 3,
+    "text": "And the second is Monday, August twenty fourth at eight AM."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 103.5616835,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 103.941926334,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 108.126118542,
+    "turn": 3,
+    "text": "If you need to confirm which one is for your hip or want to make changes, just let me know."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 109.716429625,
+    "turn": 3,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 110.920614209,
+    "turn": 3,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 111.216444,
+    "turn": 3,
+    "text": "Wait, hold on. Let me just make sure I'm hearing this right. You said the doctor's name is... Zedneel Lukowski? That doesn't sound quite right. Could you spell that for me? And which one of those appointments is the hip thing? The Tuesday one or the Monday one?"
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 127.021330042,
+    "turn": 3
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 127.021330042,
+    "turn": 4,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 130.294829084,
+    "turn": 4,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 131.393745209,
+    "turn": 4,
+    "text": "The doctor's name is spelled"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 136.432942417,
+    "turn": 4,
+    "text": "z b I g n I e w l u"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 136.672474834,
+    "turn": 4,
+    "text": "k"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 138.856181834,
+    "turn": 4,
+    "text": "Both appointments are with this provider."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 138.95809375,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 139.210071625,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 142.856492125,
+    "turn": 4,
+    "text": "The appointment details on file don't specify which one is for your hit."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 142.98054575,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 143.411071167,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 147.906139042,
+    "turn": 4,
+    "text": "Would you like me to add a note for the clinic to confirm which visit is for your hip concern?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 148.068334875,
+    "turn": 4,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 149.099037125,
+    "turn": 4,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 150.253811,
+    "turn": 4,
+    "text": "Yeah, okay, that helps a bit. So Zbigniew -- is that how you say it? Zbigniew Lukow... ski? I'm still not quite getting the last name. Could you say it one more time, slower?\n\nAnd yes, please add that note. My daughter would know which one is which, but I've got the note here somewhere and I can't find my reading glasses. So yeah, have them call me or something to figure out which appointment is for the hip."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 172.504820667,
+    "turn": 4
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 172.504820667,
+    "turn": 5,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 175.510491709,
+    "turn": 5,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 176.971520917,
+    "turn": 5,
+    "text": "The doctor's last name is pronounced"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 177.1001465,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 177.167468792,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 177.862955875,
+    "turn": 5,
+    "text": "Lukovsky."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 177.881972334,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 178.008400917,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 182.063388667,
+    "turn": 5,
+    "text": "I've added a note for the clinic to confirm which appointment is for your hip."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 182.181266125,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 182.612342792,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 184.889007167,
+    "turn": 5,
+    "text": "The support team will reach out to you soon to clarify."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 185.041237334,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 185.49317275,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 186.827730375,
+    "turn": 5,
+    "text": "Is there anything else you'd like help with?"
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 186.851511959,
+    "turn": 5,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "patient_speaking",
+    "ts": 187.854582,
+    "turn": 5,
+    "frm": "thinking",
+    "to": "patient_speaking"
+  },
+  {
+    "type": "patient_said",
+    "state": "patient_speaking",
+    "ts": 188.80488725,
+    "turn": 5,
+    "text": "Alright, Lukovsky. Got it. And they'll call me to figure out which one is the hip visit. That sounds good. Um, I think that's all I needed. My daughter said to call and get this sorted, and it sounds like we've done that. So I appreciate your patience with me here."
+  },
+  {
+    "type": "turn_complete",
+    "state": "patient_speaking",
+    "ts": 201.938311709,
+    "turn": 5
+  },
+  {
+    "type": "state_changed",
+    "state": "waiting_greeting",
+    "ts": 201.938311709,
+    "turn": 6,
+    "frm": "patient_speaking",
+    "to": "waiting_greeting"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 204.653550209,
+    "turn": 6,
+    "frm": "waiting_greeting",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 205.315255334,
+    "turn": 6,
+    "text": "You're all set."
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 209.864139167,
+    "turn": 6,
+    "text": "The clinic team will contact you soon to confirm which appointment is for your hip."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 210.061593167,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 210.548739875,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 212.45607475,
+    "turn": 6,
+    "text": "If you need anything else, just give us a call."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 212.479051,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "state_changed",
+    "state": "agent_speaking",
+    "ts": 212.80765725,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "agent_speaking"
+  },
+  {
+    "type": "agent_said",
+    "state": "agent_speaking",
+    "ts": 213.503389292,
+    "turn": 6,
+    "text": "Have a great day."
+  },
+  {
+    "type": "state_changed",
+    "state": "thinking",
+    "ts": 213.604147,
+    "turn": 6,
+    "frm": "agent_speaking",
+    "to": "thinking"
+  },
+  {
+    "type": "patient_said",
+    "state": "thinking",
+    "ts": 214.594427625,
+    "turn": 6,
+    "text": "Thank you, I appreciate it. You've been very helpful. Have a good one."
+  },
+  {
+    "type": "state_changed",
+    "state": "ended",
+    "ts": 214.59973475,
+    "turn": 6,
+    "frm": "thinking",
+    "to": "ended"
+  },
+  {
+    "type": "call_ended",
+    "state": "ended",
+    "ts": 214.59973475,
+    "turn": 6,
+    "reason": "end_frame"
+  }
+]

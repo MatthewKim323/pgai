@@ -1,0 +1,23 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:10] PATIENT: Hi
+[00:12] AGENT: Would you like to create a demo patient profile? I just need your first and last name.
+[00:16] PATIENT: Hi, yes, thanks for picking up. My name is Sofia Marchetti. I'm calling because I need to refill a prescription and also have a couple of other things to sort out while I have you on the line.
+[00:26] AGENT: Your patient profile is set up.
+[00:30] AGENT: And your date of birth is July fourth two thousand for demo purposes. How may I help you today?
+[00:34] PATIENT: Actually, I need to correct that — my date of birth is September 21st, 1979, not July fourth. Can you update that in the system?
+
+And like I said, I'm calling about a naproxen refill first. I'm on naproxen 500mg and I'm running low, so I need to get that sorted. Can you help me with that?
+[00:57] AGENT: I don't see any medications on your chart that I can refill right now.
+[01:00] AGENT: If you'd like, I can connect you to our patient support team for more help.
+[01:01] PATIENT: Um
+[01:02] AGENT: Would you like to speak with someone?
+[01:15] AGENT: I don't see naproxen or any other medications on your chart that I can refill.
+[01:19] AGENT: I can connect you to our patient support team if you'd like to discuss this further.
+[01:21] AGENT: Would you like to speak with someone?
+[01:24] PATIENT: Um, okay. Yeah, that's frustrating — I've been on naproxen 500mg for a while now. Before you transfer me, though, can I ask you something else real quick? I got a billing statement in the mail a couple days ago and I'm confused about a charge on it. Do you have access to that kind of thing, or do I need to talk to a different department about that too?
+[01:29] AGENT: Transferring you now. Thank you.
+[01:32] PATIENT: Wait, hold on —
+[01:32] AGENT: Hello.
+[01:35] AGENT: You've reached the Pretty Good AI test line. Goodbye.
+[01:36] PATIENT: Wait — hello? Are you still there?

@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:36:24+00:00",
+  "scenario": "edge-confused",
+  "title": "Confused caller with an unclear, shifting request",
+  "category": "edge",
+  "behavior": "confused",
+  "barge_in_policy": "yield",
+  "call_sid": "CAf2e08b5fcb17a0ebd86858cddf8ff944",
+  "stream_sid": "MZ6d08a10a36d4d0abe61721ee34ecd716",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}
