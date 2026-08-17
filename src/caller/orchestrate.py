@@ -80,6 +80,21 @@ def run_scenario(cfg: Config, scenario_id: str) -> Path | None:
         return None
 
     fetch_recording(cfg, call_sid, call_dir)
+
+    # Fold what this call revealed into the campaign's shared memory so the
+    # next persona walks in smarter. Fail-soft: extraction hiccups must never
+    # cost us a completed call's artifacts.
+    try:
+        import anthropic
+
+        from caller import knowledge
+
+        knowledge.update_from_call(
+            anthropic.Anthropic(api_key=cfg.anthropic_api_key), cfg.patient_model, call_dir
+        )
+    except Exception as e:  # noqa: BLE001 - deliberately broad, logged
+        logger.warning(f"knowledge extraction failed for {call_dir.name}: {e}")
+
     _print_summary(call_dir)
     return call_dir
 

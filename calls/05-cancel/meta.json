@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:14:23+00:00",
+  "scenario": "cancel",
+  "title": "Existing patient cancels an appointment",
+  "category": "rescheduling",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CA198d968739b0337f061786d98d50fa54",
+  "stream_sid": "MZ76b5560c1c7be035b5f0422626b34ed2",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

@@ -107,6 +107,19 @@ def _cmd_analyze(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_knowledge(args: argparse.Namespace) -> int:
+    from caller import knowledge
+
+    k = knowledge.load()
+    print(f"practice facts ({len(k['practice_facts'])}):")
+    for f in k["practice_facts"]:
+        print(f"  - {f['text']}  [{f['source']}]")
+    print(f"leads ({len(k['leads'])}):")
+    for f in k["leads"]:
+        print(f"  - {f['text']}  [{f['source']}]")
+    return 0
+
+
 def _cmd_dashboard(args: argparse.Namespace) -> int:
     import uvicorn
 
@@ -134,6 +147,10 @@ def main(argv: list[str] | None = None) -> int:
     p_camp.set_defaults(fn=_cmd_campaign)
 
     sub.add_parser("list", help="list scenarios and completed calls").set_defaults(fn=_cmd_list)
+
+    sub.add_parser(
+        "knowledge", help="show the campaign's cross-call memory"
+    ).set_defaults(fn=_cmd_knowledge)
 
     p_dash = sub.add_parser("dashboard", help="serve the mission-control UI")
     p_dash.add_argument("--port", type=int, default=8090)

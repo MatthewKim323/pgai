@@ -47,6 +47,7 @@ from pipecat.turns.user_stop import TurnAnalyzerUserTurnStopStrategy
 from pipecat.turns.user_turn_strategies import UserTurnStrategies
 from pipecat.workers.runner import WorkerRunner
 
+from caller import knowledge
 from caller.config import Config
 from caller.observer import TurnStateObserver
 from caller.scenario import Scenario, build_system_prompt
@@ -131,7 +132,14 @@ async def run_call_pipeline(
     tts = build_tts(cfg, scenario)
 
     context = LLMContext(
-        messages=[{"role": "system", "content": build_system_prompt(scenario)}],
+        messages=[
+            {
+                "role": "system",
+                "content": build_system_prompt(
+                    scenario, knowledge_block=knowledge.prompt_block(knowledge.load())
+                ),
+            }
+        ],
         tools=ToolsSchema(standard_tools=[END_CALL_TOOL]),
     )
 

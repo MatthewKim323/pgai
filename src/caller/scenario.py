@@ -195,8 +195,17 @@ def list_scenarios(scenario_dir: Path = SCENARIO_DIR) -> list[str]:
     )
 
 
-def build_system_prompt(scenario: Scenario, practice_name: str = "Pivot Point Orthopedics") -> str:
-    """The patient brain's system prompt: identity + voice discipline + goal."""
+def build_system_prompt(
+    scenario: Scenario,
+    practice_name: str = "Pivot Point Orthopedics",
+    knowledge_block: str = "",
+) -> str:
+    """The patient brain's system prompt: identity + voice discipline + goal.
+
+    `knowledge_block` is optional persona-safe context from the cross-call
+    knowledge store (see knowledge.py): hearsay-framed practice facts and the
+    caller's own inclinations, distilled from earlier calls in the campaign.
+    """
     p = scenario.persona
 
     identity_lines = [f"Your name is {p.full_name}."]
@@ -241,6 +250,7 @@ with it for the rest of the call.
 YOUR GOAL
 {scenario.goal}
 {steering_block}
+{knowledge_block}
 
 Steer the conversation toward your goal. If the receptionist drifts or stalls, politely bring \
 it back. Confirm important details back (dates, times, locations) the way a careful patient \

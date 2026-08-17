@@ -1,0 +1,26 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:10] PATIENT: Hi
+[00:12] AGENT: Would you like to create a demo patient profile,
+[00:14] AGENT: I just need your first and last name to get started.
+[00:16] PATIENT: Hi, thanks for picking up. My name is Matthew Kim. I'm calling because I have an appointment coming up but something came up at work and I need to reschedule it to a different day next week if that's possible.
+[00:36] AGENT: You have two upcoming appointments on Tuesday. August eighteenth. One is at
+[00:41] AGENT: ten thirty AM with Abeker,
+[00:44] AGENT: and the other is at two PM with Doo Dee Hauser.
+[00:46] AGENT: Which appointment would you like to reschedule?
+[00:48] PATIENT: Oh, I need to reschedule one of those. Um, let me go with the two PM appointment with Doo Dee Hauser. Can you move that to a different day next week for me?
+[01:04] AGENT: The next available appointment with Doogie Howser is Monday, August twenty fourth, at eleven AM in Nashville.
+[01:10] AGENT: Would you like to move your two PM appointment to that time or would you prefer a different time?
+[01:14] PATIENT: Monday the twenty fourth at eleven AM works great for me. Let me just confirm that back -- so I'm moving my two PM appointment from Tuesday the eighteenth to Monday, August twenty fourth at eleven AM with Doogie Howser in Nashville. Is that all set?
+[01:34] AGENT: Almost.
+[01:39] AGENT: Before I finish rescheduling, can you tell me the reason you need to move your appointment?
+[01:42] AGENT: For example, is it a work conflict? Illness, or something else?
+[01:45] PATIENT: Yeah, it's a work conflict. Something came up at the office that I can't get around, so I need to move it to Monday instead.
+[01:56] AGENT: Your appointment has been rescheduled.
+[02:01] AGENT: You are now set for Monday, August twenty fourth at eleven AM with Dubehauser in Nashville.
+[02:05] AGENT: Would you like me to send you a text message with these details?
+[02:06] PATIENT: Yeah, that sounds good. You can send me a text with those details. Thanks for getting that sorted out for me.
+[02:15] AGENT: You're all set.
+[02:20] AGENT: Your appointment is now Monday, August twenty fourth at eleven AM with Doobie Hauser in Nashville.
+[02:22] AGENT: I sent you a text with the details. Let me know if you need anything else.
+[02:26] PATIENT: Perfect, I appreciate it. Thanks for your help. Have a good one.

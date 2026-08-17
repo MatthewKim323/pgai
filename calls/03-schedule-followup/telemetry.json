@@ -1,0 +1,96 @@
+{
+  "call_duration_secs": 190.015,
+  "completed_turns": 8,
+  "interruptions": 0,
+  "patient": {
+    "per_turn": [
+      {
+        "turn": 0,
+        "interrupted": false,
+        "llm_first_token": 0.799,
+        "response_latency": 1.164,
+        "speech_duration": 5.854
+      },
+      {
+        "turn": 1,
+        "interrupted": false,
+        "llm_first_token": 0.802,
+        "response_latency": 1.187,
+        "speech_duration": 7.044
+      },
+      {
+        "turn": 2,
+        "interrupted": false,
+        "llm_first_token": 1.444,
+        "response_latency": 1.774,
+        "speech_duration": 10.322
+      },
+      {
+        "turn": 3,
+        "interrupted": false,
+        "llm_first_token": 1.113,
+        "response_latency": 1.377,
+        "speech_duration": 4.806
+      },
+      {
+        "turn": 4,
+        "interrupted": false,
+        "llm_first_token": 0.859,
+        "response_latency": 1.126,
+        "speech_duration": 4.523
+      },
+      {
+        "turn": 5,
+        "interrupted": false,
+        "llm_first_token": 0.674,
+        "response_latency": 0.977,
+        "speech_duration": 4.366
+      },
+      {
+        "turn": 6,
+        "interrupted": false,
+        "llm_first_token": 0.675,
+        "response_latency": 1.082,
+        "speech_duration": 14.525
+      },
+      {
+        "turn": 7,
+        "interrupted": false,
+        "llm_first_token": 0.594
+      }
+    ],
+    "response_latency": {
+      "count": 7,
+      "p50": 1.164,
+      "p95": 1.774,
+      "max": 1.774,
+      "mean": 1.241
+    },
+    "llm_first_token": {
+      "count": 8,
+      "p50": 0.8,
+      "p95": 1.444,
+      "max": 1.444,
+      "mean": 0.87
+    }
+  },
+  "agent_under_test": {
+    "response_gaps": [
+      0.148,
+      10.06,
+      9.643,
+      2.619,
+      2.589,
+      2.301,
+      5.688,
+      3.459
+    ],
+    "response_gap": {
+      "count": 8,
+      "p50": 3.039,
+      "p95": 10.06,
+      "max": 10.06,
+      "mean": 4.563
+    }
+  }
+}

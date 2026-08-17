@@ -1,0 +1,34 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:07] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:10] PATIENT: Hey
+[00:12] AGENT: Would you like to create a demo patient profile?
+[00:14] AGENT: I just need your first and last name to get started.
+[00:15] PATIENT: Hi, yeah, I'm calling to cancel an appointment actually. My name is Matthew Kim.
+[00:23] AGENT: Thanks. Matthew.
+[00:28] AGENT: Before I can help with your cancellation, I'll create your demo patient profile. One moment.
+[00:30] PATIENT: Sure, no problem. Thanks for getting me set up.
+[00:37] AGENT: You have two upcoming appointments.
+[00:41] AGENT: One is with doctor Dudeehauser on Monday, August twenty fourth,
+[00:45] AGENT: The other is with doctor Eberker on Tuesday, August eighteenth. Which one would you like to cancel?
+[00:48] PATIENT: Oh, um, I want to cancel both of them actually. I've been feeling a lot better, so I don't think I need to come in. Can we just cancel both appointments?
+[01:00] AGENT: I can help with that.
+[01:05] AGENT: Before I proceed, can you confirm you want to cancel your
+[01:08] AGENT: appointments with doctor Abreker on Tuesday, August and doctor Dugge Hauser on Monday, August twenty fourth.
+[01:11] PATIENT: Yeah, that sounds right. So that's doctor Eberker on Tuesday, August eighteenth, and doctor Dudeehauser on Monday, August twenty fourth. Those are the two I want to cancel.
+[01:25] AGENT: Thank you for confirming.
+[01:29] AGENT: Can you share a brief reason for canceling these appointments?
+[01:32] AGENT: If you prefer not to say, I can just note that you're feeling better.
+[01:35] PATIENT: Yeah, just put down that I'm feeling better. That works for me.
+[01:45] AGENT: Both appointments are now canceled.
+[01:48] AGENT: Doctor Abreker on August eighteenth
+[01:51] AGENT: and doctor Judy Hauser on August twenty fourth.
+[01:53] AGENT: I've noted that you're feeling better
+[01:56] AGENT: Is there anything else I can help you with today?
+[01:57] PATIENT: Actually, just a couple quick things. Is there gonna be a cancellation fee for these, and do I need anything in writing to confirm that they're canceled?
+[02:09] AGENT: There is no cancellation fee for these appointments.
+[02:15] AGENT: If you'd like written confirmation, I can send you a text message confirming your cancellation. Would you like me to do that?
+[02:17] PATIENT: Yeah, that would be great. Go ahead and send that text to me. My number is six five seven seven six six five one three six.
+[02:30] AGENT: I have your number as six five seven seven six six five one three six
+[02:35] PATIENT: Actually
+[02:37] AGENT: The confirmation text has already been sent there. Is there anything else you need help with?
+[02:40] PATIENT: No, that's all set. Thanks for taking care of that for me. Have a good one.

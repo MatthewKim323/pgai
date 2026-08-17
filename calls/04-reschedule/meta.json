@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:11:17+00:00",
+  "scenario": "reschedule",
+  "title": "Existing patient moves an upcoming appointment",
+  "category": "rescheduling",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CAafc3cff3d0582b1a03829f149a4064f3",
+  "stream_sid": "MZ3852b410ae77054c9bad458567ef3e19",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

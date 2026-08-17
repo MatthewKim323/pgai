@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-08-17T11:08:26+00:00",
+  "scenario": "schedule-followup",
+  "title": "Existing patient books a follow-up visit",
+  "category": "scheduling",
+  "behavior": "baseline",
+  "barge_in_policy": "yield",
+  "call_sid": "CAaaeeb66734b197ad4cc9ca7d70c1c1fb",
+  "stream_sid": "MZ81b96d809e4f5719b23d5566246f2a22",
+  "ended_by": "patient_goodbye",
+  "model": "claude-haiku-4-5-20251001"
+}

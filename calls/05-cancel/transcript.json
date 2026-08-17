@@ -1,0 +1,206 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.06,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 7.535,
+    "stamp": "00:07"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hey",
+    "ts": 10.056,
+    "stamp": "00:10"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile?",
+    "ts": 12.211,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.772,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, yeah, I'm calling to cancel an appointment actually. My name is Matthew Kim.",
+    "ts": 15.864,
+    "stamp": "00:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks. Matthew.",
+    "ts": 23.739,
+    "stamp": "00:23"
+  },
+  {
+    "speaker": "agent",
+    "text": "Before I can help with your cancellation, I'll create your demo patient profile. One moment.",
+    "ts": 28.685,
+    "stamp": "00:28"
+  },
+  {
+    "speaker": "patient",
+    "text": "Sure, no problem. Thanks for getting me set up.",
+    "ts": 30.595,
+    "stamp": "00:30"
+  },
+  {
+    "speaker": "agent",
+    "text": "You have two upcoming appointments.",
+    "ts": 37.992,
+    "stamp": "00:37"
+  },
+  {
+    "speaker": "agent",
+    "text": "One is with doctor Dudeehauser on Monday, August twenty fourth,",
+    "ts": 41.681,
+    "stamp": "00:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "The other is with doctor Eberker on Tuesday, August eighteenth. Which one would you like to cancel?",
+    "ts": 45.311,
+    "stamp": "00:45"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh, um, I want to cancel both of them actually. I've been feeling a lot better, so I don't think I need to come in. Can we just cancel both appointments?",
+    "ts": 48.575,
+    "stamp": "00:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can help with that.",
+    "ts": 60.961,
+    "stamp": "01:00"
+  },
+  {
+    "speaker": "agent",
+    "text": "Before I proceed, can you confirm you want to cancel your",
+    "ts": 65.871,
+    "stamp": "01:05"
+  },
+  {
+    "speaker": "agent",
+    "text": "appointments with doctor Abreker on Tuesday, August and doctor Dugge Hauser on Monday, August twenty fourth.",
+    "ts": 68.939,
+    "stamp": "01:08"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that sounds right. So that's doctor Eberker on Tuesday, August eighteenth, and doctor Dudeehauser on Monday, August twenty fourth. Those are the two I want to cancel.",
+    "ts": 71.767,
+    "stamp": "01:11"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for confirming.",
+    "ts": 85.854,
+    "stamp": "01:25"
+  },
+  {
+    "speaker": "agent",
+    "text": "Can you share a brief reason for canceling these appointments?",
+    "ts": 89.022,
+    "stamp": "01:29"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you prefer not to say, I can just note that you're feeling better.",
+    "ts": 92.591,
+    "stamp": "01:32"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, just put down that I'm feeling better. That works for me.",
+    "ts": 95.083,
+    "stamp": "01:35"
+  },
+  {
+    "speaker": "agent",
+    "text": "Both appointments are now canceled.",
+    "ts": 105.996,
+    "stamp": "01:45"
+  },
+  {
+    "speaker": "agent",
+    "text": "Doctor Abreker on August eighteenth",
+    "ts": 108.668,
+    "stamp": "01:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "and doctor Judy Hauser on August twenty fourth.",
+    "ts": 111.832,
+    "stamp": "01:51"
+  },
+  {
+    "speaker": "agent",
+    "text": "I've noted that you're feeling better",
+    "ts": 113.949,
+    "stamp": "01:53"
+  },
+  {
+    "speaker": "agent",
+    "text": "Is there anything else I can help you with today?",
+    "ts": 116.173,
+    "stamp": "01:56"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually, just a couple quick things. Is there gonna be a cancellation fee for these, and do I need anything in writing to confirm that they're canceled?",
+    "ts": 117.608,
+    "stamp": "01:57"
+  },
+  {
+    "speaker": "agent",
+    "text": "There is no cancellation fee for these appointments.",
+    "ts": 129.998,
+    "stamp": "02:09"
+  },
+  {
+    "speaker": "agent",
+    "text": "If you'd like written confirmation, I can send you a text message confirming your cancellation. Would you like me to do that?",
+    "ts": 135.109,
+    "stamp": "02:15"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that would be great. Go ahead and send that text to me. My number is six five seven seven six six five one three six.",
+    "ts": 137.993,
+    "stamp": "02:17"
+  },
+  {
+    "speaker": "agent",
+    "text": "I have your number as six five seven seven six six five one three six",
+    "ts": 150.635,
+    "stamp": "02:30"
+  },
+  {
+    "speaker": "patient",
+    "text": "Actually",
+    "ts": 155.121,
+    "stamp": "02:35"
+  },
+  {
+    "speaker": "agent",
+    "text": "The confirmation text has already been sent there. Is there anything else you need help with?",
+    "ts": 157.375,
+    "stamp": "02:37"
+  },
+  {
+    "speaker": "patient",
+    "text": "No, that's all set. Thanks for taking care of that for me. Have a good one.",
+    "ts": 160.519,
+    "stamp": "02:40"
+  }
+]

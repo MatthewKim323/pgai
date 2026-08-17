@@ -1,0 +1,126 @@
+{
+  "practice_facts": [
+    {
+      "text": "Practice name: Pivot Point Orthopaedics",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Accepts Aetna PPO insurance",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Has next-day morning appointments available",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "New patient appointment requires: photo ID, insurance card, list of current medications, and referral from primary care doctor",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Provider name: Doctor Abricker",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Agent offers to create demo patient profiles with placeholder date of birth (July 4, 2000 mentioned as 'for demo purposes')",
+      "source": "02-refill"
+    },
+    {
+      "text": "Agent cannot see medications on patient chart to process refills",
+      "source": "02-refill"
+    },
+    {
+      "text": "Provider name: Dr. Dugie Hauser",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Follow-up appointments available next-day afternoon",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Afternoon appointment slots available: 1 PM, 2 PM, 3 PM, 4 PM",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Follow-up appointments require: photo ID, insurance card, and list of current medications",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Practice location: Nashville",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Provider name: Doogie Howser (multiple spelling variations used by agent: 'Doo Dee Hauser', 'Doogie Howser', 'Dubehauser', 'Doobie Hauser')",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Tuesday, August 18 appointments available: 10:30 AM, 2 PM",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Monday, August 24 appointments available: 11 AM",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Agent asks for reason for rescheduling before confirming the appointment change",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "No cancellation fee for appointments",
+      "source": "05-cancel"
+    },
+    {
+      "text": "Agent can send appointment cancellation confirmation via text message",
+      "source": "05-cancel"
+    },
+    {
+      "text": "Agent asks for reason before canceling appointments",
+      "source": "05-cancel"
+    }
+  ],
+  "leads": [
+    {
+      "text": "Agent confirmed Aetna PPO coverage but initially said 'Aetna PTO' (possible typo or speech recognition error) -- clarify if this is a consistent misstatement",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Agent cannot directly update patient DOB in system and must route to clinic support team -- test if this limitation affects other data corrections",
+      "source": "01-schedule-new-patient"
+    },
+    {
+      "text": "Requesting a prescription refill when no medications appear in the system -- test if this is expected behavior or a data sync issue",
+      "source": "02-refill"
+    },
+    {
+      "text": "Attempting to transfer to patient support team appears to route to 'Pretty Good AI test line' and disconnect -- verify if transfers are functional or if this is a test environment artifact",
+      "source": "02-refill"
+    },
+    {
+      "text": "Agent accepts patient's corrected date of birth and routes to clinic support team for update -- test if corrections are actually processed",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Agent can schedule follow-up appointments with specific times and send appointment confirmation via text message",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Agent spells provider name inconsistently -- 'Dugie Hauser' initially, then 'Dubeyhauser' at end of call -- clarify correct spelling",
+      "source": "03-schedule-followup"
+    },
+    {
+      "text": "Provider name spelling remains inconsistent across single call (Doo Dee Hauser \u2192 Doogie Howser \u2192 Dubehauser \u2192 Doobie Hauser) -- clarify correct spelling and whether agent has accurate data",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Agent confirms specific appointment times and dates but uses inconsistent provider name spelling -- test if this affects record accuracy in system",
+      "source": "04-reschedule"
+    },
+    {
+      "text": "Provider name spelling remains highly inconsistent within same call (Dudeehauser \u2192 Abreker \u2192 Eberker \u2192 Judy Hauser) -- clarify correct provider names and test if agent has access to accurate data",
+      "source": "05-cancel"
+    },
+    {
+      "text": "Agent can cancel multiple appointments in single call -- test edge cases like attempting to cancel non-existent appointments or testing cancellation process limitations",
+      "source": "05-cancel"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[00:03] AGENT: May be recorded for quality and training purposes.
+[00:09] AGENT: Thank you for calling Pivot Point Orthopaedics.
+[00:12] AGENT: Would you like to create a demo patient profile?
+[00:14] AGENT: I see your first and last name to get started.
+[00:17] PATIENT: Hi, thanks for calling back. Yeah, I'd like to book a follow-up appointment. My name is Matthew Kim.
+[00:35] AGENT: Your patient profile is set up.
+[00:37] AGENT: And your date of birth is July fourth two thousand. How can I help you today?
+[00:41] PATIENT: Actually, I think there might be a mix-up with the date of birth. Mine is March 23rd, 2006. Can you update that for me?
+[01:01] AGENT: I've documented your request to update your date of birth to March twenty third. Two thousand six
+[01:07] AGENT: our clinic support team will review and update your record as soon as they can.
+[01:10] AGENT: Would you still like to book your follow-up appointment while they work on this?
+[01:12] PATIENT: Yeah, absolutely. I saw the doctor about two weeks ago for shoulder pain, and I was told to come back in two to three weeks to check how it's progressing. So I'm looking to book that follow-up now.
+[01:25] AGENT: Thanks for sharing that.
+[01:29] AGENT: Do you have a specific provider you'd like to see again?
+[01:32] AGENT: Or are you open to any available provider for your follow-up?
+[01:34] PATIENT: I'm open to whoever's available, really. Just whoever can fit me in soon would be great.
+[01:43] AGENT: We have several openings this week, including tomorrow,
+[01:46] AGENT: Would you prefer a morning or afternoon appointment?
+[01:47] PATIENT: Afternoon would work better for me, actually. What do you have available in the afternoon?
+[01:55] AGENT: Tomorrow afternoon,
+[01:59] AGENT: we have openings at one PM, two PM, three PM, and four PM.
+[02:02] AGENT: Would any of those times work for your follow-up?
+[02:03] PATIENT: Tomorrow afternoon works great. Let me go with two PM if that's available.
+[02:15] AGENT: You're all set for a follow-up appointment tomorrow.
+[02:18] AGENT: Tuesday, August eighteenth at two PM,
+[02:21] AGENT: with doctor Dugie Hauser at Pivot Point Orthopedics.
+[02:23] AGENT: Please bring your photo ID, insurance card,
+[02:27] AGENT: and a list of your current medications.
+[02:30] AGENT: Would you like a text message with your appointment details?
+[02:32] PATIENT: Yeah, that sounds good. So just to confirm—tomorrow, Tuesday August eighteenth at two PM with Dr. Dugie Hauser. And yeah, I'll take the text message with the details. My phone number is 6575665136.
+[02:52] AGENT: I have your number as six five seven five six six five one three six
+[02:59] AGENT: You'll get a text with your appointment details.
+[03:01] AGENT: Your follow-up is tomorrow at two PM. With doctor Dubeyhauser at Pivot Point Orthopedics.
+[03:07] AGENT: Let me know if you need anything else.
+[03:10] PATIENT: Perfect, that's all set. Thanks so much for booking me in, I really appreciate it. I'll see you tomorrow at two. Goodbye.

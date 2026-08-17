@@ -1,0 +1,158 @@
+[
+  {
+    "speaker": "agent",
+    "text": "May be recorded for quality and training purposes.",
+    "ts": 3.144,
+    "stamp": "00:03"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thank you for calling Pivot Point Orthopaedics.",
+    "ts": 9.491,
+    "stamp": "00:09"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi",
+    "ts": 10.191,
+    "stamp": "00:10"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to create a demo patient profile,",
+    "ts": 12.3,
+    "stamp": "00:12"
+  },
+  {
+    "speaker": "agent",
+    "text": "I just need your first and last name to get started.",
+    "ts": 14.941,
+    "stamp": "00:14"
+  },
+  {
+    "speaker": "patient",
+    "text": "Hi, thanks for picking up. My name is Matthew Kim. I'm calling because I have an appointment coming up but something came up at work and I need to reschedule it to a different day next week if that's possible.",
+    "ts": 16.56,
+    "stamp": "00:16"
+  },
+  {
+    "speaker": "agent",
+    "text": "You have two upcoming appointments on Tuesday. August eighteenth. One is at",
+    "ts": 36.738,
+    "stamp": "00:36"
+  },
+  {
+    "speaker": "agent",
+    "text": "ten thirty AM with Abeker,",
+    "ts": 41.201,
+    "stamp": "00:41"
+  },
+  {
+    "speaker": "agent",
+    "text": "and the other is at two PM with Doo Dee Hauser.",
+    "ts": 44.382,
+    "stamp": "00:44"
+  },
+  {
+    "speaker": "agent",
+    "text": "Which appointment would you like to reschedule?",
+    "ts": 46.713,
+    "stamp": "00:46"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oh, I need to reschedule one of those. Um, let me go with the two PM appointment with Doo Dee Hauser. Can you move that to a different day next week for me?",
+    "ts": 48.054,
+    "stamp": "00:48"
+  },
+  {
+    "speaker": "agent",
+    "text": "The next available appointment with Doogie Howser is Monday, August twenty fourth, at eleven AM in Nashville.",
+    "ts": 64.197,
+    "stamp": "01:04"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like to move your two PM appointment to that time or would you prefer a different time?",
+    "ts": 70.929,
+    "stamp": "01:10"
+  },
+  {
+    "speaker": "patient",
+    "text": "Monday the twenty fourth at eleven AM works great for me. Let me just confirm that back -- so I'm moving my two PM appointment from Tuesday the eighteenth to Monday, August twenty fourth at eleven AM with Doogie Howser in Nashville. Is that all set?",
+    "ts": 74.165,
+    "stamp": "01:14"
+  },
+  {
+    "speaker": "agent",
+    "text": "Almost.",
+    "ts": 94.731,
+    "stamp": "01:34"
+  },
+  {
+    "speaker": "agent",
+    "text": "Before I finish rescheduling, can you tell me the reason you need to move your appointment?",
+    "ts": 99.422,
+    "stamp": "01:39"
+  },
+  {
+    "speaker": "agent",
+    "text": "For example, is it a work conflict? Illness, or something else?",
+    "ts": 102.232,
+    "stamp": "01:42"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, it's a work conflict. Something came up at the office that I can't get around, so I need to move it to Monday instead.",
+    "ts": 105.724,
+    "stamp": "01:45"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your appointment has been rescheduled.",
+    "ts": 116.42,
+    "stamp": "01:56"
+  },
+  {
+    "speaker": "agent",
+    "text": "You are now set for Monday, August twenty fourth at eleven AM with Dubehauser in Nashville.",
+    "ts": 121.338,
+    "stamp": "02:01"
+  },
+  {
+    "speaker": "agent",
+    "text": "Would you like me to send you a text message with these details?",
+    "ts": 125.1,
+    "stamp": "02:05"
+  },
+  {
+    "speaker": "patient",
+    "text": "Yeah, that sounds good. You can send me a text with those details. Thanks for getting that sorted out for me.",
+    "ts": 126.41,
+    "stamp": "02:06"
+  },
+  {
+    "speaker": "agent",
+    "text": "You're all set.",
+    "ts": 135.495,
+    "stamp": "02:15"
+  },
+  {
+    "speaker": "agent",
+    "text": "Your appointment is now Monday, August twenty fourth at eleven AM with Doobie Hauser in Nashville.",
+    "ts": 140.546,
+    "stamp": "02:20"
+  },
+  {
+    "speaker": "agent",
+    "text": "I sent you a text with the details. Let me know if you need anything else.",
+    "ts": 142.922,
+    "stamp": "02:22"
+  },
+  {
+    "speaker": "patient",
+    "text": "Perfect, I appreciate it. Thanks for your help. Have a good one.",
+    "ts": 146.578,
+    "stamp": "02:26"
+  }
+]
